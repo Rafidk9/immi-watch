@@ -9,6 +9,7 @@
 #             homeaffairs Home Affairs SharePoint page (content lives in hidden JSON fields)
 #             ha_news     Home Affairs news JSON API (lists new/edited news items)
 #             legislation newly registered Acts/instruments from the Federal Register API
+#             rss         RSS/Atom feed (optional `keywords` regex filter); alerts on new items
 #             browser     headless Chromium (needed for Cloudflare-protected sites)
 #   selector  optional CSS selector for the main content (falls back to <main>, then <body>)
 #   priority  high | normal   (high = alert even on small edits)
@@ -121,14 +122,55 @@ sources:
     url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/global-visa-processing-times
     method: homeaffairs
 
+  - id: ha-student-priorities
+    name: Student visa processing priorities (Ministerial Direction)
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/student-visa
+    method: homeaffairs
+    priority: high
+  - id: ha-skilled-priorities
+    name: Skilled visa processing priorities (Ministerial Direction)
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/skilled-visa-processing-priorities
+    method: homeaffairs
+    priority: high
+  - id: ha-family-priorities
+    name: Family visa processing priorities (Ministerial Direction)
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/visa-processing-priorities/family-visa
+    method: homeaffairs
+  - id: ha-genuine-student
+    name: Genuine Student requirement
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500/genuine-student-requirement
+    method: homeaffairs
+    priority: high
+  - id: ha-english
+    name: English language requirements (accepted tests & scores)
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language
+    method: homeaffairs
+    priority: high
+
   # ---------------- Legislation ----------------
-  - id: leg-new-instruments
-    name: Federal Register – new Migration / Citizenship / ESOS legislation
+  - id: leg-new-legislation
+    name: Federal Register – newly registered migration / student / citizenship legislation
     group: Legislation
     url: https://www.legislation.gov.au/
     method: legislation
-    terms: ["Migration", "Australian Citizenship", "Education Services for Overseas Students"]
+    # Title words. "Overseas Student" covers both the ESOS Act instruments and the National Code.
+    terms: ["Migration", "Visa", "Visas", "Australian Citizenship", "Overseas Student", "Overseas Students",
+            "International Student", "International Students", "Education Services for Overseas Students",
+            "Higher Education Standards", "Tertiary Education Quality and Standards Agency",
+            "National Vocational Education and Training Regulator"]
     days: 120
+    priority: high
+  - id: parl-bills
+    name: Parliament – bills introduced (migration, education, citizenship, visas)
+    group: Legislation
+    url: "https://parlinfo.aph.gov.au/parlInfo/feeds/rss.w3p;adv=yes;orderBy=date-eFirst;page=0;query=Dataset%3Abillhome%20Date%3AthisYear;resCount=200"
+    method: rss
+    keywords: "migration|visa|citizenship|overseas student|international student|education|tertiary|vocational|universit"
     priority: high
   - id: leg-migration-regs
     name: Migration Regulations 1994 – versions / amendments
@@ -302,3 +344,53 @@ sources:
     group: Education
     url: https://www.studyaustralia.gov.au/en/tools-and-resources/news
     method: browser
+  - id: npl
+    name: DEWR – National Planning Level (international student caps)
+    group: Education
+    url: https://www.dewr.gov.au/international-skills-engagement/national-planning-level
+    priority: high
+  - id: min-education
+    name: Minister for Education – media releases (international education items)
+    group: Education
+    url: https://ministers.dewr.gov.au/releases.xml?minister=6525
+    method: rss
+    keywords: "international|overseas|student visa|planning level|ESOS|migration|visa|TEQSA|ATEC"
+    priority: high
+  - id: dewr-news
+    name: DEWR newsroom (international education / skills items)
+    group: Education
+    url: https://www.dewr.gov.au/rss/newsroom.xml
+    method: rss
+    keywords: "international|overseas|visa|migration|planning level|ESOS|PRISMS"
+  - id: teqsa-news
+    name: TEQSA – latest news (higher education regulator)
+    group: Education
+    url: https://www.teqsa.gov.au/about-us/news-and-events/latest-news
+    selector: .views-row
+  - id: asqa-news
+    name: ASQA – news (VET regulator)
+    group: Education
+    url: https://www.asqa.gov.au/news-events/news
+    selector: .card
+
+  # ---------------- Skills / occupations ----------------
+  - id: jsa-news
+    name: Jobs and Skills Australia – news (occupation lists, shortages)
+    group: Skills & occupations
+    url: https://www.jobsandskills.gov.au/news_rss
+    method: rss
+    keywords: "migration|occupation|shortage|core skills|CSOL|visa|skills in demand"
+    match: title
+    priority: high
+  - id: vetassess-news
+    name: VETASSESS – news & updates
+    group: Skills & occupations
+    url: https://www.vetassess.com.au/news
+  - id: acs-msa
+    name: ACS – Migration Skills Assessment
+    group: Skills & occupations
+    url: https://www.acs.org.au/msa.html
+  - id: ea-msa
+    name: Engineers Australia – Migration skills assessment
+    group: Skills & occupations
+    url: https://www.engineersaustralia.org.au/migration-skills-assessment

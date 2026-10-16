@@ -21,6 +21,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import difflib
+import email.utils
 import hashlib
 import json
 import os
@@ -75,7 +76,7 @@ HIGH_WORDS = re.compile(
     re.I,
 )
 # Sources that are lists of items: alert on new items only; items ageing out are silent.
-FEED_METHODS = ("ha_news", "legislation")
+FEED_METHODS = ("ha_news", "legislation", "rss")
 HA_SKIP_FIELDS = ("Translate", "BannerImage", "PageImage", "Thumbnail")
 
 
@@ -108,7 +109,16 @@ def html_to_lines(markup: str | bytes, selector: str | None = None) -> list[str]
     soup = BeautifulSoup(markup, "lxml")
     for tag in soup(["script", "style", "noscript", "svg", "iframe", "template", "button"]):
         tag.decompose()
-    root = soup.select_one(selector) if selector else None
+    root = None
+    if selector:
+        matches = soup.select(selector)
+        if len(matches) > 1:                      # e.g. one element per news item: keep them all
+            wrapper = soup.new_tag("div")
+            for m in matches:
+                wrapper.append(m.extract())
+            root = wrapper
+        elif matches:
+            root = matches[0]
     if root is None:
         # First candidate with real text (a "#main-content" can be an empty skip-link anchor).
         candidates = [soup.select_one(s) for s in ("main", "[role=main]", "#main-content")]
@@ -201,6 +211,8 @@ class Fetcher:
             return self.ha_news(src)
         if method == "legislation":
             return self.legislation(src)
+        if method == "rss":
+            return self.rss(src)
         if method == "browser":
             return html_to_lines(self.browser_html(src["url"]), src.get("selector"))
         raise FetchError(f"unknown method {method!r}")
@@ -284,22 +296,54 @@ class Fetcher:
         today = dt.datetime.now(TZ).date()
         since = today - dt.timedelta(days=days)
         rows: dict[str, dict] = {}
+        dates = f"registrationdate({since},{today + dt.timedelta(days=1)})"
+        queries = []
         for term in src.get("terms", ["Migration"]):
-            for collection in ("LegislativeInstrument", "Act"):
-                criteria = (f"and(text(\"{term}\",name,contains),pointintime(Latest),type(Principal,Amending),"
-                            f"collection({collection}),registrationdate({since},{today + dt.timedelta(days=1)}))")
-                r = self.http.get(f"https://api.prod.legislation.gov.au/v1/titles/search(criteria='{criteria}')",
-                                  params={"$select": "id,name,makingDate,asMadeRegisteredAt", "$top": "200"},
-                                  timeout=HTTP_TIMEOUT, headers={"Accept": "application/json"})
-                if r.status_code >= 400:
-                    raise FetchError(f"legislation API HTTP {r.status_code}", r.status_code)
-                for it in r.json().get("value", []):
+            text = f"text(\"{term}\",name,contains),pointintime(Latest)"
+            queries += [f"and({text},type(Principal,Amending),collection(LegislativeInstrument),{dates})",
+                        f"and({text},type(Principal,Amending),collection(Act),{dates})",
+                        # Notifiable instruments (commencement proclamations, some LINs) don't support
+                        # the date filter; they are few, so fetch all and filter by date below.
+                        f"and({text},collection(NotifiableInstrument))"]
+        for criteria in queries:
+            r = self.http.get(f"https://api.prod.legislation.gov.au/v1/titles/search(criteria='{criteria}')",
+                              params={"$select": "id,name,makingDate,asMadeRegisteredAt", "$top": "500"},
+                              timeout=HTTP_TIMEOUT, headers={"Accept": "application/json"})
+            if r.status_code >= 400:
+                raise FetchError(f"legislation API HTTP {r.status_code}", r.status_code)
+            for it in r.json().get("value", []):
+                if ((it.get("asMadeRegisteredAt") or it.get("makingDate") or "")[:10]) >= since.isoformat():
                     rows[it["id"]] = it
         lines = []
         for it in sorted(rows.values(), key=lambda it: (it.get("asMadeRegisteredAt") or "", it["id"]), reverse=True):
             when = (it.get("asMadeRegisteredAt") or it.get("makingDate") or "")[:10]
             lines.append(f"{when} | {it['id']} | {it['name'].strip()} | https://www.legislation.gov.au/{it['id']}/asmade/text")
         return lines or [f"[No matching legislation registered in the last {days} days]"]
+
+    def rss(self, src: dict) -> list[str]:
+        """RSS/Atom feed -> one line per item; optional `keywords` regex keeps only relevant items."""
+        soup = BeautifulSoup(self.get(src["url"]).content, "xml")
+        kw = re.compile(src["keywords"], re.I) if src.get("keywords") else None
+        lines = []
+        for it in soup.find_all(["item", "entry"]):
+            def field(*names):
+                for n in names:
+                    tag = it.find(n)
+                    if tag is not None:
+                        return (tag.get("href") if n == "link" and tag.get("href") else tag.get_text(" ", strip=True))
+                return ""
+            title = re.sub(r"\s+", " ", field("title")).strip()
+            desc = BeautifulSoup(field("description", "summary", "content"), "lxml").get_text(" ", strip=True)
+            haystack = title if src.get("match") == "title" else f"{title} {desc}"
+            if kw and not kw.search(haystack):
+                continue
+            raw_date = field("pubDate", "published", "updated", "date")
+            try:
+                when = email.utils.parsedate_to_datetime(raw_date).astimezone(TZ).date().isoformat()
+            except (TypeError, ValueError):
+                when = raw_date[:10]
+            lines.append(f"{when} | {title} | {field('link', 'guid')}")
+        return lines[: int(src.get("limit", 60))] or ["[No matching items in this feed right now]"]
 
     def browser_html(self, url: str) -> str:
         if self._ctx is None:
