@@ -583,7 +583,7 @@ def load_state() -> dict:
 
 
 def save_state(state: dict) -> None:
-    STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_record(ch: Change, now: dt.datetime) -> str:
@@ -593,8 +593,7 @@ def write_record(ch: Change, now: dt.datetime) -> str:
     ch.record = str(path.relative_to(ROOT)).replace("\\", "/")
     body = change_md(ch, with_diff=False)
     path.write_text(f"{body}\n\nDetected {now.isoformat(timespec='minutes')}\n\n```diff\n{ch.unified}\n```\n",
-                    encoding="utf-8", newline="
-")
+                    encoding="utf-8", newline="\n")
     return ch.record
 
 
@@ -711,8 +710,7 @@ def run(args) -> int:
                 stats["baseline"] += 1
                 print(f"BASE {sid}: {len(lines)} lines")
                 if not args.dry_run:
-                    snap.write_text(text, encoding="utf-8", newline="
-")
+                    snap.write_text(text, encoding="utf-8", newline="\n")
                     st["baseline"] = now.isoformat(timespec="minutes")
                 continue
 
@@ -736,8 +734,7 @@ def run(args) -> int:
             if src.get("method") in FEED_METHODS and not added:
                 # Only old items aged out of the list; nothing new.
                 if not args.dry_run:
-                    snap.write_text(text, encoding="utf-8", newline="
-")
+                    snap.write_text(text, encoding="utf-8", newline="\n")
                 print(f"same {sid} (old news items rolled off)")
                 continue
 
@@ -749,8 +746,7 @@ def run(args) -> int:
                   f"{' (AI)' if used_ai else ''}")
             if not args.dry_run:
                 write_record(ch, now)
-                snap.write_text(text, encoding="utf-8", newline="
-")
+                snap.write_text(text, encoding="utf-8", newline="\n")
                 st["last_changed"] = now.isoformat(timespec="minutes")
             changes.append(ch)
     finally:
