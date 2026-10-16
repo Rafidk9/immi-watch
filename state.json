@@ -332,38 +332,39 @@
     },
     "parl-bills": {
       "url": "https://parlinfo.aph.gov.au/parlInfo/feeds/rss.w3p;adv=yes;orderBy=date-eFirst;page=0;query=Dataset%3Abillhome%20Date%3AthisYear;resCount=200",
-      "fail_count": 1,
-      "last_error": "2026-10-16T14:02+11:00 FetchError: HTTP 403"
+      "fail_count": 0,
+      "last_checked": "2026-10-16T14:06+11:00",
+      "baseline": "2026-10-16T14:06+11:00"
     },
     "npl": {
       "url": "https://www.dewr.gov.au/international-skills-engagement/national-planning-level",
-      "fail_count": 1,
-      "last_error": "2026-10-16T14:02+11:00 ReadTimeout: HTTPSConnectionPool(host='www.dewr.gov.au', port=443): Read timed out. (read timeout=30)"
+      "fail_count": 2,
+      "last_error": "2026-10-16T14:06+11:00 Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.dewr.gov.au/international-skills-engagement/national-planning-level\nCall log:\n  - navigating to \"https://www.dewr.gov.au/international-skills-engagement/national-planning-level\", waiting until \"domcontentloaded\"\n"
     },
     "min-education": {
       "url": "https://ministers.dewr.gov.au/releases.xml?minister=6525",
-      "fail_count": 1,
-      "last_error": "2026-10-16T14:02+11:00 ReadTimeout: HTTPSConnectionPool(host='ministers.dewr.gov.au', port=443): Read timed out. (read timeout=30)"
+      "fail_count": 2,
+      "last_error": "2026-10-16T14:06+11:00 Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://ministers.dewr.gov.au/releases.xml?minister=6525\nCall log:\n  - navigating to \"https://ministers.dewr.gov.au/releases.xml?minister=6525\", waiting until \"domcontentloaded\"\n"
     },
     "dewr-news": {
       "url": "https://www.dewr.gov.au/rss/newsroom.xml",
-      "fail_count": 1,
-      "last_error": "2026-10-16T14:02+11:00 ReadTimeout: HTTPSConnectionPool(host='www.dewr.gov.au', port=443): Read timed out. (read timeout=30)"
+      "fail_count": 2,
+      "last_error": "2026-10-16T14:06+11:00 Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.dewr.gov.au/rss/newsroom.xml\nCall log:\n  - navigating to \"https://www.dewr.gov.au/rss/newsroom.xml\", waiting until \"domcontentloaded\"\n"
     },
     "teqsa-news": {
       "url": "https://www.teqsa.gov.au/about-us/news-and-events/latest-news",
-      "fail_count": 1,
-      "last_error": "2026-10-16T14:02+11:00 ReadTimeout: HTTPSConnectionPool(host='www.teqsa.gov.au', port=443): Read timed out. (read timeout=30)"
+      "fail_count": 2,
+      "last_error": "2026-10-16T14:06+11:00 Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.teqsa.gov.au/about-us/news-and-events/latest-news\nCall log:\n  - navigating to \"https://www.teqsa.gov.au/about-us/news-and-events/latest-news\", waiting until \"domcontentloaded\"\n"
     },
     "asqa-news": {
       "url": "https://www.asqa.gov.au/news-events/news",
-      "fail_count": 1,
-      "last_error": "2026-10-16T14:02+11:00 ReadTimeout: HTTPSConnectionPool(host='www.asqa.gov.au', port=443): Read timed out. (read timeout=30)"
+      "fail_count": 2,
+      "last_error": "2026-10-16T14:06+11:00 Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.asqa.gov.au/news-events/news\nCall log:\n  - navigating to \"https://www.asqa.gov.au/news-events/news\", waiting until \"domcontentloaded\"\n"
     },
     "jsa-news": {
       "url": "https://www.jobsandskills.gov.au/news_rss",
-      "fail_count": 1,
-      "last_error": "2026-10-16T14:02+11:00 ReadTimeout: HTTPSConnectionPool(host='www.jobsandskills.gov.au', port=443): Read timed out. (read timeout=30)"
+      "fail_count": 2,
+      "last_error": "2026-10-16T14:06+11:00 Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.jobsandskills.gov.au/news_rss\nCall log:\n  - navigating to \"https://www.jobsandskills.gov.au/news_rss\", waiting until \"domcontentloaded\"\n"
     },
     "vetassess-news": {
       "url": "https://www.vetassess.com.au/news",
@@ -386,11 +387,11 @@
   },
   "pending_digest": [],
   "last_run": {
-    "at": "2026-10-16T14:02+11:00",
-    "checked": 56,
-    "baseline": 9,
+    "at": "2026-10-16T14:06+11:00",
+    "checked": 1,
+    "baseline": 1,
     "changed": 0,
-    "failed": 7,
+    "failed": 6,
     "skipped": 0
   }
 }
