@@ -1,0 +1,404 @@
+The Victorian Skilled Visa Nomination Program uses the Victorian Points Test (VPT) to rank all Registrations of Interest (ROIs) when selecting ROIs for Victorian nomination for the Skilled Nominated visa (subclass 190) and the Skilled Work Regional (Provisional) visa (subclass 491).
+This ranking is based on a combination of the following seven weighted factors:
+Age,
+English language,
+Years of experience in the nominated occupation,
+Educational qualification,
+Occupation skill level,
+Partner’s skill (if applicable), and
+Annual earnings from skilled employment in Victoria (if applicable).
+Each factor contributes to an ROI’s VPT total. ROIs are ranked from highest to lowest based on their VPT total.
+Note: To be considered for a Victorian skilled visa nomination, you must meet both the Australian Government’s visa eligibility requirements and the Victorian Government’s nomination requirements for the Skilled Nominated visa (subclass 190) or the Skilled Work Regional (Provisional) visa (subclass 491).
+Invitation process
+Applicants in all eligible occupations can submit an ROI. All ROIs are ranked using the VPT.
+There are two ways to be invited through the Victorian Skilled Visa Nomination Program. When you submit an ROI, you are considered under the options below:
+1. Most competitive
+In each invitation round, ROIs with the highest VPT totals across all eligible occupations in the pool at that time are invited.
+2. Priority industry
+Certain occupations in Victorian industries are also prioritised to address critical skills needs.
+In each invitation round, ROIs with the highest VPT totals within each priority industry in the pool at that time are invited.
+Information about the priority industries and occupations for the 2026-27 program is available in the program priority industries and occupations section below.
+Invitation Rounds
+The Victorian Government issues invitations to selected ROIs through regular invitation rounds. In each invitation round ROIs with the highest VPT total at that time are invited.
+Invitation outcomes depend on the competitiveness of the ROI pool at the time of the invitation round.
+No Fixed Pass Mark
+Unlike the Australian Government’s points test (SkillSelect), the VPT does not have a fixed ‘pass mark’. Invitations are issued to ROIs with the highest VPT totals in each invitation round.
+Australian Government SkillSelect points
+The Australian Government's points test (SkillSelect) is used by the Australian Government to determine eligibility for a skilled visa. The Australian Government requires all applicants to score at least 65 points on the Australian points test.
+Note: The VPT is used to assess ROIs for Victorian skilled visa nominations.
+Your competitiveness
+An applicant's competitiveness depends on their VPT total relative to other applicants and the availability of limited nomination places.
+We are therefore not able to provide information about your likelihood of being invited or how your points compare to other applicants.
+An invitation to apply for a nomination application or a successful nomination application is not guaranteed.
+Personal circumstances
+We are unable to prioritise invitations based on personal circumstances such as age or the expiry of a current visa or supporting documents.
+Victorian Points Test
+Each ROI receives a VPT total. The VPT total is calculated using information from the Australian Government SkillSelect Expression of Interest and the Victorian ROI.
+The VPT prioritises younger, highly qualified applicants with higher levels of English language.
+Age
+Range
+Points
+18
+265
+19
+282
+20-29
+300
+30
+286
+31
+270
+32
+256
+33
+240
+34
+226
+35
+210
+36
+196
+37
+180
+38
+166
+39
+150
+40
+136
+41
+106
+42
+76
+43
+46
+44
+16
+English language level
+Range
+Points
+Competent
+0
+Proficient
+100
+Superior
+200
+Years of experience in nominated occupation
+Range
+Points
+0 years
+0
+1 year
+20
+2-3 years
+40
+4-5 years
+60
+6-7 years
+80
+More than 8 years
+100
+Education level
+Range
+Points
+Other
+25
+Bachelors and Honours
+50
+Masters
+75
+PhD
+100
+Occupation skill level
+Range
+Points
+Skill level 3 occupation
+0
+Skill level 2
+occupation
+0
+Skill level 1 occupation
+50
+Partner’s skill
+Requirement
+Points
+You have claimed 10 points for Partner Skills in your SkillSelect EOI and
+Your partner will be included in your state nominated visa application and
+Your partner’s occupation is a current priority industry occupation
+50
+You are single, have an Australian partner, or do not meet the requirements above.
+0
+Annual earnings from current skilled employment in Victoria
+Range (AUD)
+Points
+$80,000-$84,999
+8
+$85,000-$89,999
+16
+$90,000-$94,999
+24
+$95,000-$99,999
+32
+$100,000-$104,999
+39
+$105,000-$109,999
+47
+$110,000-$114,999
+55
+$115,000-$119,999
+63
+$120,000-$124,999
+71
+$125,000-$129,999
+79
+$130,000-$134,999
+87
+$135,000-$139,999
+95
+$140,000-$144,999
+103
+$145,000-$149,999
+111
+$150,000-$154,999
+118
+$155,000-$159,999
+126
+$160,000-164,999
+134
+$165,000-$169,999
+142
+$170,000 and over
+150
+More Information
+For more information on the skill level of your occupation, please visit the skilled occupation list on the Department of Home Affairs website.external link
+For more information on the Expression of Interest points for partners, please visit the points table on the Department of Home Affairs websiteexternal link.
+For more information on annual earnings from skilled employment, please refer to the Annual Earnings Estimation guide on the Live in Melbourne website.
+‎‎‎‎
+2026-27 program priority industries and occupations
+Certain occupations in Victorian industries are prioritised to address critical skills needs.
+Registrations of Interest (ROIs) in each priority industry or industry subgroup are ranked using the Victorian Points Test (VPT). ROIs with the highest VPT totals within each priority industry or industry subgroup are invited to apply for nomination.
+The 2026-27 priority occupations for each priority industry and industry subgroup are listed below.
+Priority industries
+Healthcare
+ANZSCO code
+Occupation name
+251211
+Medical Diagnostic Radiographer
+251212
+Medical Radiation Therapist
+251213
+Nuclear Medicine Technologist
+251214
+Sonographer
+251411
+Optometrist
+251511
+Hospital Pharmacist
+251912
+Orthotist or Prosthetist
+252411
+Occupational Therapist
+252511
+Physiotherapist
+252611
+Podiatrist
+252711
+Audiologist
+252712
+Speech Pathologist
+253311
+Specialist Physician (General Medicine)
+253314
+Medical Oncologist
+253317
+Intensive Care Specialist
+253318
+Neurologist
+253321
+Paediatrician
+253399
+Specialist Physicians nec
+253312
+Cardiologist
+253313
+Clinical Haematologist
+253315
+Endocrinologist
+253316
+Gastroenterologist
+253322
+Renal Medicine Specialist
+253323
+Rheumatologist
+253324
+Thoracic Medicine Specialist
+253411
+Psychiatrist
+253512
+Cardiothoracic Surgeon
+253511
+Surgeon
+253513
+Neurosurgeon
+253514
+Orthopaedic Surgeon
+253515
+Otorhinolaryngologist
+253516
+Paediatric Surgeon
+253517
+Plastic and Reconstructive Surgeon
+253518
+Urologist
+253521
+Vascular Surgeon
+253912
+Emergency Medicine Specialist
+253913
+Obstetrician and Gynaecologist
+253917
+Diagnostic and Interventional Radiologist
+253914
+Ophthalmologist
+253915
+Pathologist
+254111
+Midwife
+254211
+Nurse Educator
+254212
+Nurse Researcher
+254311
+Nurse Manager
+254411
+Nurse Practitioner
+254412
+Registered Nurse (Aged Care)
+254413
+Registered Nurse (Child and Family Health)
+254414
+Registered Nurse (Community Health)
+254415
+Registered Nurse (Critical Care and Emergency)
+254416
+Registered Nurse (Developmental Disability)
+254417
+Registered Nurse (Disability and Rehabilitation)
+254418
+Registered Nurse (Medical)
+254421
+Registered Nurse (Medical Practice)
+254422
+Registered Nurse (Mental Health)
+254423
+Registered Nurse (Perioperative)
+254424
+Registered Nurse (Surgical)
+254425
+Registered Nurse (Paediatrics)
+254499
+Registered Nurses nec
+411213
+Dental Technician
+Social assistance
+ANZSCO code
+Occupation name
+272311
+Clinical Psychologist
+272313
+Organisational Psychologist
+272312
+Educational Psychologist
+272399
+Psychologists nec
+272511
+Social Worker
+272613
+Welfare Worker
+Education
+Teachers subgroup
+ANZSCO code
+Occupation name
+241311
+Middle School Teacher
+241411
+Secondary School Teacher
+241511
+Special Needs Teacher
+241599
+Special Education Teachers nec
+Early Childhood Education subgroup
+ANZSCO code
+Occupation name
+241111
+Early Childhood (Pre-primary School) Teacher
+Registrations of Interest with one (1) or more years of relevant work experience and Proficient or Superior English will be prioritised for invitation.
+Construction
+Construction Professionals subgroup
+ANZSCO code
+Occupation name
+233212
+Geotechnical Engineer
+234412
+Geophysicist
+234413
+Hydrogeologist
+133111
+Construction Project Manager
+232212
+Surveyor
+232214
+Other Spatial Scientist
+Construction Trades subgroup
+ANZSCO code
+Occupation name
+333111
+Glazier
+331111
+Bricklayer
+331112
+Stonemason
+334111
+Plumber (General)
+334112
+Airconditioning and Mechanical Services Plumber
+334113
+Drainer
+334114
+Gasfitter
+334115
+Roof Plumber
+331211
+Carpenter and Joiner
+331212
+Carpenter
+331213
+Joiner
+312113
+Building Inspector
+341111
+Electrician (General)
+341112
+Electrician (Special Class)
+342111
+Airconditioning and Refrigeration Mechanic
+322211
+Sheet Metal Worker
+323214
+Metal Machinist
+312312
+Electrical Engineering Technician
+333212
+Solid Plasterer
+333411
+Wall and Floor Tiler
+333311
+Roof Tiler
+323412
+Toolmaker
+322311
+Metal Fabricator
+321211
+Motor Mechanic (General)
+321111
+Automotive Electrician

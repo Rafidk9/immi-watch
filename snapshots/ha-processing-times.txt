@@ -1,0 +1,10 @@
+Global visa processing times
+Page Image
+Published
+Page Content
+Visa processing times guide
+The visa processing times guide gives an indication of how long a visa application may take to process. This estimated timeframe is based on how long it has taken to process recently decided applications. It does
+not guarantee that applications will be decided within the timeframe.
+Note:
+the tool does not check specific information relating to your application
+only visas for which there are processing times appear in the dropdown list.

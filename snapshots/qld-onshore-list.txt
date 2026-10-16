@@ -1,0 +1,612 @@
+Queensland onshore skilled occupation list
+If your nominated occupation is not on the list below, you are not eligible for Queensland nomination in 2025-26. Please do not submit a Registration of Interest.
+Note, not all occupations are eligible for the subclass 190 visa.
+Home Affairs use the 2013 ANZSCO version for skilled visa subclasses 190 and 491. Queensland’s occupation lists are derived from the Legislative Instrument 19/051, which utilises the 2013 ANZSCO version.
+ANZSCO Code
+Occupation
+Skilled Work Regional visa (subclass 491)
+Skilled Nominated visa (subclass 190)
+Building and Construction pathway
+121111
+Aquaculture Farmer
+Yes
+121311
+Apiarist
+Yes
+121312
+Beef Cattle Farmer
+Yes
+131112
+Sales And Marketing Manager
+Yes
+133111
+Construction Project Manager
+Yes
+133112
+Project Builder
+Yes
+133211
+Engineering Manager
+Yes
+133411
+Manufacturer
+Yes
+133511
+Production Manager (Forestry)
+Yes
+133512
+Production Manager (Manufacturing)
+Yes
+133513
+Production Manager (Mining)
+Yes
+134111
+Child Care Centre Manager
+Yes
+134212
+Nursing Clinical Director
+Yes
+141111
+Cafe Or Restaurant Manager
+Yes
+141311
+Hotel Or Motel Manager
+Yes
+141999
+Accommodation And Hospitality Managers (Nec)
+Yes
+231111
+Aeroplane Pilot
+Yes
+232212
+Surveyor
+Yes
+232611
+Urban And Regional Planner
+Yes
+233111
+Chemical Engineer
+Yes
+233112
+Materials Engineer
+Yes
+233211
+Civil Engineer
+Yes
+233212
+Geotechnical Engineer
+Yes
+233213
+Quantity Surveyor
+Yes
+233214
+Structural Engineer
+Yes
+233215
+Transport Engineer
+Yes
+233311
+Electrical Engineer
+Yes
+233411
+Electronics Engineer
+Yes
+233511
+Industrial Engineer
+Yes
+233512
+Mechanical Engineer
+Yes
+233513
+Production Or Plant Engineer
+Yes
+233611
+Mining Engineer (Excluding Petroleum)
+Yes
+233612
+Petroleum Engineer
+Yes
+233912
+Agricultural Engineer
+Yes
+233913
+Biomedical Engineer
+Yes
+233915
+Environmental Engineer
+Yes
+233999
+Engineering Professionals (Nec)
+Yes
+234111
+Agricultural Consultant
+Yes
+234112
+Agricultural Scientist
+Yes
+234113
+Forester / Forest Scientist
+Yes
+234211
+Chemist
+Yes
+234312
+Environmental Consultant
+Yes
+234399
+Environmental Scientist (Nec)
+Yes
+234411
+Geologist
+Yes
+234413
+Hydrogeologist
+Yes
+234513
+Biochemist
+Yes
+234514
+Biotechnologist
+Yes
+234599
+Life Scientists (Nec)
+Yes
+234611
+Medical Laboratory Scientist
+Yes
+234711
+Veterinarian
+Yes
+234915
+Exercise Physiologist
+Yes
+241111
+Early Childhood (Pre Primary School) Teacher
+Yes
+241213
+Primary School Teacher
+Yes
+241311
+Middle School Teacher / Intermediate School Teacher
+Yes
+241411
+Secondary School Teacher
+Yes
+241511
+Special Needs Teacher
+Yes
+241512
+Teacher Of The Hearing Impaired
+Yes
+241513
+Teacher Of The Sight Impaired
+Yes
+241599
+Special Education Teachers (Nec)
+Yes
+242211
+Vocational Education Teacher / Polytechnic Teacher
+Yes
+251111
+Dietitian
+Yes
+251211
+Medical Diagnostic Radiographer
+Yes
+251212
+Medical Radiation Therapist
+Yes
+251213
+Nuclear Medicine Technologist
+Yes
+251214
+Sonographer
+Yes
+251311
+Environmental Health Officer
+Yes
+251511
+Hospital Pharmacist
+Yes
+251513
+Retail Pharmacist
+Yes
+251912
+Orthotist Or Prosthetist
+Yes
+252311
+Dental Specialist
+Yes
+252312
+Dentist
+Yes
+252411
+Occupational Therapist
+Yes
+252511
+Physiotherapist
+Yes
+252611
+Podiatrist
+Yes
+252711
+Audiologist
+Yes
+252712
+Speech Pathologist / Speech Language Therapist
+Yes
+253111
+General Practitioner
+Yes
+253112
+Resident Medical Officer
+Yes
+253211
+Anaesthetist
+Yes
+253311
+Specialist Physician (General Medicine)
+Yes
+253312
+Cardiologist
+Yes
+253313
+Clinical Haematologist
+Yes
+253314
+Medical Oncologist
+Yes
+253315
+Endocrinologist
+Yes
+253316
+Gastroenterologist
+Yes
+253317
+Intensive Care Specialist
+Yes
+253318
+Neurologist
+Yes
+253321
+Paediatrician
+Yes
+253322
+Renal Medicine Specialist
+Yes
+253323
+Rheumatologist
+Yes
+253324
+Thoracic Medicine Specialist
+Yes
+253399
+Specialist Physicians (Nec)
+Yes
+253411
+Psychiatrist
+Yes
+253511
+Surgeon (General)
+Yes
+253512
+Cardiothoracic Surgeon
+Yes
+253513
+Neurosurgeon
+Yes
+253514
+Orthopaedic Surgeon
+Yes
+253515
+Otorhinolaryngologist
+Yes
+253516
+Paediatric Surgeon
+Yes
+253518
+Urologist
+Yes
+253521
+Vascular Surgeon
+Yes
+253911
+Dermatologist
+Yes
+253912
+Emergency Medicine Specialist
+Yes
+253913
+Obstetrician And Gynaecologist
+Yes
+253914
+Ophthalmologist
+Yes
+253915
+Pathologist
+Yes
+253917
+Diagnostic And Interventional Radiologist
+Yes
+253918
+Radiation Oncologist
+Yes
+253999
+Medical Practitioners (Nec)
+Yes
+254111
+Midwife
+Yes
+254411
+Nurse Practitioner
+Yes
+254412
+Registered Nurse (Aged Care)
+Yes
+254413
+Registered Nurse (Child and Family Health)
+Yes
+254414
+Registered Nurse (Community Health)
+Yes
+254415
+Registered Nurse (Critical Care and Emergency)
+Yes
+254416
+Registered Nurse (Developmental Disability)
+Yes
+254417
+Registered Nurse (Disability and Rehabilitation)
+Yes
+254418
+Registered Nurse (Medical)
+Yes
+254421
+Registered Nurse (Medical Practice)
+Yes
+254422
+Registered Nurse (Mental Health)
+Yes
+254423
+Registered Nurse (Perioperative)
+Yes
+254424
+Registered Nurse (Surgical)
+Yes
+254425
+Registered Nurse (Paediatrics)
+Yes
+254499
+Registered Nurses (Nec)
+Yes
+261311
+Analyst Programmer
+Yes
+261312
+Developer Programmer
+Yes
+261313
+Software Engineer
+Yes
+261399
+Software And Applications Programmers (Nec)
+Yes
+262112
+ICT Security Specialist
+Yes
+272115
+Student Counsellor
+Yes
+272199
+Counsellors (Nec)
+Yes
+272311
+Clinical Psychologist
+Yes
+272312
+Educational Psychologist
+Yes
+272313
+Organisational Psychologist
+Yes
+272314
+Psychotherapist
+Yes
+272399
+Psychologists (Nec)
+Yes
+272511
+Social Worker
+Yes
+311213
+Medical Laboratory Technician
+Yes
+312111
+Architectural Draftsperson
+Yes
+312113
+Building Inspector
+Yes
+312114
+Construction Estimator
+Yes
+312116
+Surveying Or Spatial Science Technician
+Yes
+312199
+Architectural, Building and Surveying Technicians (Nec)
+Yes
+312211
+Civil Engineering Draftsperson
+Yes
+312212
+Civil Engineering Technician
+Yes
+312311
+Electrical Engineering Draftsperson
+Yes
+312312
+Electrical Engineering Technician
+Yes
+312511
+Mechanical Engineering Draftsperson
+Yes
+312512
+Mechanical Engineering Technician
+Yes
+312611
+Safety Inspector
+Yes
+312912
+Metallurgical Or Materials Technician
+Yes
+312913
+Mine Deputy
+Yes
+312999
+Building And Engineering Technicians (Nec)
+Yes
+321111
+Automotive Electrician
+Yes
+321211
+Motor Mechanic (General)
+Yes
+321212
+Diesel Motor Mechanic
+Yes
+322211
+Sheetmetal Worker
+Yes
+322311
+Metal Fabricator
+Yes
+322312
+Pressure Welder
+Yes
+322313
+Welder (First Class)
+Yes
+323111
+Aircraft Maintenance Engineer (Avionics)
+Yes
+323112
+Aircraft Maintenance Engineer (Mechanical)
+Yes
+323113
+Aircraft Maintenance Engineer (Structures)
+Yes
+323211
+Fitter (General)
+Yes
+323212
+Fitter And Turner
+Yes
+323213
+Fitter Welder
+Yes
+323214
+Metal Machinist (First Class)
+Yes
+323299
+Metal Fitters and Machinists (Nec)
+Yes
+331111
+Bricklayer
+Yes
+331112
+Stonemason
+Yes
+331211
+Carpenter And Joiner
+Yes
+331212
+Carpenter
+Yes
+331213
+Joiner
+Yes
+332111
+Floor Finisher
+Yes
+332211
+Painter
+Yes
+333111
+Glazier
+Yes
+333211
+Plasterer (Wall and Ceiling)
+Yes
+333212
+Renderer (Solid Plaster)
+Yes
+333311
+Roof Tiler
+Yes
+333411
+Wall And Floor Tiler
+Yes
+334111
+Plumber (General)
+Yes
+334112
+Airconditioning And Mechanical Services Plumber
+Yes
+334113
+Drainer
+Yes
+334114
+Gasfitter
+Yes
+334115
+Roof Plumber
+Yes
+341111
+Electrician (General)
+Yes
+341112
+Electrician (Special Class)
+Yes
+341113
+Lift Mechanic
+Yes
+342111
+Airconditioning And Refrigeration Mechanic
+Yes
+342211
+Electrical Linesworker / Electrical Line Mechanic
+Yes
+342212
+Technical Cable Jointer
+Yes
+351311
+Chef
+Yes
+351411
+Cook
+Yes
+394111
+Cabinetmaker
+Yes
+399111
+Boat Builder and Repairer
+Yes
+399213
+Power Generation Plant Operator
+Yes
+411211
+Dental Hygienist
+Yes
+411213
+Dental Technician
+Yes
+411214
+Dental Therapist
+Yes
+411411
+Enrolled Nurse
+Yes
+411716
+Youth Worker
+Yes

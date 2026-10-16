@@ -1,0 +1,790 @@
+Definition
+X
+ACT Nominated Migration Program Occupation List
+What is the ACT Nominated Migration Program Occupation List?
+The ACT Nominated Migration Program Occupation List (formerly known as the ACT Critical Skills list) identifies occupations skilled migrants can nominate to apply for ACT nomination of either a:
+Skilled Work Regional Visa (subclass 491)
+Skilled Nominated Visa (subclass 190)
+You can also claim points in the Canberra Matrix if your nominated occupation is on the ACT Nominated Migration Program Occupation List or if you are working in an occupation on the List.
+The ACT Nominated Migration Program Occupation List includes occupations that may be in high demand, that are supporting priority sectors, or where there is anticipated future demand. Canberra Matrix submissions with a nominated occupation in a critical sector may be prioritised. Critical sectors include the care, education, construction, renewables, experience, and advanced technology sectors.
+Cap on occupations
+Occupations may be capped if the number of nominations made in a financial year far outstrips demand for the occupation.
+Current ACT Nominated Migration Program Occupation List
+The ACT Nominated Migration Program Occupation List was last updated on 10 October 2025. It applies to all Canberra Matrix, regardless of when they were submitted.
+We will review the list annually around the start of the new migration program year to make sure that the ACT Migration Program adapts and responds to the evolving needs of the ACT economy. A review does not guarantee that the list will be updated if the list continues to support the economic conditions at the time.
+ACT Nominated Migration Program Occupation List - October 2025
+ANZSCO Unit Group
+Unit Group Code
+ANZSCO Code
+NOMINATED OCCUPATION
+Construction Managers
+1331
+133111
+construction project manager
+133112
+project builder (491 Only)
+Engineering Managers
+1332
+133211
+engineering manager
+Supply, Distribution and Procurement Managers
+1336
+133611
+supply and distribution manager
+133612
+procurement manager (491 Only)
+Child Care Centre Managers
+1341
+134111
+child care centre manager
+Health and Welfare Services
+1342
+134211
+medical administrator
+134212
+nursing clinical director
+134213
+primary health organisation manager
+134214
+welfare centre manager
+134299
+health and welfare services managers (nec)
+ICT Managers
+1351
+135112
+ICT project manager
+135199
+ICT managers (nec)
+Other Specialist Managers
+1399
+139911
+arts administrator or manager
+139912
+environmental manager
+139913
+laboratory manager
+139914
+quality assurance manager
+139915
+sports administrator (491 Only)
+139999
+specialist managers (nec)
+Cafe and Restaurant Managers
+1411
+141111
+cafe or restaurant manager
+Hotel and Motel Managers
+1413
+141311
+hotel or motel manager
+Accountants
+2211
+221111
+accountant (general)
+221112
+management accountant
+221113
+taxation accountant
+Auditors, Company Secretaries and Corporate Treasurers
+2212
+221211
+company secretary
+221213
+external auditor
+221214
+internal auditor
+Archivists, Curators and Records Managers
+2242
+224213
+health information manager
+Architects and Landscape Architects
+2321
+232111
+architect
+232112
+landscape architect
+Surveyors and Spatial Scientists
+2322
+232212
+surveyor
+Urban and Regional Planners
+2326
+232611
+urban and regional planner
+Civil Engineering Professionals
+2332
+233211
+civil engineer
+233212
+geotechnical engineer
+233213
+quantity surveyor
+233214
+structural engineer
+233215
+transport engineer
+Electrical Engineers
+2333
+233311
+electrical engineer
+Electronics Engineers
+2334
+233411
+electronics engineer
+Industrial, Mechanical and Production Engineers
+2335
+233511
+industrial engineer
+233512
+mechanical engineer
+233513
+production or plant engineer
+Other Engineering Professionals
+2339
+233911
+aeronautical engineer
+233912
+agricultural engineer
+233913
+biomedical engineer
+233914
+engineering technologist
+233915
+environmental engineer
+233916
+naval architect
+233999
+engineering professionals (nec)
+Environmental Scientists
+2343
+234311
+conservation officer (491 Only)
+234312
+environmental consultant
+234313
+environmental research scientist
+234399
+environmental scientist (nec)
+Life Scientists
+2345
+234511
+life scientist (general)
+234599
+life scientists (nec)
+Medical Laboratory Scientists
+2346
+234611
+medical laboratory scientist
+Veterinarians
+2347
+234711
+veterinarian
+Other Natural and Physical Science Professionals
+2349
+234914
+physicist
+234999
+natural and physical science professionals (nec)
+Early Childhood (Pre-primary School) Teachers
+2411
+241111
+early childhood (pre-primary school) teacher
+Primary School Teachers
+2412
+241213
+primary school teacher
+Middle School Teachers Intermediate School Teachers
+2413
+241311
+middle school teacher (Aus) / intermediate school teacher (NZ)
+Secondary School Teachers
+2414
+241411
+secondary school teacher
+Vocational Education Teachers Polytechnic Teachers
+2422
+242211
+vocational education teacher (491 Only)
+Special Education Teachers
+2415
+241511
+special needs teacher
+241512
+teacher of the hearing impaired
+241513
+teacher of the sight impaired
+241599
+special education teachers (nec)
+Nutrition Professionals
+2511
+251111
+dietitian
+251112
+nutritionist
+Medical Imaging Professionals
+2512
+251211
+medical diagnostic radiographer
+251212
+medical radiation therapist
+251213
+nuclear medicine technologist
+251214
+sonographer
+Occupational and Environmental Health Professionals
+2513
+251311
+environmental health officer (491 Only)
+251312
+occupational health and safety adviser
+Optometrists and Orthoptists
+2514
+251411
+optometrist
+251412
+orthoptist
+Pharmacists
+2515
+251511
+hospital pharmacist
+251512
+industrial pharmacist
+251513
+retail pharmacist
+Other Health Diagnostic and Promotion Professionals
+2519
+251911
+health promotion officer
+251912
+orthotist or prosthetist
+251999
+health diagnostic and promotion professionals (nec)
+Chiropractors and Osteopaths
+2521
+252111
+chiropractor
+252112
+osteopath
+Complementary Health Therapists
+2522
+252211
+acupuncturist
+252213
+naturopath
+252214
+traditional Chinese medicine practitioner
+252299
+complementary health therapists (nec)
+Dental Practitioners
+2523
+252311
+dental specialist
+252312
+dentist (491 Only)
+Occupational Therapists
+2524
+252411
+occupational therapist
+Physiotherapists
+2525
+252511
+physiotherapist
+Podiatrists
+2526
+252611
+podiatrist
+Audiologists and Speech Pathologists Therapists
+2527
+252711
+audiologist
+252712
+speech pathologist
+General Practitioners and Resident Medical Officers
+2531
+253111
+general practitioner
+253112
+resident medical officer
+Anaesthetists
+2532
+253211
+anaesthetist (491 Only)
+Specialist Physicians
+2533
+253311
+specialist physician (general medicine)
+253312
+cardiologist
+253313
+clinical haematologist
+253314
+medical oncologist
+253315
+endocrinologist
+253316
+gastroenterologist
+253317
+intensive care specialist
+253318
+neurologist
+253321
+paediatrician
+253322
+renal medicine specialist
+253323
+rheumatologist
+253324
+thoracic medicine specialist
+253399
+specialist physicians (nec)
+Psychiatrists
+2534
+253411
+psychiatrist
+Surgeons
+2535
+253511
+surgeon (general)
+253512
+cardiothoracic surgeon
+253513
+neurosurgeon
+253514
+orthopaedic surgeon
+253515
+otorhinolaryngologist
+253516
+paediatric surgeon
+253517
+plastic and reconstructive surgeon
+253518
+urologist
+253521
+vascular surgeon
+Other Medical Practitioners
+2539
+253911
+dermatologist
+253912
+emergency medicine specialist
+253913
+obstetrician and gynaecologist
+253914
+ophthalmologist
+253915
+pathologist
+253917
+diagnostic and interventional radiologist
+253918
+radiation oncologist
+253999
+medical practitioners (nec)
+Midwives
+2541
+254111
+midwife
+Nurse Educators and Researchers
+2542
+254211
+nurse educator
+254212
+nurse researcher
+Nurse Managers
+2543
+254311
+nurse manager
+Registered Nurses
+2544
+254411
+nurse practitioner
+254412
+registered nurse (aged care)
+254413
+registered nurse (child and family health)
+254414
+registered nurse (community health)
+254415
+registered nurse (critical care and emergency)
+254416
+registered nurse (developmental disability)
+254417
+registered nurse (disability and rehabilitation)
+254418
+registered nurse (medical)
+254421
+registered nurse (medical practice)
+254422
+registered nurse (mental health)
+254423
+registered nurse (perioperative)
+254424
+registered nurse (surgical)
+254425
+registered nurse (paediatrics)
+254499
+registered nurses (nec)
+ICT Business and Systems Analysts
+2611
+261111
+ICT business analyst
+261112
+systems analyst
+Software and Applications Programmers
+2613
+261311
+analyst programmer
+261312
+developer programmer
+261313
+software engineer
+261314
+software tester
+261399
+software and applications programmers (nec)
+Database and Systems Administrators, and ICT Security Specialists
+2621
+262111
+database administrator
+262112
+ICT security specialist
+262113
+systems administrator
+Computer Network Professionals
+2631
+263111
+computer network and systems engineer
+263112
+network administrator
+263113
+network analyst
+ICT Support and Test Engineers
+2632
+263211
+ICT quality assurance engineer
+263212
+ICT support engineer
+263213
+ICT systems test engineer
+263299
+ICT support and test engineers (nec)
+Telecommunications Engineering Professionals
+2633
+263311
+telecommunications engineer
+263312
+telecommunications network engineer
+Solicitors
+2713
+271311
+solicitor
+Counsellors
+2721
+272111
+careers counsellor
+272112
+drug and alcohol counsellor
+272113
+family and marriage counsellor
+272114
+rehabilitation counsellor
+272115
+student counsellor
+272199
+counsellors (nec)
+Psychologists
+2723
+272311
+clinical psychologist
+272312
+educational psychologist
+272313
+organisational psychologist
+272314
+psychotherapist
+272399
+psychologists (nec)
+Social Workers
+2725
+272511
+social worker
+Welfare, Recreation and Community Arts Workers
+2726
+272611
+community arts worker (491 Only)
+272612
+recreation officer
+272613
+welfare worker
+Medical Technicians
+3112
+311211
+anaesthetic technician
+311212
+cardiac technician
+311213
+medical laboratory technician
+311214
+operating theatre technician (491 Only)
+311215
+pharmacy technician
+311216
+pathology collector (491 Only)
+311299
+medical technicians (nec)
+Science Technicians
+3114
+311411
+chemistry technician
+311412
+earth science technician
+311413
+life science technician
+311499
+science technicians (nec)
+Architectural, Building and Surveying Technicians
+3121
+312111
+architectural draftsperson
+312113
+building inspector
+312114
+construction estimator (491 Only)
+312116
+surveying or spatial science technician (491 Only)
+312199
+architectural, building and surveying technicians (nec)
+Civil Engineering Draftspersons and Technicians
+3122
+312211
+civil engineering draftsperson
+312212
+civil engineering technician
+Electrical Engineering Draftspersons and Technicians
+3123
+312311
+electrical engineering draftsperson
+312312
+electrical engineering technician
+Mechanical Engineering Draftspersons and Technicians
+3125
+312511
+mechanical engineering draftsperson
+312512
+mechanical engineering technician
+Other Building and Engineering Technicians
+3129
+312911
+maintenance planner (491 Only)
+312912
+metallurgical or materials technician
+312999
+building and engineering technicians (nec) (491 Only)
+ICT Support Technicians
+3131
+313111
+hardware technician
+313112
+ICT customer support officer
+313113
+web administrator
+313199
+ICT support technicians (nec)
+Telecommunications Technical Specialists
+3132
+313211
+radio communications technician
+313212
+telecommunications field engineer
+313213
+telecommunications network planner
+313214
+telecommunications technical officer or technologist
+Automotive Electricians
+3211
+321111
+automotive electrician
+Motor Mechanics
+3212
+321211
+motor mechanic (general)
+321212
+diesel motor mechanic
+321213
+motorcycle mechanic
+321214
+small engine mechanic
+Aircraft Maintenance Engineers
+3231
+323111
+aircraft maintenance engineer (avionics)
+323112
+aircraft maintenance engineer (mechanical)
+323113
+aircraft maintenance engineer
+Metal Fitters and Machinists
+3232
+323211
+fitter (general)
+323212
+fitter and turner
+323213
+fitter-welder
+323214
+metal machinist (first class)
+323299
+metal fitters and machinists (nec)
+Precision Metal Trades Workers
+3233
+323313
+locksmith
+323314
+precision instrument maker and repairer
+Panelbeaters
+3241
+324111
+panelbeater
+Vehicle Body Builders and Trimmers
+3242
+324211
+vehicle body builder
+324212
+vehicle trimmer
+Vehicle Painters
+3243
+324311
+vehicle painter (491 Only)
+Bricklayers and Stonemasons
+3311
+331111
+bricklayer
+331112
+stonemason
+Carpenters and Joiners
+3312
+331211
+carpenter and joiner
+331212
+carpenter
+331213
+joiner
+Floor Finishers
+3321
+332111
+floor finisher (491 Only)
+Painting Trades Workers
+3322
+332211
+painting trades worker
+Glaziers
+3331
+333111
+glazier
+Plasterers
+3332
+333211
+fibrous plasterer
+333212
+solid plasterer
+Roof Tilers
+3333
+333311
+roof tiler
+Wall and Floor Tilers
+3334
+333411
+wall and floor tiler
+Plumbers
+3341
+334111
+plumber (general)
+334112
+airconditioning and mechanical services plumber
+334113
+drainer
+334114
+gasfitter
+334115
+roof plumber
+Electricians
+3411
+341111
+electrician (general)
+341112
+electrician (special class)
+341113
+lift mechanic
+Airconditioning and Refrigeration Mechanics
+3421
+342111
+airconditioning and refrigeration mechanic
+Electrical Distribution Trades Workers
+3422
+342211
+electrical linesworker (491 Only)
+342212
+technical cable jointer
+Telecommunications Trades Workers
+3424
+342411
+cabler (data and telecommunications)
+342413
+telecommunications linesworker
+Butchers and Smallgoods Makers
+3512
+351211
+butcher or smallgoods maker
+Chefs
+3513
+351311
+chef
+Cook
+3514
+351411
+cook
+Veterinary Nurses
+3613
+361311
+veterinary nurse
+Ambulance Officers and Paramedics
+4111
+411111
+ambulance officer
+411112
+intensive care ambulance paramedic
+Dental Hygienists, Technicians and Therapists
+4112
+411211
+dental hygienist (491 Only)
+411213
+dental technician
+411214
+dental therapist (491 Only)
+Diversional Therapist
+4113
+411311
+diversional therapist
+Enrolled and Mothercraft Nurses
+4114
+411411
+enrolled nurse
+Welfare Support Workers
+4117
+411711
+community worker
+411712
+disabilities services officer
+411713
+family support worker
+411715
+residential care officer
+411716
+youth worker
+Contract, Program and Project Administrators
+5111
+511111
+contract administrator
+511112
+program or project administrator
+Original text
+Rate this translation
+Your feedback will be used to help improve Google Translate
