@@ -74,6 +74,8 @@ HIGH_WORDS = re.compile(
     r"|financial capacity|genuine student|processing time|planning level|subclass \d{3}",
     re.I,
 )
+# Sources that are lists of items: alert on new items only; items ageing out are silent.
+FEED_METHODS = ("ha_news", "legislation")
 HA_SKIP_FIELDS = ("Translate", "BannerImage", "PageImage", "Thumbnail")
 
 
@@ -197,6 +199,8 @@ class Fetcher:
             return self.homeaffairs(src)
         if method == "ha_news":
             return self.ha_news(src)
+        if method == "legislation":
+            return self.legislation(src)
         if method == "browser":
             return html_to_lines(self.browser_html(src["url"]), src.get("selector"))
         raise FetchError(f"unknown method {method!r}")
@@ -273,6 +277,30 @@ class Fetcher:
             lines.append(f"{item_date(it)} | {it.get('Category') or '-'} | {title} | {url}")
         return lines
 
+    def legislation(self, src: dict) -> list[str]:
+        """Newly registered Acts / legislative instruments whose title contains any of `terms`,
+        from the Federal Register of Legislation API (catches LIN instruments the day they land)."""
+        days = int(src.get("days", 120))
+        today = dt.datetime.now(TZ).date()
+        since = today - dt.timedelta(days=days)
+        rows: dict[str, dict] = {}
+        for term in src.get("terms", ["Migration"]):
+            for collection in ("LegislativeInstrument", "Act"):
+                criteria = (f"and(text(\"{term}\",name,contains),pointintime(Latest),type(Principal,Amending),"
+                            f"collection({collection}),registrationdate({since},{today + dt.timedelta(days=1)}))")
+                r = self.http.get(f"https://api.prod.legislation.gov.au/v1/titles/search(criteria='{criteria}')",
+                                  params={"$select": "id,name,makingDate,asMadeRegisteredAt", "$top": "200"},
+                                  timeout=HTTP_TIMEOUT, headers={"Accept": "application/json"})
+                if r.status_code >= 400:
+                    raise FetchError(f"legislation API HTTP {r.status_code}", r.status_code)
+                for it in r.json().get("value", []):
+                    rows[it["id"]] = it
+        lines = []
+        for it in sorted(rows.values(), key=lambda it: (it.get("asMadeRegisteredAt") or "", it["id"]), reverse=True):
+            when = (it.get("asMadeRegisteredAt") or it.get("makingDate") or "")[:10]
+            lines.append(f"{when} | {it['id']} | {it['name'].strip()} | https://www.legislation.gov.au/{it['id']}/asmade/text")
+        return lines or [f"[No matching legislation registered in the last {days} days]"]
+
     def browser_html(self, url: str) -> str:
         if self._ctx is None:
             from playwright.sync_api import sync_playwright
@@ -334,7 +362,7 @@ def diff_lines(old: list[str], new: list[str]) -> tuple[list[str], list[str], st
 
 def heuristic_severity(ch: Change) -> str:
     text = "\n".join(ch.added + ch.removed)
-    if ch.src.get("method") == "ha_news" or MISSING_LINE in ch.added + ch.removed:
+    if ch.src.get("method") in FEED_METHODS or MISSING_LINE in ch.added + ch.removed:
         return "high"
     if len(text) < 40 and not re.search(r"\d", text):
         return "low"
@@ -413,7 +441,7 @@ def change_md(ch: Change, with_diff: bool = True) -> str:
     if not ch.summary:
         if ch.added:
             parts.append("\n**Added:**\n" + "\n".join(f"- {l[:300]}" for l in ch.added[:12]))
-        if ch.removed and s.get("method") != "ha_news":
+        if ch.removed and s.get("method") not in FEED_METHODS:
             parts.append("\n**Removed:**\n" + "\n".join(f"- ~~{l[:300]}~~" for l in ch.removed[:12]))
     if with_diff and ch.unified:
         lines = ch.unified.splitlines()
@@ -520,7 +548,8 @@ def fetch_all(fetcher: Fetcher, sources: list[dict]) -> dict[str, list[str] | Ex
     def fetch_one(src: dict) -> None:
         try:
             lines = fetcher.fetch(src)
-            if lines != [MISSING_LINE] and sum(map(len, lines)) < MIN_TEXT_CHARS:
+            if (lines != [MISSING_LINE] and src.get("method") not in FEED_METHODS
+                    and sum(map(len, lines)) < MIN_TEXT_CHARS):
                 raise FetchError(f"almost no content extracted ({sum(map(len, lines))} chars)")
             results[src["id"]] = lines
         except Exception as e:
@@ -617,7 +646,7 @@ def run(args) -> int:
                 continue
 
             added, removed, unified = diff_lines(old_lines, lines)
-            if src.get("method") == "ha_news" and not added:
+            if src.get("method") in FEED_METHODS and not added:
                 # Only old items aged out of the list; nothing new.
                 if not args.dry_run:
                     snap.write_text(text, encoding="utf-8")

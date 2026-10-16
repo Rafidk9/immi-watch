@@ -46,6 +46,9 @@ monitored. Methods:
 - `http` (default) — normal page.
 - `homeaffairs` — Home Affairs SharePoint pages (content is read from hidden JSON fields).
 - `ha_news` — the Home Affairs news archive API (alerts on each new news item).
+- `legislation` — Federal Register of Legislation API: every Act or instrument (incl. LIN
+  instruments) registered in the last `days` whose title contains one of `terms`; alerts on
+  each newly registered item.
 - `browser` — headless Chromium, for sites behind Cloudflare (Live in Melbourne, TAS, NT…).
 
 Options: `selector` (CSS selector for the content area), `priority: high`,

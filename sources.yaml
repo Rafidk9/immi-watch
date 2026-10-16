@@ -8,6 +8,7 @@
 #   method    http        plain request + HTML text extraction (default)
 #             homeaffairs Home Affairs SharePoint page (content lives in hidden JSON fields)
 #             ha_news     Home Affairs news JSON API (lists new/edited news items)
+#             legislation newly registered Acts/instruments from the Federal Register API
 #             browser     headless Chromium (needed for Cloudflare-protected sites)
 #   selector  optional CSS selector for the main content (falls back to <main>, then <body>)
 #   priority  high | normal   (high = alert even on small edits)
@@ -121,6 +122,14 @@ sources:
     method: homeaffairs
 
   # ---------------- Legislation ----------------
+  - id: leg-new-instruments
+    name: Federal Register – new Migration / Citizenship / ESOS legislation
+    group: Legislation
+    url: https://www.legislation.gov.au/
+    method: legislation
+    terms: ["Migration", "Australian Citizenship", "Education Services for Overseas Students"]
+    days: 120
+    priority: high
   - id: leg-migration-regs
     name: Migration Regulations 1994 – versions / amendments
     group: Legislation
