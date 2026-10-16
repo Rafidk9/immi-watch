@@ -177,8 +177,9 @@
     "nsw-190": {
       "url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-nominated-visa-subclass-190",
       "fail_count": 0,
-      "last_checked": "2026-10-16T13:15+11:00",
-      "baseline": "2026-10-16T13:15+11:00"
+      "last_checked": "2026-10-16T13:20+11:00",
+      "baseline": "2026-10-16T13:15+11:00",
+      "last_changed": "2026-10-16T13:20+11:00"
     },
     "nsw-491": {
       "url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-work-regional-visa-subclass-491",
@@ -290,11 +291,11 @@
   },
   "pending_digest": [],
   "last_run": {
-    "at": "2026-10-16T13:18+11:00",
-    "checked": 2,
+    "at": "2026-10-16T13:20+11:00",
+    "checked": 1,
     "baseline": 0,
-    "changed": 0,
-    "failed": 1,
+    "changed": 1,
+    "failed": 0,
     "skipped": 0
   }
 }
