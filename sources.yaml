@@ -172,6 +172,8 @@ sources:
     method: rss
     keywords: "migration|visa|citizenship|overseas student|international student|education|tertiary|vocational|universit"
     priority: high
+    fallback: browser   # blocks plain requests from cloud servers
+    timeout: 10
   - id: leg-migration-regs
     name: Migration Regulations 1994 – versions / amendments
     group: Legislation
@@ -349,6 +351,8 @@ sources:
     group: Education
     url: https://www.dewr.gov.au/international-skills-engagement/national-planning-level
     priority: high
+    fallback: browser   # blocks plain requests from cloud servers
+    timeout: 10
   - id: min-education
     name: Minister for Education – media releases (international education items)
     group: Education
@@ -356,22 +360,30 @@ sources:
     method: rss
     keywords: "international|overseas|student visa|planning level|ESOS|migration|visa|TEQSA|ATEC"
     priority: high
+    fallback: browser   # blocks plain requests from cloud servers
+    timeout: 10
   - id: dewr-news
     name: DEWR newsroom (international education / skills items)
     group: Education
     url: https://www.dewr.gov.au/rss/newsroom.xml
     method: rss
     keywords: "international|overseas|visa|migration|planning level|ESOS|PRISMS"
+    fallback: browser   # blocks plain requests from cloud servers
+    timeout: 10
   - id: teqsa-news
     name: TEQSA – latest news (higher education regulator)
     group: Education
     url: https://www.teqsa.gov.au/about-us/news-and-events/latest-news
     selector: .views-row
+    fallback: browser   # blocks plain requests from cloud servers
+    timeout: 10
   - id: asqa-news
     name: ASQA – news (VET regulator)
     group: Education
     url: https://www.asqa.gov.au/news-events/news
     selector: .card
+    fallback: browser   # blocks plain requests from cloud servers
+    timeout: 10
 
   # ---------------- Skills / occupations ----------------
   - id: jsa-news
@@ -382,6 +394,8 @@ sources:
     keywords: "migration|occupation|shortage|core skills|CSOL|visa|skills in demand"
     match: title
     priority: high
+    fallback: browser   # blocks plain requests from cloud servers
+    timeout: 10
   - id: vetassess-news
     name: VETASSESS – news & updates
     group: Skills & occupations

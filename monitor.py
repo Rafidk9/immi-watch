@@ -184,8 +184,8 @@ class Fetcher:
         if self._pw:
             self._pw.stop()
 
-    def get(self, url: str) -> requests.Response:
-        r = self.http.get(url, timeout=HTTP_TIMEOUT)
+    def get(self, url: str, timeout: float | None = None) -> requests.Response:
+        r = self.http.get(url, timeout=timeout or HTTP_TIMEOUT)
         if r.status_code >= 400:
             raise FetchError(f"HTTP {r.status_code}", r.status_code)
         return r
@@ -204,7 +204,7 @@ class Fetcher:
     def _fetch(self, src: dict) -> list[str]:
         method = src.get("method", "http")
         if method == "http":
-            return html_to_lines(self.get(src["url"]).content, src.get("selector"))
+            return html_to_lines(self.content(src), src.get("selector"))
         if method == "homeaffairs":
             return self.homeaffairs(src)
         if method == "ha_news":
@@ -322,7 +322,7 @@ class Fetcher:
 
     def rss(self, src: dict) -> list[str]:
         """RSS/Atom feed -> one line per item; optional `keywords` regex keeps only relevant items."""
-        soup = BeautifulSoup(self.get(src["url"]).content, "xml")
+        soup = BeautifulSoup(self.content(src, raw=True), "xml")
         kw = re.compile(src["keywords"], re.I) if src.get("keywords") else None
         lines = []
         for it in soup.find_all(["item", "entry"]):
@@ -345,7 +345,13 @@ class Fetcher:
             lines.append(f"{when} | {title} | {field('link', 'guid')}")
         return lines[: int(src.get("limit", 60))] or ["[No matching items in this feed right now]"]
 
-    def browser_html(self, url: str) -> str:
+    def content(self, src: dict, raw: bool = False) -> bytes | str:
+        """Page body via plain HTTP, or via the browser once a source has needed the fallback."""
+        if src.get("_via_browser"):
+            return self.browser_html(src["url"], raw=raw)
+        return self.get(src["url"], src.get("timeout")).content
+
+    def browser_html(self, url: str, raw: bool = False) -> str | bytes:
         if self._ctx is None:
             from playwright.sync_api import sync_playwright
             self._pw = sync_playwright().start()
@@ -374,6 +380,8 @@ class Fetcher:
                 raise FetchError(f"blocked by bot protection ({title!r})")
             if resp is not None and resp.status >= 400 and resp.status not in (403,):
                 raise FetchError(f"HTTP {resp.status}", resp.status)
+            if raw and resp is not None:              # e.g. an RSS feed: the bytes, not the XML viewer
+                return resp.body()
             return page.content()
         finally:
             page.close()
@@ -618,6 +626,11 @@ def fetch_all(fetcher: Fetcher, sources: list[dict]) -> dict[str, list[str] | Ex
             fetch_one(src)
         for f in futures:
             f.result()
+    # Sites that block plain requests from cloud servers: retry in the browser (main thread only).
+    for src in sources:
+        if isinstance(results.get(src["id"]), Exception) and src.get("fallback") == "browser":
+            src["_via_browser"] = True               # remembered for the confirm re-fetch
+            fetch_one(src)
     return results
 
 
