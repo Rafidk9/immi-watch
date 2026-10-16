@@ -288,11 +288,6 @@ sources:
     priority: high
 
   # ---------------- Education ----------------
-  - id: edu-international
-    name: Dept of Education – International education
-    group: Education
-    url: https://www.education.gov.au/international-education
-    method: browser   # blocks plain requests from cloud servers
   - id: studyaus-news
     name: Study Australia – News
     group: Education
