@@ -27,7 +27,10 @@ import os
 import re
 import smtplib
 import sys
+import threading
 import time
+from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from email.message import EmailMessage
 from pathlib import Path
@@ -47,7 +50,9 @@ SOURCES_FILE = ROOT / "sources.yaml"
 TZ = ZoneInfo("Australia/Melbourne")
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
-REQUEST_DELAY = 1.0          # seconds between requests (be polite)
+REQUEST_DELAY = 1.0          # seconds between requests to the same site (be polite)
+HTTP_TIMEOUT = 30
+HTTP_WORKERS = 6             # different sites are fetched in parallel, each site sequentially
 FAIL_ALERT_AT = 3            # consecutive failures before a health alert
 DIGEST_HOUR = 8              # Melbourne hour at which low-severity changes are sent
 MIN_TEXT_CHARS = 200         # less than this = treat as a failed/blocked fetch
@@ -149,9 +154,17 @@ def _walk_json(node, out: list[str]) -> None:
 
 class Fetcher:
     def __init__(self) -> None:
-        self.http = requests.Session()
-        self.http.headers.update({"User-Agent": UA, "Accept-Language": "en-AU,en;q=0.9"})
+        self._local = threading.local()
         self._pw = self._browser = self._ctx = None
+
+    @property
+    def http(self) -> requests.Session:
+        """One requests.Session per thread (HTTP sources for different hosts run in parallel)."""
+        s = getattr(self._local, "session", None)
+        if s is None:
+            s = self._local.session = requests.Session()
+            s.headers.update({"User-Agent": UA, "Accept-Language": "en-AU,en;q=0.9"})
+        return s
 
     def close(self) -> None:
         if self._browser:
@@ -160,7 +173,7 @@ class Fetcher:
             self._pw.stop()
 
     def get(self, url: str) -> requests.Response:
-        r = self.http.get(url, timeout=45)
+        r = self.http.get(url, timeout=HTTP_TIMEOUT)
         if r.status_code >= 400:
             raise FetchError(f"HTTP {r.status_code}", r.status_code)
         return r
@@ -226,7 +239,7 @@ class Fetcher:
                     "filter": {"Month": None, "Year": str(y), "Categories": [], "PageNumber": 1,
                                "RowLimit": 50, "ShowCurrentSiteOnly": False,
                                "CurrentSite": src.get("site", "Immi")}}
-            r = self.http.post(f"{base}/_layouts/15/api/Data.aspx/GetNews", json=body, timeout=45,
+            r = self.http.post(f"{base}/_layouts/15/api/Data.aspx/GetNews", json=body, timeout=HTTP_TIMEOUT,
                                headers={"Accept": "application/json"})
             if r.status_code >= 400:
                 raise FetchError(f"GetNews HTTP {r.status_code}")
@@ -269,15 +282,19 @@ class Fetcher:
             self._ctx = self._browser.new_context(user_agent=UA, locale="en-AU",
                                                   viewport={"width": 1366, "height": 900})
             self._ctx.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined})")
+            # Text is all we need: skip images, fonts and media to keep runs short.
+            self._ctx.route("**/*", lambda route: route.abort()
+                            if route.request.resource_type in ("image", "font", "media")
+                            else route.continue_())
         page = self._ctx.new_page()
         try:
-            resp = page.goto(url, wait_until="domcontentloaded", timeout=60000)
+            resp = page.goto(url, wait_until="domcontentloaded", timeout=45000)
             for _ in range(20):                       # wait out a Cloudflare interstitial
                 if "just a moment" not in page.title().lower():
                     break
                 page.wait_for_timeout(1000)
             try:
-                page.wait_for_load_state("networkidle", timeout=15000)
+                page.wait_for_load_state("networkidle", timeout=8000)
             except Exception:
                 pass
             title = page.title()
@@ -495,6 +512,42 @@ def write_record(ch: Change, now: dt.datetime) -> str:
     return ch.record
 
 
+def fetch_all(fetcher: Fetcher, sources: list[dict]) -> dict[str, list[str] | Exception]:
+    """Fetch every source. Different sites run in parallel threads, pages on the same site run
+    one after another with REQUEST_DELAY between them; browser pages run on the main thread."""
+    results: dict[str, list[str] | Exception] = {}
+
+    def fetch_one(src: dict) -> None:
+        try:
+            lines = fetcher.fetch(src)
+            if lines != [MISSING_LINE] and sum(map(len, lines)) < MIN_TEXT_CHARS:
+                raise FetchError(f"almost no content extracted ({sum(map(len, lines))} chars)")
+            results[src["id"]] = lines
+        except Exception as e:
+            results[src["id"]] = e
+
+    def site_worker(group: list[dict]) -> None:
+        for i, src in enumerate(group):
+            if i:
+                time.sleep(REQUEST_DELAY)
+            fetch_one(src)
+
+    by_site: dict[str, list[dict]] = defaultdict(list)
+    browser_srcs = []
+    for src in sources:
+        if src.get("method") == "browser":
+            browser_srcs.append(src)
+        else:
+            by_site[urlsplit(src["url"]).netloc].append(src)
+    with ThreadPoolExecutor(HTTP_WORKERS) as pool:
+        futures = [pool.submit(site_worker, group) for group in by_site.values()]
+        for src in browser_srcs:
+            fetch_one(src)
+        for f in futures:
+            f.result()
+    return results
+
+
 def run(args) -> int:
     sources = load_sources()
     if args.only:
@@ -509,19 +562,18 @@ def run(args) -> int:
     health: list[str] = []
     stats = {"checked": 0, "baseline": 0, "changed": 0, "failed": 0, "skipped": 0}
 
+    due = [s for s in sources if args.only or not hour_index % int(s.get("every", 1))]
+    stats["skipped"] = len(sources) - len(due)
+
     try:
-        for src in sources:
+        results = fetch_all(fetcher, due)
+        for src in due:
             sid = src["id"]
-            if not args.only and hour_index % int(src.get("every", 1)):
-                stats["skipped"] += 1
-                continue
             st = state["sources"].setdefault(sid, {})
             st["url"] = src["url"]
-            try:
-                lines = fetcher.fetch(src)
-                if lines != [MISSING_LINE] and sum(map(len, lines)) < MIN_TEXT_CHARS:
-                    raise FetchError(f"almost no content extracted ({sum(map(len, lines))} chars)")
-            except Exception as e:
+            lines = results[sid]
+            if isinstance(lines, Exception):
+                e = lines
                 stats["failed"] += 1
                 st["fail_count"] = st.get("fail_count", 0) + 1
                 st["last_error"] = f"{now.isoformat(timespec='minutes')} {type(e).__name__}: {e}"[:300]
@@ -529,7 +581,6 @@ def run(args) -> int:
                 if st["fail_count"] == FAIL_ALERT_AT:
                     health.append(f"- ❌ **{src['name']}** has failed {FAIL_ALERT_AT} checks in a row "
                                   f"— {st['last_error']} ([page]({src['url']}))")
-                time.sleep(REQUEST_DELAY)
                 continue
 
             if st.get("fail_count", 0) >= FAIL_ALERT_AT:
@@ -547,13 +598,11 @@ def run(args) -> int:
                 if not args.dry_run:
                     snap.write_text(text, encoding="utf-8")
                     st["baseline"] = now.isoformat(timespec="minutes")
-                time.sleep(REQUEST_DELAY)
                 continue
 
             old_lines = snap.read_text(encoding="utf-8").splitlines()
             if old_lines == lines:
                 print(f"same {sid}")
-                time.sleep(REQUEST_DELAY)
                 continue
 
             # Re-fetch once to make sure the change is real (not rotating content / a glitch).
@@ -586,7 +635,6 @@ def run(args) -> int:
                 snap.write_text(text, encoding="utf-8")
                 st["last_changed"] = now.isoformat(timespec="minutes")
             changes.append(ch)
-            time.sleep(REQUEST_DELAY)
     finally:
         fetcher.close()
 
