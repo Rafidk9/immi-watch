@@ -117,7 +117,7 @@
     "vic-news": {
       "url": "https://liveinmelbourne.vic.gov.au/news-events/news",
       "fail_count": 0,
-      "last_checked": "2026-10-16T13:15+11:00",
+      "last_checked": "2026-10-16T13:18+11:00",
       "baseline": "2026-10-16T13:15+11:00"
     },
     "vic-skilled": {
@@ -243,7 +243,7 @@
     "act-skilled": {
       "url": "https://www.act.gov.au/migration/skilled-migrants",
       "fail_count": 0,
-      "last_checked": "2026-10-16T13:15+11:00",
+      "last_checked": "2026-10-16T13:18+11:00",
       "baseline": "2026-10-16T13:15+11:00"
     },
     "act-occupations": {
@@ -278,8 +278,8 @@
     },
     "edu-international": {
       "url": "https://www.education.gov.au/international-education",
-      "fail_count": 1,
-      "last_error": "2026-10-16T13:15+11:00 Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.education.gov.au/international-education\nCall log:\n  - navigating to \"https://www.education.gov.au/international-education\", waiting until \"domcontentloaded\"\n"
+      "fail_count": 2,
+      "last_error": "2026-10-16T13:18+11:00 TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.education.gov.au/international-education\", waiting until \"domcontentloaded\"\n"
     },
     "studyaus-news": {
       "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/news",
@@ -290,9 +290,9 @@
   },
   "pending_digest": [],
   "last_run": {
-    "at": "2026-10-16T13:15+11:00",
-    "checked": 47,
-    "baseline": 47,
+    "at": "2026-10-16T13:18+11:00",
+    "checked": 2,
+    "baseline": 0,
     "changed": 0,
     "failed": 1,
     "skipped": 0
