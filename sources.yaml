@@ -1,0 +1,296 @@
+# Pages watched by immi-watch.
+#
+# Fields
+#   id        unique slug (used for the snapshot file name)
+#   name      human label shown in alerts
+#   group     section heading in alerts
+#   url       page to watch
+#   method    http        plain request + HTML text extraction (default)
+#             homeaffairs Home Affairs SharePoint page (content lives in hidden JSON fields)
+#             ha_news     Home Affairs news JSON API (lists new/edited news items)
+#             browser     headless Chromium (needed for Cloudflare-protected sites)
+#   selector  optional CSS selector for the main content (falls back to <main>, then <body>)
+#   priority  high | normal   (high = alert even on small edits)
+#   every     optional: check every N hours instead of every hour
+
+defaults:
+  method: http
+  priority: normal
+
+sources:
+  # ---------------- Department of Home Affairs ----------------
+  - id: ha-news-immi
+    name: Home Affairs – Immigration & citizenship news
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/news-media/archive
+    method: ha_news
+    site: Immi
+    priority: high
+  - id: ha-news-portfolio
+    name: Home Affairs – Portfolio news (incl. OMARA, ministerial)
+    group: Home Affairs
+    url: https://www.homeaffairs.gov.au/news-media/archive
+    method: ha_news
+    site: Portfolio
+    priority: high
+  - id: ha-500
+    name: Student visa (subclass 500)
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500
+    method: homeaffairs
+    priority: high
+  - id: ha-485-phe
+    name: Temporary Graduate 485 – Post-Higher Education Work stream
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-higher-education-work
+    method: homeaffairs
+    priority: high
+  - id: ha-485-pve
+    name: Temporary Graduate 485 – Post-Vocational Education Work stream
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-vocational-education-work
+    method: homeaffairs
+    priority: high
+  - id: ha-485-second
+    name: Temporary Graduate 485 – Second Post-Higher Education Work stream
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/second-post-higher-education-work
+    method: homeaffairs
+  - id: ha-189
+    name: Skilled Independent 189 – Points-tested stream
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested
+    method: homeaffairs
+  - id: ha-190
+    name: Skilled Nominated visa (subclass 190)
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190
+    method: homeaffairs
+  - id: ha-491
+    name: Skilled Work Regional 491 – Main applicant
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/application
+    method: homeaffairs
+  - id: ha-491-points
+    name: Points table for 189/190/491 (491 points table page)
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491/points-table
+    method: homeaffairs
+    priority: high
+  - id: ha-482-core
+    name: Skills in Demand 482 – Core Skills stream
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream
+    method: homeaffairs
+  - id: ha-482-specialist
+    name: Skills in Demand 482 – Specialist Skills stream
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/specialist-skills-stream
+    method: homeaffairs
+  - id: ha-186-de
+    name: Employer Nomination 186 – Direct Entry stream
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/direct-entry-stream
+    method: homeaffairs
+  - id: ha-186-trt
+    name: Employer Nomination 186 – Temporary Residence Transition stream
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186/temporary-residence-transition-stream
+    method: homeaffairs
+  - id: ha-occupation-list
+    name: Skilled occupation list
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/working-in-australia/skill-occupation-list
+    method: homeaffairs
+    priority: high
+  - id: ha-invitation-rounds
+    name: SkillSelect invitation rounds
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/invitation-rounds
+    method: homeaffairs
+    priority: high
+  - id: ha-planning-levels
+    name: Migration Program planning levels
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/what-we-do/migration-program-planning-levels
+    method: homeaffairs
+  - id: ha-processing-times
+    name: Global visa processing times
+    group: Home Affairs
+    url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/global-visa-processing-times
+    method: homeaffairs
+
+  # ---------------- Legislation ----------------
+  - id: leg-migration-regs
+    name: Migration Regulations 1994 – versions / amendments
+    group: Legislation
+    url: https://www.legislation.gov.au/F1996B03551/latest/versions
+    priority: high
+
+  # ---------------- Victoria (Live in Melbourne) ----------------
+  - id: vic-news
+    name: Live in Melbourne – News
+    group: Victoria
+    url: https://liveinmelbourne.vic.gov.au/news-events/news
+    method: browser
+    priority: high
+  - id: vic-skilled
+    name: Live in Melbourne – Skilled migration visas
+    group: Victoria
+    url: https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas
+    method: browser
+    priority: high
+  - id: vic-vpt
+    name: Live in Melbourne – Victorian Points Test & selection factors
+    group: Victoria
+    url: https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/vpt
+    method: browser
+    priority: high
+  - id: vic-fees
+    name: Live in Melbourne – Nomination & ROI fees
+    group: Victoria
+    url: https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/fees
+    method: browser
+    priority: high
+  - id: vic-nomination-assessment
+    name: Live in Melbourne – Visa nomination and assessment
+    group: Victoria
+    url: https://liveinmelbourne.vic.gov.au/migrate/migration-process/visa-nomination-and-assessment
+    method: browser
+  - id: vic-program
+    name: Live in Melbourne – Skilled Visa Nomination Program page
+    group: Victoria
+    url: https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/2025-26-skilled-migration-visa-nomination-program
+    method: browser
+    priority: high
+    allow_missing: true   # offline between program years; alert when it returns
+  - id: vic-roi
+    name: Live in Melbourne – Registration of Interest (ROI)
+    group: Victoria
+    url: https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/registration-of-interest-for-victorian-state-visa-nomination
+    method: browser
+    priority: high
+    allow_missing: true   # offline between program years; alert when it returns
+  - id: vic-190
+    name: Live in Melbourne – Subclass 190
+    group: Victoria
+    url: https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-nominated-visa-subclass-190
+    method: browser
+    priority: high
+    allow_missing: true   # offline between program years; alert when it returns
+  - id: vic-491
+    name: Live in Melbourne – Subclass 491
+    group: Victoria
+    url: https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/491
+    method: browser
+    priority: high
+    allow_missing: true   # offline between program years; alert when it returns
+
+  # ---------------- New South Wales ----------------
+  - id: nsw-skilled
+    name: NSW – Skilled visas
+    group: New South Wales
+    url: https://www.nsw.gov.au/visas-and-migration/skilled-visas
+    priority: high
+  - id: nsw-190
+    name: NSW – Subclass 190
+    group: New South Wales
+    url: https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-nominated-visa-subclass-190
+  - id: nsw-491
+    name: NSW – Subclass 491
+    group: New South Wales
+    url: https://www.nsw.gov.au/visas-and-migration/skilled-visas/skilled-work-regional-visa-subclass-491
+
+  # ---------------- Queensland ----------------
+  - id: qld-news
+    name: Migration Queensland – News
+    group: Queensland
+    url: https://migration.qld.gov.au/news
+    priority: high
+  - id: qld-skilled
+    name: Migration Queensland – Skilled visas
+    group: Queensland
+    url: https://migration.qld.gov.au/visa-options/skilled-visas
+  - id: qld-onshore-list
+    name: Migration Queensland – Onshore skilled occupation list
+    group: Queensland
+    url: https://migration.qld.gov.au/occupation-lists/queensland-onshore-skilled-occupation-list
+  - id: qld-offshore-list
+    name: Migration Queensland – Offshore skilled occupation list
+    group: Queensland
+    url: https://migration.qld.gov.au/occupation-lists/offshore-queensland-skilled-occupation-lists-(qsol)
+
+  # ---------------- South Australia ----------------
+  - id: sa-news
+    name: Migration SA – News
+    group: South Australia
+    url: https://migration.sa.gov.au/news
+    priority: high
+  - id: sa-skilled
+    name: Migration SA – Skilled migrants
+    group: South Australia
+    url: https://migration.sa.gov.au/before-applying/visa-options-and-pathways/skilled-migrants
+  - id: sa-occupations
+    name: Migration SA – Occupation list
+    group: South Australia
+    url: https://migration.sa.gov.au/before-applying/work-in-sa/occupation-lists/occupations-list
+    method: browser
+    selector: body
+
+  # ---------------- Western Australia ----------------
+  - id: wa-news
+    name: Migration WA – Latest news
+    group: Western Australia
+    url: https://migration.wa.gov.au/news
+    priority: high
+  - id: wa-snmp
+    name: Migration WA – State Nominated Migration Program
+    group: Western Australia
+    url: https://migration.wa.gov.au/our-services-support/state-nominated-migration-program
+
+  # ---------------- ACT ----------------
+  - id: act-skilled
+    name: ACT – Skilled migrants
+    group: ACT
+    url: https://www.act.gov.au/migration/skilled-migrants
+  - id: act-occupations
+    name: ACT – Nominated occupation list
+    group: ACT
+    url: https://www.act.gov.au/migration/skilled-migrants/act-nominated-migration-program-occupation-list
+  - id: act-matrix-rounds
+    name: ACT – Canberra Matrix invitation rounds
+    group: ACT
+    url: https://www.act.gov.au/migration/resources/canberra-matrix-invitation-round
+    priority: high
+
+  # ---------------- Tasmania ----------------
+  - id: tas-news
+    name: Migration Tasmania – News
+    group: Tasmania
+    url: https://www.migration.tas.gov.au/news
+    method: browser
+    priority: high
+  - id: tas-skilled
+    name: Migration Tasmania – Skilled migration
+    group: Tasmania
+    url: https://www.migration.tas.gov.au/skilled_migration
+    method: browser
+
+  # ---------------- Northern Territory ----------------
+  - id: nt-nomination
+    name: NT Government visa nomination
+    group: Northern Territory
+    url: https://theterritory.com.au/migrate/migrate-to-work/northern-territory-government-visa-nomination
+    method: browser
+    priority: high
+
+  # ---------------- Education ----------------
+  - id: edu-international
+    name: Dept of Education – International education
+    group: Education
+    url: https://www.education.gov.au/international-education
+  - id: studyaus-news
+    name: Study Australia – News
+    group: Education
+    url: https://www.studyaustralia.gov.au/en/tools-and-resources/news
+    method: browser

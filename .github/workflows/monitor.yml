@@ -1,0 +1,84 @@
+name: immi-watch
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # every hour at :17 (UTC); GitHub may start it a few minutes late
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Comma-separated source ids to check (blank = all)"
+        required: false
+        default: ""
+      test_alert:
+        description: "Send a test alert instead of checking"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: immi-watch
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+
+      - name: Cache Playwright browser
+        id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Install Chromium
+        if: steps.pw-cache.outputs.cache-hit != 'true'
+        run: python -m playwright install --only-shell chromium
+
+      - name: Run monitor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ALERT_MENTION: ${{ vars.ALERT_MENTION || github.repository_owner }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          ONLY: ${{ inputs.only }}
+          TEST_ALERT: ${{ inputs.test_alert }}
+        run: |
+          if [ "$TEST_ALERT" = "true" ]; then
+            python monitor.py --test-alert
+          elif [ -n "$ONLY" ]; then
+            python monitor.py --only "$ONLY"
+          else
+            python monitor.py
+          fi
+
+      - name: Save snapshots   # only after a successful run, so no change is saved without its alert
+        run: |
+          git config user.name "immi-watch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A snapshots changes state.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No snapshot changes."
+          else
+            git commit -q -m "check $(TZ=Australia/Melbourne date '+%Y-%m-%d %H:%M')"
+            git push -q
+          fi
