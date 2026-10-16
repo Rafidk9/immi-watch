@@ -36,3 +36,16 @@ if ($ok) {
 } else {
     Log "monitor.py failed; snapshots not pushed"
 }
+
+# Backstop for GitHub's cron, which can skip or delay scheduled runs: if the cloud check hasn't
+# run for over 65 minutes, start it now.
+try {
+    $last = gh run list --repo Rafidk9/immi-watch --workflow monitor.yml --limit 1 --json createdAt --jq '.[0].createdAt' 2>$null
+    if ($last) {
+        $age = ((Get-Date).ToUniversalTime() - [datetime]::Parse($last).ToUniversalTime()).TotalMinutes
+        if ($age -gt 65) {
+            gh workflow run monitor.yml --repo Rafidk9/immi-watch 2>&1 | ForEach-Object { Log "$_" }
+            Log ("GitHub check last ran {0:N0} min ago - started it" -f $age)
+        }
+    }
+} catch { Log "backstop check failed: $_" }
