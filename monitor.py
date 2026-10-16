@@ -278,7 +278,8 @@ class Fetcher:
             from playwright.sync_api import sync_playwright
             self._pw = sync_playwright().start()
             self._browser = self._pw.chromium.launch(
-                headless=True, args=["--disable-blink-features=AutomationControlled"])
+                headless=True, args=["--disable-blink-features=AutomationControlled",
+                                     "--disable-http2"])  # some gov CDNs reset HTTP/2 from cloud IPs
             self._ctx = self._browser.new_context(user_agent=UA, locale="en-AU",
                                                   viewport={"width": 1366, "height": 900})
             self._ctx.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined})")
