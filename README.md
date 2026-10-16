@@ -80,3 +80,15 @@ ids, or as a test alert).
   news feeds, which are watched.
 - Alerts tell you *that* something changed. Always read the official page before advising
   clients.
+
+## Office-PC checker (sites that block GitHub)
+
+Some government sites (DEWR, the Education Minister, TEQSA, ASQA, Jobs and Skills Australia,
+Parliament, education.gov.au) refuse connections from cloud servers. They are marked
+`runner: local` in `sources.yaml` and checked hourly from this PC instead:
+
+- Windows Task Scheduler task **"immi-watch local check"** runs `run_local.vbs` → `run_local.ps1`
+  every hour at :40 while you are logged in. It uses your `gh` login to raise the same GitHub
+  Issue alerts and pushes its snapshots to this repo (`state-local.json`, log in `local-run.log`).
+- If the PC checker stops for more than 24 h (PC off), the GitHub run raises a health alert.
+- Remove it with `schtasks /Delete /TN "immi-watch local check" /F`.

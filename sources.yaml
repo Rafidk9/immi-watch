@@ -14,6 +14,7 @@
 #   selector  optional CSS selector for the main content (falls back to <main>, then <body>)
 #   priority  high | normal   (high = alert even on small edits)
 #   every     optional: check every N hours instead of every hour
+#   runner    local = checked by the office-PC task (site blocks GitHub's servers)
 
 defaults:
   method: http
@@ -172,8 +173,7 @@ sources:
     method: rss
     keywords: "migration|visa|citizenship|overseas student|international student|education|tertiary|vocational|universit"
     priority: high
-    fallback: browser   # blocks plain requests from cloud servers
-    timeout: 10
+    runner: local   # blocks cloud servers; checked from the office PC
   - id: leg-migration-regs
     name: Migration Regulations 1994 – versions / amendments
     group: Legislation
@@ -351,8 +351,7 @@ sources:
     group: Education
     url: https://www.dewr.gov.au/international-skills-engagement/national-planning-level
     priority: high
-    fallback: browser   # blocks plain requests from cloud servers
-    timeout: 10
+    runner: local   # blocks cloud servers; checked from the office PC
   - id: min-education
     name: Minister for Education – media releases (international education items)
     group: Education
@@ -360,30 +359,26 @@ sources:
     method: rss
     keywords: "international|overseas|student visa|planning level|ESOS|migration|visa|TEQSA|ATEC"
     priority: high
-    fallback: browser   # blocks plain requests from cloud servers
-    timeout: 10
+    runner: local   # blocks cloud servers; checked from the office PC
   - id: dewr-news
     name: DEWR newsroom (international education / skills items)
     group: Education
     url: https://www.dewr.gov.au/rss/newsroom.xml
     method: rss
     keywords: "international|overseas|visa|migration|planning level|ESOS|PRISMS"
-    fallback: browser   # blocks plain requests from cloud servers
-    timeout: 10
+    runner: local   # blocks cloud servers; checked from the office PC
   - id: teqsa-news
     name: TEQSA – latest news (higher education regulator)
     group: Education
     url: https://www.teqsa.gov.au/about-us/news-and-events/latest-news
     selector: .views-row
-    fallback: browser   # blocks plain requests from cloud servers
-    timeout: 10
+    runner: local   # blocks cloud servers; checked from the office PC
   - id: asqa-news
     name: ASQA – news (VET regulator)
     group: Education
     url: https://www.asqa.gov.au/news-events/news
     selector: .card
-    fallback: browser   # blocks plain requests from cloud servers
-    timeout: 10
+    runner: local   # blocks cloud servers; checked from the office PC
 
   # ---------------- Skills / occupations ----------------
   - id: jsa-news
@@ -394,8 +389,7 @@ sources:
     keywords: "migration|occupation|shortage|core skills|CSOL|visa|skills in demand"
     match: title
     priority: high
-    fallback: browser   # blocks plain requests from cloud servers
-    timeout: 10
+    runner: local   # blocks cloud servers; checked from the office PC
   - id: vetassess-news
     name: VETASSESS – news & updates
     group: Skills & occupations
@@ -408,3 +402,8 @@ sources:
     name: Engineers Australia – Migration skills assessment
     group: Skills & occupations
     url: https://www.engineersaustralia.org.au/migration-skills-assessment
+  - id: edu-international
+    name: Dept of Education – International education
+    group: Education
+    url: https://www.education.gov.au/international-education
+    runner: local   # blocks cloud servers; checked from the office PC

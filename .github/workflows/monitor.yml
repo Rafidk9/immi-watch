@@ -51,6 +51,7 @@ jobs:
       - name: Run monitor
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          IMMI_RUNNER: actions
           ALERT_MENTION: ${{ vars.ALERT_MENTION || github.repository_owner }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -80,5 +81,6 @@ jobs:
             echo "No snapshot changes."
           else
             git commit -q -m "check $(TZ=Australia/Melbourne date '+%Y-%m-%d %H:%M')"
+            git pull -q --rebase   # the office-PC runner pushes to the same branch
             git push -q
           fi

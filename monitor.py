@@ -45,7 +45,12 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parent
 SNAP_DIR = ROOT / "snapshots"
 CHANGE_DIR = ROOT / "changes"
-STATE_FILE = ROOT / "state.json"
+# Two runners share the repo: GitHub Actions ("actions") and this office PC ("local", for sites that
+# block cloud servers). Each keeps its own state file so their commits never conflict.
+RUNNER = os.environ.get("IMMI_RUNNER", "all")
+STATE_FILE = ROOT / ("state-local.json" if RUNNER == "local" else "state.json")
+LOCAL_STATE_FILE = ROOT / "state-local.json"
+LOCAL_STALE_HOURS = 24
 SOURCES_FILE = ROOT / "sources.yaml"
 
 TZ = ZoneInfo("Australia/Melbourne")
@@ -634,8 +639,31 @@ def fetch_all(fetcher: Fetcher, sources: list[dict]) -> dict[str, list[str] | Ex
     return results
 
 
+def local_runner_health(state: dict, now: dt.datetime) -> list[str]:
+    """Warn (once) when the office-PC runner has stopped reporting, e.g. the PC is off."""
+    try:
+        last = json.loads(LOCAL_STATE_FILE.read_text(encoding="utf-8"))["last_run"]["at"]
+        age_h = (now - dt.datetime.fromisoformat(last)).total_seconds() / 3600
+    except (OSError, KeyError, ValueError):
+        return []
+    stale = age_h > LOCAL_STALE_HOURS
+    was_stale = state.get("local_runner_stale", False)
+    state["local_runner_stale"] = stale
+    if stale and not was_stale:
+        return [f"- 🖥️ The office-PC checker last ran **{last}** ({age_h:.0f} h ago). Sites that block "
+                "cloud servers (DEWR, TEQSA, ASQA, JSA, Parliament, Education) are not being checked "
+                "until that PC is on and logged in."]
+    if was_stale and not stale:
+        return ["- 🖥️ The office-PC checker is running again."]
+    return []
+
+
 def run(args) -> int:
     sources = load_sources()
+    if RUNNER == "actions":
+        sources = [s for s in sources if s.get("runner") != "local"]
+    elif RUNNER == "local":
+        sources = [s for s in sources if s.get("runner") == "local"]
     if args.only:
         wanted = set(args.only.split(","))
         sources = [s for s in sources if s["id"] in wanted]
@@ -749,6 +777,8 @@ def run(args) -> int:
         body = f"Detected **{stamp}** (Melbourne time).\n\n" + "\n\n".join(change_md(c) for c in urgent)
         notify(title, body, ["update", "high" if n_high else "medium"])
 
+    if RUNNER == "actions":
+        health += local_runner_health(state, now)
     if health:
         notify(f"⚠️ Monitor health: {len(health)} source(s) need attention",
                "\n".join(health) + "\n\nIf a page moved, update its URL in `sources.yaml`.",
