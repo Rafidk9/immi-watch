@@ -3,55 +3,55 @@
     "parl-bills": {
       "url": "https://parlinfo.aph.gov.au/parlInfo/feeds/rss.w3p;adv=yes;orderBy=date-eFirst;page=0;query=Dataset%3Abillhome%20Date%3AthisYear;resCount=200",
       "fail_count": 0,
-      "last_checked": "2026-10-19T09:31+11:00",
+      "last_checked": "2026-10-19T09:40+11:00",
       "last_changed": "2026-10-16T14:10+11:00"
     },
     "npl": {
       "url": "https://www.dewr.gov.au/international-skills-engagement/national-planning-level",
       "fail_count": 0,
-      "last_checked": "2026-10-19T09:31+11:00",
+      "last_checked": "2026-10-19T09:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "min-education": {
       "url": "https://ministers.dewr.gov.au/releases.xml?minister=6525",
       "fail_count": 0,
-      "last_checked": "2026-10-19T09:31+11:00",
+      "last_checked": "2026-10-19T09:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "dewr-news": {
       "url": "https://www.dewr.gov.au/rss/newsroom.xml",
       "fail_count": 0,
-      "last_checked": "2026-10-19T09:31+11:00",
+      "last_checked": "2026-10-19T09:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "teqsa-news": {
       "url": "https://www.teqsa.gov.au/about-us/news-and-events/latest-news",
       "fail_count": 0,
-      "last_checked": "2026-10-19T09:31+11:00",
+      "last_checked": "2026-10-19T09:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "asqa-news": {
       "url": "https://www.asqa.gov.au/news-events/news",
       "fail_count": 0,
-      "last_checked": "2026-10-19T09:31+11:00",
+      "last_checked": "2026-10-19T09:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "jsa-news": {
       "url": "https://www.jobsandskills.gov.au/news_rss",
       "fail_count": 0,
-      "last_checked": "2026-10-19T09:31+11:00",
+      "last_checked": "2026-10-19T09:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "edu-international": {
       "url": "https://www.education.gov.au/international-education",
       "fail_count": 0,
-      "last_checked": "2026-10-19T09:31+11:00",
+      "last_checked": "2026-10-19T09:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     }
   },
   "pending_digest": [],
   "last_run": {
-    "at": "2026-10-19T09:31+11:00",
+    "at": "2026-10-19T09:40+11:00",
     "checked": 8,
     "baseline": 0,
     "changed": 0,
