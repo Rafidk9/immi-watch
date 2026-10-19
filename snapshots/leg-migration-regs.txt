@@ -17,7 +17,7 @@ F2026C01017 C28902 October 2026
 This instrument was backcaptured in accordance with Section 36 of the Legislative Instruments Act 2003
 All versions
 Show known future amendments
-325 total
+324 total
 Page size
 Compilation date
 Filter by compilation date
@@ -40,8 +40,8 @@ sch 1 (items 1-20)
 C288
 F2026C00667
 sch 1 (items 1-7)
-sch 1 (items 1-12)
 sch 2 (items 1-6), sch 3 (items 1-65)
+sch 1 (items 1-12)
 01 Jun 2026 - 30 Jun 2026
 C287
 F2026C00497
@@ -75,7 +75,7 @@ sch 1 (Item 1)
 C281
 F2026C00030
 sch 1 (items 6, 7)
-325 total
+324 total
 Page size
 As made
 1 total
