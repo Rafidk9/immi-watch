@@ -1,3 +1,4 @@
+2026-10-15 | CISC | SOCI - Australian Signals Directorate launches the Essential Series | https://www.homeaffairs.gov.au/Pages/2026-Oct/soci---australian-signals-directorate-launches-the-essential-series.aspx
 2026-10-15 | OMARA | Migration agent sanctioned | https://www.homeaffairs.gov.au/Pages/2026-Oct/migration-agent-sanctioned.aspx
 2026-10-06 | Immigration and citizenship | Health insurance requirements for Australian visa holders | https://www.homeaffairs.gov.au/Pages/2026-Oct/health-insurance-requirements-for-australian-visa-holders.aspx
 2026-10-01 | Portfolio | One second could stop a cyber attack: Australians urged to “take a second, stay secure” this Cyber Month. | https://www.homeaffairs.gov.au/Pages/2026-Oct/one-second-could-stop-a-cyber-attack.aspx
@@ -37,4 +38,3 @@
 2026-04-22 | National Security | Strengthening national security through secure government hosting environments | https://www.homeaffairs.gov.au/Pages/2026-Apr/strengthening-national-security-through-secure-government-hosting-environments.aspx
 2026-04-16 | CISC | SOCI Act - Artificial Intelligence (AI) based cyber security incidents | https://www.homeaffairs.gov.au/Pages/2026-Apr/soci-act-ai-based-cyber-security-incidents.aspx
 2026-04-01 | Immigration and citizenship | Australian Immi App now available in 47 countries | https://www.homeaffairs.gov.au/Pages/2026-Mar/australian-immi-app-now-available-in-47-countries.aspx
-2026-03-27 | OMARA | Migration agent sanctioned | https://www.homeaffairs.gov.au/Pages/2026-Mar/migration-agent-sanctioned-25032026.aspx
