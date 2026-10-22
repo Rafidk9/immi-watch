@@ -35,6 +35,7 @@ We are unable to prioritise invitations based on personal circumstances such as 
 Victorian Points Test
 Each ROI receives a VPT total. The VPT total is calculated using information from the Australian Government SkillSelect Expression of Interest and the Victorian ROI.
 The VPT prioritises younger, highly qualified applicants with higher levels of English language.
+The information provided in the SkillSelect Expression of Interest (EOI) will be used in the assessment of your Victorian Registration of Interest (ROI). It is important to keep the SkillSelect EOI accurate and up to date.
 Age
 Range
 Points
@@ -84,6 +85,7 @@ Proficient
 Superior
 200
 Years of experience in nominated occupation
+Please refer to the Department of Home Affairs websiteexternal link for more information on the years of skilled employment experience in your SkillSelect EOI.
 Range
 Points
 0 years
