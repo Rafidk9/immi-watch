@@ -4,19 +4,18 @@ Skilled Nominated visa (subclass 190)(opens in a new tab); or
 Skilled Work Regional (Provisional) visa (subclass 491)(opens in a new tab).
 Migration Services administers Western Australia’s SNMP.
 Pictured: A young migrant man and woman sitting at a desk, working through an application on a laptop.
-2025-26 Eligibility requirements
-If you would like to be considered for an invitation for State nomination, your occupation will need to be eligible under the following streams.
-General stream — A skilled migration pathway for a range of occupations and industry categories. Eligible occupations are listed on the WA Skilled migration occupation list (WASMOL) Schedule 1 or 2.
-Graduate stream — A skilled migration pathway for eligible international students who are completing vocational education and training (VET) or higher education qualifications in WA. Eligible occupations are listed on the Graduate occupation list (GOL).
-These occupation lists identify occupations that are considered a priority for WA and are therefore eligible for skilled migrants through State nomination.
-Check your eligibility against the stream-specific requirements here
-Applicants who have a nominated occupation identified on the WASMOL or the GOL may be eligible for WA State nomination using one of the following visa subclasses:
+Eligibility
+To be considered for an invitation for State nomination, you must be skilled in an occupation in one of the following streams:
+General stream — eligible occupations are listed on the WA Skilled migration occupation list (WASMOL)(opens in a new tab). Some different criteria are applied for WASMOL Schedule 1 and Schedule 2 occupations.
+Defence industry stream – eligible occupations are listed on the WA Skilled migration occupation list (WASMOL) Schedule 3(opens in a new tab).
+Graduate stream —for international students who have studied in Western Australia for at least two years and have attained a vocational education and training (VET) or higher education qualification in WA. Eligible occupations are listed on the Graduate occupation list (GOL)(opens in a new tab).
+Check your eligibility against the stream-specific requirements here (opens in a new tab)
+Applicants with an occupation available on the WASMOL or GOL may be eligible for WA State nomination for one of the following visa subclasses:
 the Skilled Nominated visa (subclass 190)(opens in a new tab); or
 Skilled Work Regional (Provisional) visa (subclass 491)(opens in a new tab)
-The WASMOL is available to applicants who intend to use the General stream WASMOL Schedule 1 or the General stream WASMOL Schedule 2.
-Please note that the occupations identified in these streams, as detailed in the WASMOL and the GOL, do not relate to any specific job vacancies nor represent any guarantee of a job. Both lists are updated from time to time, in line with WA industry and workforce needs.
+Occupations available for State nomination included on the WASMOL and GOL do not relate to specific job vacancies or guarantee of a job. Occupation lists may be updated from time to time.
 Overview of requirements
-The following table provides an overview of the 2025-26 requirements for each stream of the State Nominated Migration Program, for each of the two eligible visa types.
+The following table provides an overview of the State nomination requirements for each stream of the State Nominated Migration Program, for each of the two eligible visa types.
 Stream requirements
 General stream
 WASMOL
@@ -34,34 +33,34 @@ Visa type
 190
 491
 Meet Department of Home Affairs eligibility requirements for the intended visa subclass
-see How to apply for WA State nomination, Step1: Lodge an expression of interest
+see How to apply for WA State nomination, Step1: Lodge an expression of interest(opens in a new tab)
 Nominated occupation is available on the relevant list
 Meet minimum English requirements
 At least one year Australian or one year of overseas work experience in nominated (or closely related) occupation
 -
 Full-time employment contract in WA for a minimum of six months in the nominated (or closely related) occupation*
 -
-Have obtained a Certificate III level or above qualification from an accredited WA educational institution
+Have attained a Certificate III level or above qualification from an accredited WA educational institution
 -
 Meet all of the Graduate stream study requirements
 -
 * Applicants invited through a WA building and construction industry sector occupation (as per the WA State nomination occupation lists) do not need to have a contract of employment.
-2025-26 Stream-specific requirements
+Stream-specific requirements
 For specific details about each of these requirements for the General or the Graduate streams, please refer to the information below.
 1. Nominated occupation on the relevant occupation list
 The nominated occupation identified in your skills assessment must be:
 listed on the WASMOL Schedule 1 occupation list; and
 eligible for your intended visa subclass.
-View eligible occupations
+View eligible occupations(opens in a new tab)
 2. Skills assessments
-Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are invited to apply for WA State nomination through.
+Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are nominating to apply for WA State nomination.
 A provisional skills assessment issued for a subclass 485 visa application cannot be considered.
 3. Department of Home Affairs requirements
 You must meet Home Affairs' requirements for your intended visa subclass, being:
 the Skilled Nominated visa (subclass 190)(opens in a new tab); or
 the Skilled Work Regional (Provisional) visa (subclass 491)(opens in a new tab).
-4. English language requirement
-To meet the English language requirement, you must meet the minimum score listed for all four components, in a single sitting of one of the Home Affairs approved English tests listed below.
+4. English language
+To meet the English language requirement, you must meet the minimum score listed for all four components of one of the Home Affairs approved English tests listed below.
 Table 1: Approved English tests taken on or before 6 August 2025.
 Results of approved tests taken on or before 6 August 2025 can be used (within their three-year validity period) as evidence of English proficiency for visa purposes until 6 August 2028.
 Competent English bands (test)
@@ -73,11 +72,10 @@ International English Language Testing System (IELTS) including One Skill Retake
 6
 Occupational English Test (OET)
 B
-Test of English as a foreign language internet-based test (TOEFL-iBT)
+Test of English as a Foreign Language Internet-based Test (TOEFL iBT)
 12
 13
 21
-18
 Pearson Test of English Academic (PTE Academic)
 50
 Cambridge C1 Advanced
@@ -95,16 +93,16 @@ Cambridge C1 Advanced Test
 179
 Canadian English Language Proficiency Index Program General
 7
-IELTS Academic including One Skill Retake (OSR)
+IELTS Academic, including One Skill Retake (OSR)
 6
-IELTS General Training including One Skill Retake (OSR)
+IELTS General Training, including One Skill Retake (OSR)
 6
 LANGUAGECERT Academic Test
 57
 60
 64
 70
-Michigan English Test
+Michigan English Test, including Single Section Retake (SSR)
 56
 55
 57
@@ -125,8 +123,8 @@ TOEFL iBT
 *The OET scoring format was previously alphabetical; scoring changed to numerical as of 7 August 2025.
 The applicant must comply with the Department of Home Affairs requirements for English language tests. More information is available on the Home Affairs website(opens in a new tab).
 British National (Overseas) passports are not acceptable as evidence of competent English.
-5. Work experience requirement
-At the time you are invited to apply for WA State nomination application you must have:
+5. Work experience requirements
+At the time you are invited to apply for WA State nomination you must have:
 at least one year of Australian work experience in the nominated (or closely related) occupation over the last 10 years; or
 at least one year of overseas work experience in the nominated (or closely related) occupation over the last 10 years.
 Australian and overseas work experience in the nominated (or closely related) occupation cannot be combined to meet the one-year requirement.
@@ -134,28 +132,31 @@ Closely related means that the occupation shares the first four digits of the no
 You can only count work experience gained post qualification, in paid employment, where you have worked at least 20 hours per week.
 A professional year or work placement will not be considered for the purposes of State nomination, unless it meets the above requirements.
 Evidence of relevant work experience may include:
-records of Payment/Payslips to demonstrate paid employment in the occupation or closely related occupation. The Record of Payment/Payslip must include the Employer’s name and ABN (or overseas equivalent), the name of the employee, the pay period, date the payment was issued, gross and net pay including any loadings, penalties or allowances, deductions and tax withheld. If you are providing payslips, please enter the details into the payslip template [PDF 183 KB](opens in a new tab) and provide this as part of your application.
+records of Payment/Payslips to demonstrate paid employment in the occupation or closely related occupation. The Record of Payment/Payslip must include the Employer’s name and ABN (or overseas equivalent), the name of the employee, the pay period, date the payment was issued, gross and net pay including any loadings, penalties or allowances, deductions and tax withheld. If you are providing payslips, please enter the details into the payslip template(opens in a new tab) and provide this as part of your application.
 a letter from an employer that provides evidence of employment, including the employee’s name, job title, location of employment, duties performed, period of employment, and the salary/hourly rate paid to the employee. The letter must include the business details, including company name and ABN (or overseas equivalent) and name and contact details of the employer for verification purposes.
 Further evidence of work experience may be requested during the application process.
 6. Contract of employment
-The Contract of employment requirement is not applicable to visa 491 applicants.
-From 1 July 2024, current employment, or a contract of employment for an occupation available through Schedule 1 may include a Contracted Medical Practitioner Agreement, a Private Practice partnership agreement, Locum Tenens agreement or similar employment contract.
-You must have a contract of employment in your nominated (or closely related) occupation for full-time employment in Western Australia, for at least six months from the date of your application for State nomination. Full-time employment is defined as an average of at least 35 hours work per week. You are able to provide two contracts of employment to make up the 35 hours. The contract must include:
+A contract of employment is not required for visa 491 applicants.
+Current employment, or a contract of employment for an occupation available through WASMOL Schedule 1 may include a Contracted Medical Practitioner Agreement, a Private Practice partnership agreement, Locum Tenens agreement or similar employment contract.
+You must have a contract of employment in your nominated (or closely related) occupation for full-time employment in Western Australia, for at least six months from the date of your application for State nomination. Full-time employment is defined as an average of at least 35 hours work per week. You are able to provide two contracts of employment to make up the 35 hours. Casual contracts do not meet this requirement.
+The contract must include:
 full names of both the employer and the employee;
-start and end date (if permanent, only start date is required). The start date must be within three months of your application;
+that it is either ‘permanent full-time’ or ‘fixed term full-time’; and
+the start and end date (if permanent, or a Private Practice partnership agreement, only start date is required). The contract start date must be within three months of the date you lodge your state nomination application, unless you currently reside offshore;
+the end date (fixes-term contracts only).
 job title and related ANZSCO code;
-job description;
-terms and conditions of employment (such as salary, hours of work, leave entitlements and superannuation) which must be no less favourable than those that would apply to an Australian citizen or permanent resident doing equivalent work. If your contract does not describe your terms and conditions of employment, you can provide the enterprise agreement or industrial award for your occupation;
+job description of the work being performed;
+terms and conditions of employment (including salary, hours of work, leave entitlements, superannuation, indemnity insurance (if applicable) among other things) which must be no less favourable than those that would apply to an Australian citizen or permanent resident doing equivalent work. If your contract does not describe your terms and conditions of employment, you can provide the enterprise agreement or industrial award for your occupation;
 location of employment;
-a statement that confirms “work specified in the employment contract must be performed by the employee and not contracted out to a third party”;
-dated signatures from the employer and the employee; and
+a statement that confirms 'work specified in the employment contract must be performed by the employee and not contracted out to a third party';
+dated signatures from the employer and the employee and provided as one document; and
 be drafted by the employer and not by the employee.
-You will need to provide a copy of your contract as part of the State nomination application, and it must be provided as one document.
+A copy of your contract must be included as part of the State nomination application, and it must be provided as one document.
 We will also assess whether:
 an appropriate salary will be paid for the specified occupation, based on market salary rates;
 the business employing you is genuine and operating in the location specified; and
 as the employee, you will bear no financial risk and be provided with the relevant tools and equipment to successfully undertake the tasks required.
-Independent contractors, self employment and sole traders
+Independent contractors, self-employment and sole traders
 Employment contracts submitted by an independent contractor or for self-employment do not meet the above requirements and are not suitable to apply for WA State nomination. Employment contracts submitted by a sole trader will be considered in the following circumstances only:
 the sole trader is not the stated applicant of the State nomination application; and
 the employment contract meets all the above requirements.
@@ -164,16 +165,16 @@ View the Employment contracts(opens in a new tab) and Independent contractors(op
 The nominated occupation identified in your skills assessment must be:
 listed on the WASMOL Schedule 2 occupation list; and
 eligible for your intended visa subclass.
-View eligible occupations
+View eligible occupations(opens in a new tab)
 2. Skills assessments
-Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are invited to apply for WA State nomination through.
+Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are nominating to apply for WA State nomination.
 A provisional skills assessment issued for a subclass 485 visa application cannot be considered.
 3. Department of Home Affairs requirements
 You must meet Home Affairs' requirements for your intended visa subclass, being:
 the Skilled Nominated visa (subclass 190)(opens in a new tab); or
-the Skilled Work Regional (Provisional) visa (subclass 491)(opens in a new tab).
-4. English language requirement
-To meet the English language requirement, you must meet the minimum score listed for all four components, in a single sitting of one of the Home Affairs approved English tests listed below.
+the Skilled Work Regional (Provisional) visa (subclass 491).(opens in a new tab)
+4. English language
+To meet the English language requirement, you must meet the minimum score listed for all four components one of the Home Affairs approved English tests listed below.
 Table 1: Approved English tests taken on or before 6 August 2025.
 Results of approved tests taken on or before 6 August 2025 can be used (within their three-year validity period) as evidence of English proficiency for visa purposes until 6 August 2028.
 Competent English bands (test)
@@ -185,11 +186,10 @@ International English Language Testing System (IELTS) including One Skill Retake
 6
 Occupational English Test (OET)
 B
-Test of English as a foreign language internet-based test (TOEFL-iBT)
+Test of English as a Foreign Language Internet-based Test (TOEFL iBT)
 12
 13
 21
-18
 Pearson Test of English Academic (PTE Academic)
 50
 Cambridge C1 Advanced
@@ -207,16 +207,16 @@ Cambridge C1 Advanced
 179
 Canadian English Language Proficiency Index Program General
 7
-IELTS Academic including One Skill Retake (OSR)
+IELTS Academic, including One Skill Retake (OSR)
 6
-IELTS General Training including One Skill Retake (OSR)
+IELTS General Training, including One Skill Retake (OSR)
 6
 LANGUAGECERT Academic Test
 57
 60
 64
 70
-Michigan English Test
+Michigan English Test, including Single Section Retake (SSR)
 56
 55
 57
@@ -238,25 +238,25 @@ TOEFL iBT
 The applicant must comply with the Department of Home Affairs requirements for English language tests. More information is available on the Home Affairs website(opens in a new tab).
 British National (Overseas) passports are not acceptable as evidence of competent English.
 5. Contract of employment
-The Contract of employment requirement is not applicable to visa 491 applicants, or applicants who were invited through a WA building and construction industry sector occupation (as classified on the WA State nomination occupation lists).
+A contract of employment is not required for visa 491 applicants, or applicants who were invited through a WA building and construction industry sector occupation (as classified on the WA State nomination occupation lists(opens in a new tab)).
 You must have a contract of employment in your nominated (or closely related) occupation for full-time employment in Western Australia, for at least six months from the date of your application for State nomination.
-Full-time employment is defined as an average of at least 35 hours work per week and you can provide two part-time contracts to meet this requirement. Casual contracts will not be considered.
-The contract must be signed and dated by both the employer and employee and include:
+Full-time employment is defined as an average of at least 35 hours work per week. You can provide two part-time contracts to meet this requirement. Casual contracts do not meet this requirement.
+The contract must be signed and dated by both the employer and employee, provided as one document and include:
 full names of both the employer and the employee;
 that it is either ‘permanent full-time’ or ‘fixed term full-time’; and
-the start date (all contracts). If you have not yet started working, the contract start date must be within three months of the date you lodge your State nomination application unless you are currently residing offshore;
+the start date (all contracts) (if permanent only start date is required). If you have not yet started working, the contract start date must be within three months of the date you lodge your State nomination application unless you currently reside offshore;
 the end date (fixed-term contracts only).
 job title, related ANZSCO and description of the work to be performed by the employee;
-the terms and conditions of employment (include the position's salary, hours of work, leave entitlements, superannuation, among other things) that are no less favourable than those that would apply to an Australian citizen or permanent resident doing equivalent work;
+the terms and conditions of employment (including the position's salary, hours of work, leave entitlements, superannuation, among other things) that are no less favourable than those that would apply to an Australian citizen or permanent resident doing equivalent work;
 location of employment;
-a statement that the work specified in the employment contract must be performed by the employee and not contracted out to a third party; and
+a statement that the 'work specified in the employment contract must be performed by the employee and not contracted out to a third party'; and
 must be drafted by the employer and not by the employee.
 You will need to provide a copy of your contract as part of the State nomination application, and it must be provided as one document.
 We will also assess whether:
 an appropriate salary will be paid for the specified occupation, based on market salary rates;
 the business employing you is genuine and operating in the location specified; and
 as the employee, you will bear no financial risk and be provided with the relevant tools and equipment to successfully undertake the tasks required.
-Independent contractors, self employment and sole traders
+Independent contractors, self-employment and sole traders
 Employment contracts submitted by an independent contractor or for self-employment do not meet the above requirements and are not suitable to apply for WA State nomination. Employment contracts submitted by a sole trader will be considered in the following circumstances only:
 the sole trader is not the stated applicant of the State nomination application; and
 the employment contract meets all the above requirements.
@@ -265,16 +265,16 @@ View the Employment contracts(opens in a new tab) and Independent contractors(op
 The nominated occupation identified in your skills assessment must be:
 listed on the Graduate stream occupation list; and
 eligible for your intended visa subclass.
-View eligible occupations
+View eligible occupations(opens in a new tab)
 2. Skills assessments
-Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are invited to apply for WA State nomination through.
+Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are nominating to apply for WA State nomination.
 A provisional skills assessment issued for a subclass 485 visa application cannot be considered.
 3. Department of Home Affairs requirements
 You must meet Home Affairs' requirements for your intended visa subclass, being:
 the Skilled Nominated visa (subclass 190)(opens in a new tab); or
 the Skilled Work Regional (Provisional) visa (subclass 491)(opens in a new tab).
-4. English language requirement
-To meet the English language requirement, you must meet the minimum score listed for all four components, in a single sitting of one of the Home Affairs approved English tests listed below.
+4. English language
+To meet the English language requirement, you must meet the minimum score listed for all four components of one of the Home Affairs approved English tests listed below.
 Table 1: Approved English tests taken on or before 6 August 2025.
 Results of approved tests taken on or before 6 August 2025 can be used (within their three-year validity period) as evidence of English proficiency for visa purposes until 6 August 2028.
 Competent English bands (test)
@@ -282,15 +282,14 @@ Listening
 Reading
 Writing
 Speaking
-International English Language Testing System (IELTS) including One Skill Retake (OSR)
+International English Language Testing System (IELTS), including One Skill Retake (OSR)
 6
 Occupational English Test (OET)
 B
-Test of English as a foreign language internet-based test (TOEFL-iBT)
+Test of English as a Foreign Language Internet-based Test (TOEFL iBT)
 12
 13
 21
-18
 Pearson Test of English Academic (PTE Academic)
 50
 Cambridge C1 Advanced
@@ -308,16 +307,16 @@ Cambridge C1 Advanced
 179
 Canadian English Language Proficiency Index Program General
 7
-IELTS Academic including One Skill Retake (OSR)
+IELTS Academic, including One Skill Retake (OSR)
 6
-IELTS General Training including One Skill Retake (OSR)
+IELTS General Training, including One Skill Retake (OSR)
 6
 LANGUAGECERT Academic Test
 57
 60
 64
 70
-Michigan English Test
+Michigan English Test, including Single Section Retake (SSR)
 56
 55
 57
@@ -339,30 +338,30 @@ TOEFL iBT
 The applicant must comply with the Department of Home Affairs requirements for English language tests. More information is available on the Home Affairs website(opens in a new tab).
 British National (Overseas) passports are not acceptable as evidence of competent English.
 5. Study requirements
-To meet the study requirements you must be able to demonstrate that you meet the following five study components:
-gained at least one qualification (at the levels listed below) in WA; and
+To meet the study requirements, you must be able to demonstrate that you meet the following five study components:
+attained at least one qualification (at the levels listed below) in WA; and
 studied in WA:
 at an accredited WA educational institution; and
 full-time; and
 in a face-to-face learning environment (on campus study); and
 for a period of at least two academic years.
 Qualifications
-You will need to have gained at least one of the following qualifications from a WA educational institution that meets the accreditation requirements (outlined below) at the time of your study.
+You will need to have attained at least one of the following qualifications from a WA educational institution that meets the accreditation requirements (outlined below) at the time of your study.
 a university or higher education qualification.
-a PhD or Masters degree;
-higher degree (Bachelor Honours degree, graduate certificate or graduate diploma); or
-Bachelor.
+a PhD or master's degree;
+higher degree (bachelor honours degree, graduate certificate or graduate diploma); or
+bachelor's degree.
 and/or
 a vocational education and training (VET) qualification at a Certificate III level or above.
 You can use study from different WA qualifications to make up the two-year study requirement component.
-Study gained through an English language program can be used to meet the study requirement, if you have also gained at least one of the qualifications listed above.
+Study gained through an English language program can be used to meet the study requirement, if you have also attained at least one of the qualifications listed above.
 WA Educational Institution accreditation requirements
 The WA Educational institution/s where you completed your studies must have:
 been accredited at the time of your studies; and
 a campus in WA where students study full-time, on campus, through face-to-face delivery.
 To be considered accredited, the educational institution (including providers of English language programs) must be:
 registered with the Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS)(opens in a new tab); and
-have a campus in WA where students study full-time, on campus, through face-to-face delivery.
+have a campus in WA where students' study full-time, on campus, through face-to-face delivery.
 In addition:
 a university or higher education institution must also be registered as an Australian higher education provider with the Tertiary Education Quality and Standards Agency (TEQSA)(opens in a new tab) to be considered an accredited educational institution; and
 a vocational education and training (VET) institution must also be registered with the Australian Skills Quality Authority (ASQA) or the WA Training Accreditation Council (TAC)(opens in a new tab) to be considered accredited. You can check if your institution is registered on the training.gov.au website(opens in a new tab).
@@ -372,13 +371,13 @@ The educational institution determines whether a course is full-time or part-tim
 If study from your full-time course was completed at a reduced study load, you will need to provide evidence demonstrating:
 this was approved by your awarding education provider; and
 if applicable, details of the advanced standing or recognition of prior learning used to reduce your study load.
-Credits, advanced standing or recognition of prior learning for study completed outside of Western Australia can not be used to meet the WA State nomination study requirements.
+Credits, advanced standing or recognition of prior learning for study completed outside of Western Australia cannot be used to meet the WA State nomination study requirements.
 Face-to-face
 Face-to-face study means in-person attendance on campus in WA for scheduled classes and assessments.
-The Education Services for Overseas Students (ESOS) Act(opens in a new tab) states that a maximum of 25% of study can be completed online and that the student must have been enrolled in at least one face-to-face subject in each compulsory teaching period.
+The Education Services for Overseas Students (ESOS) Act(opens in a new tab) states that no more than one-third, a maximum of 33.3% of the registered course can be completed online and that the student must have been enrolled in at least one face-to-face subject in each compulsory teaching period.
 More than 25% online study is not eligible unless you were required to complete some of your studies online due to COVID-19 (between 1 February 2020 to 25 November 2023). In this case, you will need to show evidence that you were enrolled as an onshore WA student during this period.
 Two years of academic study
-For the purpose of the two-year study requirement, Migration Services requires applicants to have completed at least 87 weeks duration of full-time study taken from the start date and end date on the completion letter(s). This can include more than one completed qualification or completed units with partially completed qualifications and does not need to be one continuous study period.
+For the purpose of the two-year study requirement, WA Migration Services requires applicants to have completed at least 87 weeks duration of full-time study taken from the start date and end date on the completion letter(s). This can include more than one completed qualification or completed units within partially completed qualifications and does not need to be one continuous study period.
 Credits, advanced standing or recognition of prior learning for study completed outside of Western Australia cannot be used to meet the WA State nomination study requirements.
 The onus is on the applicant to provide evidence to show two years of living and studying in WA. Additionally, the awarding institution must have met the accreditation requirements.
 Evidence required
@@ -405,18 +404,39 @@ U
 02398A
 Academies Australasia Institute
 academies.edu.au(opens in a new tab)
+02439G
+Academies Australasia Polytechnic (formerly AMI Education)
+aapoly.edu.au(opens in a new tab)
+01328A
+ACAP University College
+acap.edu.au(opens in a new tab)
 00197D
 Acknowledge Education Pty Ltd
 acknowledgeeducation.edu.au(opens in a new tab)
+03844J
+AIBI Higher Education
+aibi.edu.au(opens in a new tab)
 03782G
 AMA College
 amacollege.edu.au(opens in a new tab)
 03703M
 Apeiro Institute
 apeiro.edu.au(opens in a new tab)
+04377A
+Aroha College
+arohacollege.edu.au(opens in a new tab)
+03991J
+Atlantic College
+atlanticcollege.edu.au(opens in a new tab)
+04055H
+Auscare Training Organisation
+auscaretraining.edu.au(opens in a new tab)
 02645B
 Australia-International Institute of Workplace Training
 aiwt.edu.au(opens in a new tab)
+01328A
+Australian College of Applied Professions
+acap.edu.au(opens in a new tab)
 02813B
 Australasian Academy of Cosmetic Dermal Science
 aacds.edu.au(opens in a new tab)
@@ -424,17 +444,26 @@ aacds.edu.au(opens in a new tab)
 Australian College of Beauty Therapy
 nicheeducation.edu.au(opens in a new tab)
 03800K
-Australian College of Management and Innovation Pty Ltd
+Australian College of Management and Innovation
 acmi.wa.edu.au(opens in a new tab)
 02813B
 Australian College of Specialist Makeup
 nicheeducation.edu.au(opens in a new tab)
+04102F
+Australian Data and Cyber Institute
+adci.edu.au(opens in a new tab)
+04394M
+Australian Global Institute of Technology
+agit.edu.au(opens in a new tab)
+04137F
+Australian Higher Education Academy
+ahea.wa.edu.au(opens in a new tab)
+04207H
+Australian Institute of Hospitality and Management
+aihm.au(opens in a new tab)
 03402B
 Australian Institute of Language and Further Education
 ailfe.wa.edu.au(opens in a new tab)
-02491D
-Australian National Institute of Management and Commerce
-imc.edu.au(opens in a new tab)
 03255G
 Australian Professional Skills Institute
 apsi.wa.edu.au(opens in a new tab)
@@ -447,15 +476,33 @@ atiaus.edu.au(opens in a new tab)
 02650E
 Australian University of Theology
 actheology.edu.au(opens in a new tab)
+02948J
+Australian University College of Divinity
+aucd.edu.au(opens in a new tab)
+03569A
+Australis College
+nomicollege.com.au(opens in a new tab)
 03522E
 Babel International College (WA)
 bic.wa.edu.au(opens in a new tab)
+02233M
+Baxter Institute
+baxter.vic.edu.au(opens in a new tab)
 00463B
 Canning College
 canningcollege.wa.edu.au(opens in a new tab)
+03744B
+CIHE Australia
+cihe.edu.au(opens in a new tab)
+04234E
+City College
+citycollege.edu.au(opens in a new tab)
 03057C
 College of Sports & Fitness
 csf.edu.au(opens in a new tab)
+03933H
+Contempo College
+contempocollege.edu.au(opens in a new tab)
 02042G
 Curtin College
 curtincollege.edu.au(opens in a new tab)
@@ -477,38 +524,59 @@ etea.edu.au(opens in a new tab)
 01070M
 EF International Language Schools
 ef-australia.com.au(opens in a new tab)
+04212M
+Elpis College
+elpis.edu.au(opens in a new tab)
 03275D
 Empyrean Education Institute
 eei.wa.edu.au(opens in a new tab)
 00231G
-Endeavour College of Natural Health, College of Natural Beauty, FIAFitnation
+Endeavour College of Natural Health and College of Natural Beauty
 endeavour.edu.au(opens in a new tab)
 03567C
-Engineering Institute of Technology Pty Ltd
+Engineering Institute of Technology
 eit.edu.au(opens in a new tab)
+03923K
+English Direct Australia
+englishdirect.edu.au(opens in a new tab)
 02898C
 Everthought College of Construction
 everthought.edu.au(opens in a new tab)
+03926G
+FC Education and FIT College
+fitcollege.edu.au(opens in a new tab)
+03856E
+Glenhill College
+glenhillcollege.edu.au(opens in a new tab)
 03564F
 Global College Australasia
 globalcollege.edu.au(opens in a new tab)
+04378M
+Greenhouse Education
+greenhouse.edu.au(opens in a new tab)
 02672K
 Greenwich College
 greenwichcollege.edu.au(opens in a new tab)
+03927F
+Highgate International College
+hic.edu.au(opens in a new tab)
+04155D
+Hopkins International College
+hopkins.edu.au(opens in a new tab)
 03407G
-Institute of Health & Management Pty Ltd
+Institute of Health and Management
 ihm.edu.au(opens in a new tab)
 03386G
 Institute of Health and Nursing Australia
 ihna.edu.au(opens in a new tab)
-03345F
-International Institute of Business and Technology Australia
-iibt.edu.au(opens in a new tab)
+03901E
+Integrated Training
+integratedsecuritytraining.com.au(opens in a new tab)
 03594M
 International Institute of Planning and Management
-iipm.edu.au(opens in a new tab)
+iipm-website-production.up.railway.app(opens in a new tab)
 02426B
-Kaplan Business School Pty Ltd
+Kaplan Business School
 kbs.edu.au(opens in a new tab)
 03425F
 Keystone College of Business and Technology
@@ -520,7 +588,7 @@ kingstoncollege.wa.edu.au(opens in a new tab)
 Language Links
 languagelinks.wa.edu.au(opens in a new tab)
 03636F
-Lead College Pty Ltd
+Lead College
 leadcollege.edu.au(opens in a new tab)
 03274E
 Lexis English Perth
@@ -529,8 +597,17 @@ lexisenglish.com(opens in a new tab)
 Lexis TESOL Training Centres
 lexis-training.com(opens in a new tab)
 03468F
-Macallan College Pty Ltd
+Macallan College
 macallan.edu.au(opens in a new tab)
+03910D
+McIver College
+mcivercollege.edu.au(opens in a new tab)
+03529J
+Mechanical Institute of Training and Technology
+mitt.vic.edu.au(opens in a new tab)
+03952E
+Merit Institute of Business/ Equinim College
+eqc.edu.au(opens in a new tab)
 00061J
 Milner International College of English
 milner.wa.edu.au(opens in a new tab)
@@ -544,31 +621,46 @@ murdoch.edu.au(opens in a new tab)
 Navitas English
 navitasenglish.edu.au(opens in a new tab)
 03420M
-NIT Australia
+NIT Australia (National Institute of Technology)
 nitaustralia.edu.au(opens in a new tab)
+03966K
+Novus Education
+novus.edu.au(opens in a new tab)
+04086A
+Oban College
+oban.edu.au(opens in a new tab)
 03733E
 Open Colleges School of Health
-opencolleges.edu.au/school-of-health(opens in a new tab)
+school-of-health/edu.au(opens in a new tab)
 03802G
 Pal Education
-majorblueair.com.au(opens in a new tab)
+paleducation.wa.edu.au(opens in a new tab)
 00986G
 Perth Bible College
 pbc.wa.edu.au(opens in a new tab)
-03282E
-Perth College of Beauty Therapy
-perthcollege.com.au(opens in a new tab)
 03051J
-Perth College Of Business and Technology Pty Ltd
+Perth College of Business and Technology
 pcbt.wa.edu.au(opens in a new tab)
+04049F
+Perth Institute of Australia
+perthinstitute.wa.edu.au(opens in a new tab)
 00066D
 Phoenix Academy
 phoenix.wa.edu.au(opens in a new tab)
+03956A
+Pioneer Education Institute
+pioneercollege.edu.au(opens in a new tab)
+04277E
+Prisma Education Institute Australia
+peia.edu.au(opens in a new tab)
 00312F
 SAE University College
 sae.edu.au(opens in a new tab)
+04224G
+School of Engineering Australia
+pmv.net.au(opens in a new tab)
 03391M
-Sheridan College Inc
+Sheridan Institute of Higher Learning
 sheridan.edu.au(opens in a new tab)
 03548F
 Skills Australia Institute
@@ -582,27 +674,42 @@ scu.edu.au(opens in a new tab)
 03047E
 Stanley College
 stanleycollege.edu.au(opens in a new tab)
+03839F
+Strike Training and Consulting
+striketraining.com.au(opens in a new tab)
 00020G
 TAFE International Western Australia
 tafeinternational.wa.edu.au(opens in a new tab)
 03016A
-Taylor Weir School of Hairdressing
+Taylorweir Hairdressing and Barber Training
 taylorweir.com.au(opens in a new tab)
+04278D
+Technical Institute of Australia
+tia.edu.au(opens in a new tab)
+04095M
+The Australian institute of Professional Counsellors, and AIPC Professional
+aipc.net.au(opens in a new tab)
+03945D
+The Bright College
+thebrightcollege.edu.au(opens in a new tab)
 01032F
 The University of Notre Dame Australia
-nd.edu.au(opens in a new tab)
+notredame.edu.au(opens in a new tab)
 00126G
 The University of Western Australia
 uwa.edu.au(opens in a new tab)
+03438A
+The Wales Institute
+twi.edu.au(opens in a new tab)
+03579K
+Unity School of Education
+ued.edu.au(opens in a new tab)
 02200J
 Victory Life International Bible Training Centre
 vlibtc.wa.edu.au(opens in a new tab)
 02471G
 Western Australian Aviation College
 waaviationcollege.com.au(opens in a new tab)
-03548F
-Western Australia College international
-skillsaustralia.edu.au(opens in a new tab)
 03997C
 Westin College
 westincollege.com.au(opens in a new tab)
