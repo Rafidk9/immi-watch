@@ -824,6 +824,7 @@ Administrative and Support Services
 Agriculture, Forestry and Fishing
 Arts and Recreation
 Building and Construction
+Defence
 Education and Training
 Electricity, Gas, Water and Waste Services
 Financial and Insurance Services
@@ -840,6 +841,7 @@ Public Administration and Safety
 Rental, Hiring and Real Estate Services
 Transport, Postal and Warehousing
 Stream type
+Defence Industry - WASMOL Schedule 3
 General - WASMOL Schedule 1
 General - WASMOL Schedule 2
 Graduate
