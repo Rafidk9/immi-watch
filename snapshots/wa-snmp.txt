@@ -849,6 +849,7 @@ Graduate
 Visa type: v491
 Visa type: v190
 Priority Occupation
+Defence Stream
 Using the Occupation list filters
 To help you narrow your search, you can use the filters to refine your search. You can use more than one filter.
 You can also filter the full list of eligible occupations by choosing a WA Industry sector, Stream type and Visa type as well. You may select multiple entries under each filter.
