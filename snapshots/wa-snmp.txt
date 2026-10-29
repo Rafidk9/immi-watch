@@ -167,7 +167,7 @@ The nominated occupation identified in your skills assessment must be:
 listed on the WASMOL Schedule 2 occupation list; and
 eligible for your intended visa subclass.
 View eligible occupations(opens in a new tab)
-2. Skills assessments
+2. Skills assessment
 Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are nominating to apply for WA State nomination.
 A provisional skills assessment issued for a subclass 485 visa application cannot be considered.
 3. Department of Home Affairs requirements
@@ -268,7 +268,7 @@ The nominated occupation identified in your skills assessment must be:
 listed on the Graduate stream occupation list; and
 eligible for your intended visa subclass.
 View eligible occupations(opens in a new tab)
-2. Skills assessments
+2. Skills assessment
 Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are nominating to apply for WA State nomination.
 A provisional skills assessment issued for a subclass 485 visa application cannot be considered.
 3. Department of Home Affairs requirements
@@ -534,13 +534,13 @@ elpis.edu.au(opens in a new tab)
 Empyrean Education Institute
 eei.wa.edu.au(opens in a new tab)
 00231G
-Endeavour College of Natural Health and College of Natural Beauty
+Endeavour College of Natural Health, College of Natural Beauty
 endeavour.edu.au(opens in a new tab)
 03567C
 Engineering Institute of Technology
 eit.edu.au(opens in a new tab)
 03923K
-English Direct Australia
+English Direct Australia Pty Ltd
 englishdirect.edu.au(opens in a new tab)
 02898C
 Everthought College of Construction
