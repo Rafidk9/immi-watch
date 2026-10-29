@@ -40,8 +40,8 @@ sch 1 (items 1-20)
 C288
 F2026C00667
 sch 1 (items 1-7)
-sch 2 (items 1-6), sch 3 (items 1-65)
 sch 1 (items 1-12)
+sch 2 (items 1-6), sch 3 (items 1-65)
 01 Jun 2026 - 30 Jun 2026
 C287
 F2026C00497
