@@ -10,7 +10,7 @@ Every hour GitHub Actions runs `monitor.py`, which:
    (menus, footers, scripts, "last updated" stamps removed);
 2. compares it with the previous snapshot in `snapshots/`;
 3. re-fetches any changed page once to make sure the change is real;
-4. rates each change **high / medium / low** (keyword rules, or Claude if an API key is set);
+4. rates each change **high / medium / low** (keyword rules, or Gemini if an API key is set);
 5. alerts you, and saves a record of the change in `changes/YYYY-MM/`.
 
 ## Alerts
@@ -31,10 +31,15 @@ Every hour GitHub Actions runs `monitor.py`, which:
   For Gmail use `smtp.gmail.com` and an [app password](https://myaccount.google.com/apppasswords).
 - **Teams / Slack** — add secret `ALERT_WEBHOOK_URL` (an incoming-webhook URL; Teams
   "Workflows" webhooks and Slack incoming webhooks both accept the `{"text": ...}` payload).
-- **Claude summaries** — add secret `ANTHROPIC_API_KEY`. Each change then gets a 1–2 sentence
-  plain-English summary, key points and a severity judged by Claude (`claude-opus-5-5`,
-  low effort; override with env `IMMI_AI_MODEL`). Only changed pages are sent, so cost is a
-  few cents a day.
+- **Gemini briefings** — add secret `GEMINI_API_KEY` (from https://aistudio.google.com/apikey).
+  Each change is then explained by Gemini (`gemini-3.8-flash`; override with env
+  `IMMI_AI_MODEL`): a one-line
+  headline (used as the email subject), what changed with exact figures and dates, who it
+  affects and what to do, plus a severity. For new news items and legislation it also reads
+  the linked article or instrument, so the briefing covers what it says, not just its title.
+  The alert then links to the exact wording changes instead of pasting the diff. Only changed
+  pages are sent, so cost is cents a day. For the office-PC runner, also set
+  `GEMINI_API_KEY` as a Windows user environment variable (the scheduled task picks it up).
 
 Add secrets at **Settings → Secrets and variables → Actions → New repository secret**.
 

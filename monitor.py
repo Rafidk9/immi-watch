@@ -7,7 +7,7 @@ last snapshot and raises alerts for anything that changed:
   * GitHub Issue (when running in GitHub Actions)  -> GitHub emails you
   * Email via SMTP                                  (if SMTP_* env vars are set)
   * Teams / Slack webhook                           (if ALERT_WEBHOOK_URL is set)
-  * Claude summary + severity                       (if ANTHROPIC_API_KEY is set)
+  * Gemini briefing + severity                     (if GEMINI_API_KEY is set)
 
 Usage:
   python monitor.py                 # normal run (what the scheduler calls)
@@ -63,7 +63,7 @@ FAIL_ALERT_AT = 3            # consecutive failures before a health alert
 DIGEST_HOUR = 8              # Melbourne hour at which low-severity changes are sent
 MIN_TEXT_CHARS = 200         # less than this = treat as a failed/blocked fetch
 MAX_DIFF_LINES = 60          # per change, in alert bodies
-AI_MODEL = os.environ.get("IMMI_AI_MODEL", "claude-opus-5-5")
+AI_MODEL = os.environ.get("IMMI_AI_MODEL", "gemini-3.8-flash")
 
 # Lines that change on every load or carry no meaning.
 NOISE = re.compile(
@@ -289,7 +289,8 @@ class Fetcher:
         lines = []
         for it in rows[:40]:
             url = it.get("NewsRedirectLink") or it.get("Url") or ""
-            url = urljoin(base + "/", url) if url else src["url"]
+            # Item URLs are relative to the shared news subsite, not to the site that lists them.
+            url = urljoin("https://www.homeaffairs.gov.au/News-subsite/", url) if url else src["url"]
             title = re.sub(r"\s+", " ", str(it.get("Title") or "")).strip()
             lines.append(f"{item_date(it)} | {it.get('Category') or '-'} | {title} | {url}")
         return lines
@@ -403,6 +404,8 @@ class Change:
     severity: str = "medium"
     summary: str = ""
     points: list[str] = field(default_factory=list)
+    affects: str = ""
+    action: str = ""
     record: str = ""
 
 
@@ -434,48 +437,114 @@ AI_SCHEMA = {
         "severity": {"type": "string", "enum": ["high", "medium", "low"]},
         "summary": {"type": "string"},
         "key_points": {"type": "array", "items": {"type": "string"}},
+        "who_is_affected": {"type": "string"},
+        "what_to_do": {"type": "string"},
     },
-    "required": ["severity", "summary", "key_points"],
+    "required": ["severity", "summary", "key_points", "who_is_affected", "what_to_do"],
     "additionalProperties": False,
 }
 AI_SYSTEM = (
-    "You review changes detected on Australian immigration and education websites for a "
-    "registered migration and education agency. You get the lines removed from and added to "
-    "one page since the last check. Say plainly what changed, quoting exact figures, dates, "
-    "occupations or visa subclasses where they appear. Severity: high = anything that can "
-    "affect a client's eligibility, application, fees, deadlines, nomination/invitation "
-    "rounds, occupation lists or policy, or a new news item/announcement; medium = new or "
-    "reworded guidance with little practical effect; low = cosmetic, navigation, typo or "
-    "formatting changes. Keep the summary to 1-2 sentences and key_points to at most 5 "
-    "short bullets. Base everything only on the lines given."
+    "You brief a registered migration and education agency in Australia on changes detected on "
+    "government immigration and education websites. The reader is busy: they should understand "
+    "the change and its effect from your briefing alone, without opening the page.\n\n"
+    "You get the page name, a diff of the page since the last check, and, for new news items or "
+    "legislation, the text of the linked document. Work out what actually changed in substance "
+    "and explain it in plain English.\n"
+    "- summary: a one-sentence headline of the change and its effect, e.g. 'Training visa (407) "
+    "applicants must now include X from 1 Dec 2026'. It is used as the email subject, so lead "
+    "with the visa or program and the change; no page names or wording like 'lines added'.\n"
+    "- key_points: up to 5 short bullets on what changed, quoting exact figures, dates, "
+    "subclasses, occupations and fees, with before → after values where they appear.\n"
+    "- who_is_affected: who this touches (e.g. 'Student visa applicants from 1 Jan 2027', "
+    "'Employers sponsoring 482 workers'), or 'No one – wording or layout change only'.\n"
+    "- what_to_do: the practical step for the agency or its clients, or 'Nothing – for "
+    "information'.\n"
+    "Severity: high = can affect a client's eligibility, application, fees, deadlines, "
+    "nomination/invitation rounds, occupation lists or policy, or is a new announcement or "
+    "legislation; medium = new or reworded guidance with little practical effect; low = "
+    "cosmetic, navigation, typo, reordering, duplicated or rolling content.\n"
+    "Use only the text given. If the effect is not stated, say what changed and that the effect "
+    "is not stated; never guess dates, figures or requirements."
 )
+LINKED_DOCS = 3              # linked items (news, legislation) fetched for the AI per change
+LINKED_DOC_CHARS = 40000     # cap per linked document
+
+
+def linked_docs(ch: Change) -> list[tuple[str, str]]:
+    """For list sources (news, legislation, feeds), fetch the pages the new items link to, so
+    the AI can explain what they say rather than just their titles."""
+    if ch.src.get("method") not in FEED_METHODS:
+        return []
+    urls = dict.fromkeys(u for line in ch.added for u in re.findall(r"https?://\S+", line))
+    docs = []
+    for url in list(urls)[:LINKED_DOCS]:
+        try:
+            leg = re.match(r"https://www\.legislation\.gov\.au/(\w+)/asmade", url)
+            if leg:
+                # The register's web page is an empty app shell; the API serves the instrument
+                # and its Explanatory Statement (which explains the effect) as Word files.
+                for kind, label in (("ES", "explanatory statement"), ("Primary", "instrument text")):
+                    r = requests.get(
+                        "https://api.prod.legislation.gov.au/v1/documents/find("
+                        f"titleid='{leg.group(1)}',asatspecification='AsMade',type='{kind}',"
+                        "format='Word',uniqueTypeNumber=0,volumeNumber=0,rectificationVersionNumber=0)",
+                        headers={"User-Agent": UA}, timeout=HTTP_TIMEOUT)
+                    if r.ok:
+                        docs.append((f"{url} ({label})", docx_text(r.content)[:LINKED_DOC_CHARS]))
+                continue
+            if "homeaffairs.gov.au" in url:
+                text = "\n".join(Fetcher().homeaffairs({"url": url}))
+            else:
+                r = requests.get(url, headers={"User-Agent": UA}, timeout=HTTP_TIMEOUT)
+                r.raise_for_status()
+                text = "\n".join(html_to_lines(r.content))
+            if text:
+                docs.append((url, text[:LINKED_DOC_CHARS]))
+        except Exception as e:
+            print(f"  ! linked document {url} not fetched: {type(e).__name__}: {e}")
+    return docs
+
+
+def docx_text(data: bytes) -> str:
+    """Plain text of a .docx, one paragraph per line (no extra dependency needed)."""
+    import io
+    import zipfile
+    xml = zipfile.ZipFile(io.BytesIO(data)).read("word/document.xml").decode("utf-8")
+    paras = re.findall(r"<w:p[ >].*?</w:p>", xml, flags=re.S)
+    text = "\n".join(BeautifulSoup(p, "lxml").get_text() for p in paras)
+    return "\n".join(clean_lines(text))
 
 
 def ai_review(ch: Change) -> bool:
-    if not os.environ.get("ANTHROPIC_API_KEY"):
+    if not os.environ.get("GEMINI_API_KEY"):
         return False
     try:
-        import anthropic
-        client = anthropic.Anthropic()
-        removed = "\n".join(ch.removed) or "(none)"
-        added = "\n".join(ch.added) or "(none)"
-        prompt = (f"Page: {ch.src['name']}\nURL: {ch.src['url']}\n\n"
-                  f"<removed_lines>\n{removed}\n</removed_lines>\n\n<added_lines>\n{added}\n</added_lines>")
-        resp = client.beta.messages.create(
+        from google import genai
+        from google.genai import types
+        client = genai.Client(http_options=types.HttpOptions(timeout=180_000))  # ms
+        prompt =(f"Page: {ch.src['name']}\nGroup: {ch.src.get('group', '')}\nURL: {ch.src['url']}\n\n"
+                  f"<diff>\n{ch.unified}\n</diff>")
+        for url, text in linked_docs(ch):
+            prompt += f'\n\n<linked_document url="{url}">\n{text}\n</linked_document>'
+        resp = client.models.generate_content(
             model=AI_MODEL,
-            max_tokens=4000,
-            betas=["server-side-fallback-2026-07-01"],
-            fallbacks="default",
-            system=AI_SYSTEM,
-            output_config={"effort": "low", "format": {"type": "json_schema", "schema": AI_SCHEMA}},
-            messages=[{"role": "user", "content": prompt}],
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                system_instruction=AI_SYSTEM,
+                response_mime_type="application/json",
+                response_json_schema=AI_SCHEMA,
+                max_output_tokens=16000,
+            ),
         )
-        if resp.stop_reason == "refusal":
+        if not resp.text:  # blocked or empty reply: fall back to the plain diff alert
+            print(f"  ! AI review empty for {ch.src['id']}")
             return False
-        data = json.loads(next(b.text for b in resp.content if b.type == "text"))
+        data = json.loads(resp.text)
         ch.severity = data["severity"]
         ch.summary = data["summary"].strip()
         ch.points = [p.strip() for p in data["key_points"] if p.strip()]
+        ch.affects = data["who_is_affected"].strip()
+        ch.action = data["what_to_do"].strip()
         return True
     except Exception as e:  # never let the AI step break monitoring
         print(f"  ! AI review failed for {ch.src['id']}: {type(e).__name__}: {e}")
@@ -487,19 +556,34 @@ def ai_review(ch: Change) -> bool:
 SEV_ICON = {"high": "🔴", "medium": "🟠", "low": "⚪"}
 
 
+def record_url(ch: Change) -> str:
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    return f"https://github.com/{repo}/blob/main/{ch.record}" if repo and ch.record else ""
+
+
 def change_md(ch: Change, with_diff: bool = True) -> str:
     s = ch.src
+    if ch.summary:
+        # AI briefing: readable on its own, so the alert email needs no clicking through.
+        parts = [f"### {SEV_ICON[ch.severity]} {ch.summary}", f"_{s['name']}_"]
+        if ch.points:
+            parts.append("\n**What changed**\n" + "\n".join(f"- {p}" for p in ch.points))
+        if ch.affects:
+            parts.append(f"\n**Who it affects:** {ch.affects}")
+        if ch.action:
+            parts.append(f"\n**What to do:** {ch.action}")
+        links = [f"[Official page]({s['url']})"]
+        if record_url(ch):
+            links.append(f"[Exact wording changes]({record_url(ch)})")
+        parts.append("\n" + " · ".join(links) + f" · severity: **{ch.severity}**")
+        return "\n".join(parts)
+
     parts = [f"### {SEV_ICON[ch.severity]} {s['name']}",
              f"**{s.get('group', '')}** · [{s['url']}]({s['url']}) · severity: **{ch.severity}**"]
-    if ch.summary:
-        parts.append(f"\n{ch.summary}")
-    for p in ch.points:
-        parts.append(f"- {p}")
-    if not ch.summary:
-        if ch.added:
-            parts.append("\n**Added:**\n" + "\n".join(f"- {l[:300]}" for l in ch.added[:12]))
-        if ch.removed and s.get("method") not in FEED_METHODS:
-            parts.append("\n**Removed:**\n" + "\n".join(f"- ~~{l[:300]}~~" for l in ch.removed[:12]))
+    if ch.added:
+        parts.append("\n**Added:**\n" + "\n".join(f"- {l[:300]}" for l in ch.added[:12]))
+    if ch.removed and s.get("method") not in FEED_METHODS:
+        parts.append("\n**Removed:**\n" + "\n".join(f"- ~~{l[:300]}~~" for l in ch.removed[:12]))
     if with_diff and ch.unified:
         lines = ch.unified.splitlines()
         shown = "\n".join(lines[:MAX_DIFF_LINES])
@@ -731,6 +815,12 @@ def run(args) -> int:
                 continue
 
             added, removed, unified = diff_lines(old_lines, lines)
+            if sorted(added) == sorted(removed):
+                # Same lines in a different order (e.g. a versions table re-sorted): nothing new.
+                if not args.dry_run:
+                    snap.write_text(text, encoding="utf-8", newline="\n")
+                print(f"same {sid} (lines only reordered)")
+                continue
             if src.get("method") in FEED_METHODS and not added:
                 # Only old items aged out of the list; nothing new.
                 if not args.dry_run:
@@ -770,8 +860,10 @@ def run(args) -> int:
     if urgent:
         urgent.sort(key=lambda c: (c.severity != "high", c.src.get("group", "")))
         n_high = sum(c.severity == "high" for c in urgent)
-        names = ", ".join(dict.fromkeys(c.src["name"] for c in urgent))
-        title = f"{'🔴' if n_high else '🟠'} {len(urgent)} update{'s' * (len(urgent) > 1)}: {names}"
+        # The issue title is the email subject: use the AI headline(s) when there are any.
+        names = "; ".join(dict.fromkeys(c.summary or c.src["name"] for c in urgent))
+        title = (f"{'🔴' if n_high else '🟠'} {names}" if len(urgent) == 1
+                 else f"{'🔴' if n_high else '🟠'} {len(urgent)} updates: {names}")
         if len(title) > 200:
             title = title[:197] + "…"
         body = f"Detected **{stamp}** (Melbourne time).\n\n" + "\n\n".join(change_md(c) for c in urgent)

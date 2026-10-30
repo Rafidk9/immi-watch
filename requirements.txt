@@ -3,5 +3,5 @@ beautifulsoup4>=4.12
 lxml>=5.0
 PyYAML>=6.0
 playwright==1.64.0
-anthropic>=1.15,<2
+google-genai>=2.30,<3
 tzdata
