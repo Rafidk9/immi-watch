@@ -4,3 +4,4 @@ __pycache__/
 .env
 local-run.log
 local-run.log.tmp
+_site/
