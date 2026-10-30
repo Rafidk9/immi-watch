@@ -13,6 +13,10 @@ on:
         description: "Send a test alert instead of checking"
         type: boolean
         default: false
+      replay_last:
+        description: "Re-send the most recent update in the current alert format (marked TEST)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -63,9 +67,12 @@ jobs:
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
           ONLY: ${{ inputs.only }}
           TEST_ALERT: ${{ inputs.test_alert }}
+          REPLAY_LAST: ${{ inputs.replay_last }}
         run: |
           if [ "$TEST_ALERT" = "true" ]; then
             python monitor.py --test-alert
+          elif [ "$REPLAY_LAST" = "true" ]; then
+            python monitor.py --replay-last
           elif [ -n "$ONLY" ]; then
             python monitor.py --only "$ONLY"
           else

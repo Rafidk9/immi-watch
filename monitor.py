@@ -888,6 +888,40 @@ def run(args) -> int:
     return 0
 
 
+def replay_last() -> int:
+    """Rebuild the most recent update from its change records and send it again, marked TEST,
+    so the current alert format (AI briefing included) can be checked on real data."""
+    records = sorted(CHANGE_DIR.glob("*/*.md"))
+    if not records:
+        sys.exit("no change records yet")
+    stamp = records[-1].name.split("_", 1)[0]
+    sources = {s["id"]: s for s in load_sources()}
+    changes = []
+    for path in (p for p in records if p.name.startswith(stamp + "_")):
+        src = sources.get(path.stem.split("_", 1)[1])
+        m = re.search(r"```diff\n(.*?)\n```", path.read_text(encoding="utf-8"), flags=re.S)
+        if not src or not m:
+            continue
+        diff = [l for l in m.group(1).splitlines() if not l.startswith(("+++", "---"))]
+        added = [l[1:] for l in diff if l.startswith("+")]
+        removed = [l[1:] for l in diff if l.startswith("-")]
+        if sorted(added) == sorted(removed):
+            print(f"skip {src['id']}: lines only reordered (no longer alerted)")
+            continue
+        ch = Change(src, added, removed, m.group(1))
+        ch.severity = heuristic_severity(ch)
+        ch.record = str(path.relative_to(ROOT)).replace("\\", "/")
+        print(f"{src['id']}: AI briefing {'ok' if ai_review(ch) else 'NOT available'}")
+        changes.append(ch)
+    if not changes:
+        sys.exit("nothing to replay")
+    names = "; ".join(dict.fromkeys(c.summary or c.src["name"] for c in changes))
+    notify(f"🧪 TEST replay: {names}"[:200],
+           f"Test: the update detected **{stamp}** re-sent in the current alert format. "
+           "Nothing new has changed.\n\n" + "\n\n".join(change_md(c) for c in changes), ["test"])
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--only", help="comma-separated source ids")
@@ -895,6 +929,8 @@ def main() -> int:
     ap.add_argument("--show", metavar="ID", help="print extracted text for one source and exit")
     ap.add_argument("--test-alert", action="store_true")
     ap.add_argument("--force-digest", action="store_true")
+    ap.add_argument("--replay-last", action="store_true",
+                    help="re-send the most recent update through today's alert format, marked TEST")
     args = ap.parse_args()
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -904,6 +940,8 @@ def main() -> int:
                "This is a test. If you can read this, alerts are reaching you.\n\n"
                f"Watching **{len(load_sources())}** pages every hour.", ["test"])
         return 0
+    if args.replay_last:
+        return replay_last()
     if args.show:
         src = next((s for s in load_sources() if s["id"] == args.show), None)
         if not src:
