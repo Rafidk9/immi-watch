@@ -520,7 +520,10 @@ def ai_review(ch: Change) -> bool:
     try:
         from google import genai
         from google.genai import types
-        client = genai.Client(http_options=types.HttpOptions(timeout=180_000))  # ms
+        # Gemini returns 503 "high demand" now and then: retry with backoff (~2 min at most).
+        retry = types.HttpRetryOptions(attempts=6, initial_delay=5, max_delay=60,
+                                       http_status_codes=[429, 500, 502, 503, 504])
+        client = genai.Client(http_options=types.HttpOptions(timeout=180_000, retry_options=retry))  # ms
         prompt =(f"Page: {ch.src['name']}\nGroup: {ch.src.get('group', '')}\nURL: {ch.src['url']}\n\n"
                   f"<diff>\n{ch.unified}\n</diff>")
         for url, text in linked_docs(ch):
