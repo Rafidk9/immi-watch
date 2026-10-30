@@ -851,7 +851,7 @@ Visa type: v190
 Priority Occupation
 Using the Occupation list filters
 To help you narrow your search, you can use the filters to refine your search. You can use more than one filter.
-You can also filter the full list of eligible occupations by choosing a WA Industry sector, Stream type and Visa type as well. You may select multiple entries under each filter.
+You can also filter the full list of eligible occupations by WA Industry sector, Stream type and Visa type. You may select multiple entries under each filter.
 All matching results will then be displayed.
 Download CSV
 Invitation rounds
@@ -912,8 +912,8 @@ up to 75% of SNMP graduate stream nominations will be made for higher education 
 up to 25% of SNMP graduate stream nominations will be made for VET graduates.
 If you are eligible for an invitation through multiple streams, you will receive an invitation for each stream you are eligible for. However, you will only be able to lodge one application for State nomination through your chosen stream. If multiple EOIs are ranked at the same level, invitations will be issued based on the EOI submission date.
 If your EOI indicates you are seeking State nomination for both the subclass 190 and subclass 491 visa, you will generally be invited for the subclass 491 visa in the first instance. This is because you will generally have a higher EOI points score for this visa. If you are invited for the subclass 491 visa and the subclass 190 visa (in different invitation rounds) only one application can proceed.
-Invitations for priority trade occupations were issues on 14 October for the State Nominated Migration Program.
-Invitations for priority non-trade occupations were issues on 14 October for the State Nominated Migration Program.
+Invitations for priority trade occupations were issued on 14 October for the State Nominated Migration Program.
+Invitations for priority non-trade occupations were issued on 14 October for the State Nominated Migration Program.
 Intending visa subclass
 General stream
 WASMOL Schedule 1
@@ -988,7 +988,7 @@ AQF Certificate III
 02/09/2026
 Vocational education and training
 491
-Western Australia
+Overseas
 AQF Certificate III
 75
 01/09/2026
@@ -1017,7 +1017,7 @@ Western Australia
 09/04/2026
 WASMOL Schedule 2
 491
-Western Australia
+-
 95
 19/12/2025
 Occupations in priority WA industry sectors - GRADUATE STREAM
@@ -1039,7 +1039,7 @@ Higher education
 -
 Vocational education and training
 190
-WA
+Western Australia
 Advanced Diploma
 90
 04/04/2025
