@@ -475,9 +475,8 @@ def linked_docs(ch: Change) -> list[tuple[str, str]]:
     the AI can explain what they say rather than just their titles."""
     if ch.src.get("method") not in FEED_METHODS:
         return []
-    urls = dict.fromkeys(u for line in ch.added for u in re.findall(r"https?://\S+", line))
     docs = []
-    for url in list(urls)[:LINKED_DOCS]:
+    for url in item_urls(ch):
         try:
             leg = re.match(r"https://www\.legislation\.gov\.au/(\w+)/asmade", url)
             if leg:
@@ -561,6 +560,14 @@ def record_url(ch: Change) -> str:
     return f"https://github.com/{repo}/blob/main/{ch.record}" if repo and ch.record else ""
 
 
+def item_urls(ch: Change) -> list[str]:
+    """For list sources (news, legislation, feeds): the new items' own pages, not the list page."""
+    if ch.src.get("method") not in FEED_METHODS:
+        return []
+    urls = dict.fromkeys(u for line in ch.added for u in re.findall(r"https?://\S+", line))
+    return list(urls)[:LINKED_DOCS]
+
+
 def change_md(ch: Change, with_diff: bool = True) -> str:
     s = ch.src
     if ch.summary:
@@ -572,7 +579,9 @@ def change_md(ch: Change, with_diff: bool = True) -> str:
             parts.append(f"\n**Who it affects:** {ch.affects}")
         if ch.action:
             parts.append(f"\n**What to do:** {ch.action}")
-        links = [f"[Official page]({s['url']})"]
+        links = [f"[Official page]({u})" for u in item_urls(ch)] or [f"[Official page]({s['url']})"]
+        if len(links) > 1:
+            links = [f"[Official page {i}]({u})" for i, u in enumerate(item_urls(ch), 1)]
         if record_url(ch):
             links.append(f"[Exact wording changes]({record_url(ch)})")
         parts.append("\n" + " · ".join(links) + f" · severity: **{ch.severity}**")
