@@ -88,7 +88,7 @@ Years of experience in nominated occupation
 Please refer to the Department of Home Affairs websiteexternal link for more information on the years of skilled employment experience in your SkillSelect EOI.
 Range
 Points
-0 years
+Less than 1 year
 0
 1 year
 20
@@ -98,7 +98,7 @@ Points
 60
 6-7 years
 80
-More than 8 years
+8 years or more
 100
 Education level
 Range

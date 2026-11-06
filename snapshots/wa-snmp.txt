@@ -8,8 +8,8 @@ Eligibility
 To be considered for an invitation for State nomination, you must be skilled in an occupation in one of the following streams:
 General stream — eligible occupations are listed on the WA Skilled migration occupation list (WASMOL). Some different criteria are applied for WASMOL Schedule 1 and Schedule 2 occupations.
 Defence industry stream – eligible occupations are listed on the WA Skilled migration occupation list (WASMOL) Schedule 3.
-Graduate stream —for international students who have studied in Western Australia for at least two years and have attained a vocational education and training (VET) or higher education qualification in WA. Eligible occupations are listed on the Graduate occupation list (GOL)(opens in a new tab).
-Check your eligibility against the stream-specific requirements here (opens in a new tab)
+Graduate stream —for international students who have studied in Western Australia for at least two years and have attained a vocational education and training (VET) or higher education qualification in WA. Eligible occupations are listed on the Graduate occupation list (GOL).
+Check your eligibility against the stream-specific requirements here
 Applicants with an occupation available on the WASMOL or GOL may be eligible for WA State nomination for one of the following visa subclasses:
 the Skilled Nominated visa (subclass 190)(opens in a new tab); or
 Skilled Work Regional (Provisional) visa (subclass 491)(opens in a new tab)
@@ -33,7 +33,7 @@ Visa type
 190
 491
 Meet Department of Home Affairs eligibility requirements for the intended visa subclass
-see How to apply for WA State nomination, Step1: Lodge an expression of interest(opens in a new tab)
+see How to apply for WA State nomination, Step1: Lodge an expression of interest
 Nominated occupation is available on the relevant list
 Meet minimum English requirements
 At least one year Australian or one year of overseas work experience in nominated (or closely related) occupation
@@ -51,7 +51,7 @@ For specific details about each of these requirements for the General or the Gra
 The nominated occupation identified in your skills assessment must be:
 listed on the WASMOL Schedule 1 occupation list; and
 eligible for your intended visa subclass.
-View eligible occupations(opens in a new tab)
+View eligible occupations
 2. Skills assessment
 Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are nominating to apply for WA State nomination
 A provisional skills assessment issued for a subclass 485 visa application cannot be considered.
@@ -166,7 +166,7 @@ View the Employment contracts(opens in a new tab) and Independent contractors(op
 The nominated occupation identified in your skills assessment must be:
 listed on the WASMOL Schedule 2 occupation list; and
 eligible for your intended visa subclass.
-View eligible occupations(opens in a new tab)
+View eligible occupations
 2. Skills assessment
 Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are nominating to apply for WA State nomination.
 A provisional skills assessment issued for a subclass 485 visa application cannot be considered.
@@ -240,7 +240,7 @@ TOEFL iBT
 The applicant must comply with the Department of Home Affairs requirements for English language tests. More information is available on the Home Affairs website(opens in a new tab).
 British National (Overseas) passports are not acceptable as evidence of competent English.
 5. Contract of employment
-A contract of employment is not required for visa 491 applicants, or applicants who were invited through a WA building and construction industry sector occupation (as classified on the WA State nomination occupation lists(opens in a new tab)).
+A contract of employment is not required for visa 491 applicants, or applicants who were invited through a WA building and construction industry sector occupation (as classified on the WA State nomination occupation lists).
 You must have a contract of employment in your nominated (or closely related) occupation for full-time employment in Western Australia, for at least six months from the date of your application for State nomination.
 Full-time employment is defined as an average of at least 35 hours work per week. You can provide two part-time contracts to meet this requirement. Casual contracts do not meet this requirement.
 The contract must be signed and dated by both the employer and employee, provided as one document and include:
@@ -267,7 +267,7 @@ View the Employment contracts(opens in a new tab) and Independent contractors(op
 The nominated occupation identified in your skills assessment must be:
 listed on the Graduate stream occupation list; and
 eligible for your intended visa subclass.
-View eligible occupations(opens in a new tab)
+View eligible occupations
 2. Skills assessment
 Your skills assessment must match the occupation you nominate in your EOI, and the occupation you are nominating to apply for WA State nomination.
 A provisional skills assessment issued for a subclass 485 visa application cannot be considered.
@@ -728,7 +728,7 @@ the Department of Home Affairs (Home Affairs) criteria for the nominated visa(op
 the WA criteria for State nomination(opens in a new tab)
 Applicants must review the FAQs, which form part of the WA SNMP criteria. Applications will be assessed against the eligibility criteria, based on the evidence provided at the time of lodgement. WA Migration Services may request additional documentation or information to clarify eligibility requirements, where necessary.
 Before starting your application, you will need to check whether your occupation is available on either the WA Skilled migration occupation list (WASMOL) Schedule 1 or 2, or the Graduate occupation list.
-Check the eligibility of your occupation here (opens in a new tab)
+Check the eligibility of your occupation here
 Current processing time for 'decision ready' applications is 28 working days.
 SkillSelect is Home Affairs online platform that enables skilled workers to express interest in applying for a skilled migration visa, to live and work in Australia. Lodging an expression of interest (EOI) through SkillSelect is the first step.
 Having an active EOI in SkillSelect does not guarantee you will be invited for WA State nomination. Not all EOIs that meet the relevant requirements will receive an invitation to apply for WA State nomination.
@@ -737,8 +737,8 @@ That you are seeking nomination from Western Australia.
 Indicate that you are younger than 45 years of age.
 A score of at least 65 points in the Home Affairs points test(opens in a new tab).
 Evidence of a current and valid skills assessment suitable for migration in your nominated occupation. See the Home Affairs website(opens in a new tab) for more information on skills assessments and skills assessing authorities.
-Nomination of an occupation that is available for your intended visa subclass on the WA Skilled migration occupation list (WASMOL) Schedule 1 or 2(opens in a new tab) for the General stream; or the Graduate occupation list (GOL)(opens in a new tab) for the Graduate stream.
-If you are using the Graduate stream, the details of your WA study, including the address and postcode of the WA campus of the educational institution, must be included in your EOI. View our Graduate stream requirements(opens in a new tab) for more information.
+Nomination of an occupation that is available for your intended visa subclass on the WA Skilled migration occupation list (WASMOL) Schedule 1 or 2 for the General stream; or the Graduate occupation list (GOL) for the Graduate stream.
+If you are using the Graduate stream, the details of your WA study, including the address and postcode of the WA campus of the educational institution, must be included in your EOI. View our Graduate stream requirements for more information.
 Show that you meet the English language requirements. If you have a passport from the United Kingdom, Canada, New Zealand, the United States of America or Ireland, you are not required to sit an English exam to be eligible for WA State nomination.
 Please check the accuracy of the information entered in your EOI on SkillSelect. The information provided in your EOI will be examined and verified by WA Migration Services. If you provide false or misleading information as part of your State nomination application, your application may be declined. Read the Terms and Conditions for more information(opens in a new tab).
 If your EOI is amended during the application process resulting in a reduction of your points score, evidence must be provided to substantiate the points claimed in your EOI.
@@ -774,12 +774,12 @@ evidence of school or childcare enrolment for dependent children in WA; and
 enrolment confirmation or transcripts from a WA educational institution.
 Important: Residency evidence must demonstrate that the applicant is genuinely living in Western Australia. Utility bills, mobile phone bills, mail redirection notices and statutory declarations alone are generally not sufficient evidence of residence. Documents that only show a postal address, without evidence of ongoing residence and day-to-day activity in WA, may not be accepted. Migration Services may request additional evidence where the applicant's residency cannot be clearly established.
 WA Migration Services reviews EOIs that have been submitted through SkillSelect and invites eligible applicants to apply for State nomination based on the WA State nomination criteria(opens in a new tab).
-Before accepting an invitation, you will need to ensure you can meet the WA State nomination eligibility requirements(opens in a new tab) for the stream through which you were invited and understand and accept the terms and conditions of WA State nomination(opens in a new tab).
+Before accepting an invitation, you will need to ensure you can meet the WA State nomination eligibility requirements for the stream through which you were invited and understand and accept the terms and conditions of WA State nomination(opens in a new tab).
 If you are eligible for an invitation and your EOI is suitably ranked through multiple streams, you may receive an invitation for each stream you are eligible for. If you receive more than one invitation in a particular invitation round you will only be able to lodge one application for State nomination. If multiple EOIs are ranked at the same level, invitations will be issued based on the EOI submission date.
 If your EOI indicates you are seeking State nomination for both the subclass 190 and subclass 491 visa, you will generally be invited for the subclass 491 visa in the first instance. This is because you will generally have a higher EOI points score for this visa. If you are invited for the subclass 491 visa and the subclass 190 visa (in different invitation rounds) only one application can proceed.
 You will not receive multiple invitations for WA State Nomination through the same EOI. If you receive an invitation that then lapses, is withdrawn or declined, you must lodge a new EOI to be considered for a future invitation.
 An invitation to apply for State nomination does not guarantee that a subsequent application will be approved or that State nomination will be granted.
-Read more about the invitation rounds(opens in a new tab)
+Read more about the invitation rounds
 If you are invited by WA Migration Services to apply for State nomination, you will receive an email with a link to the application form. To access the application form, you will need to create a profile on the Migration WA Portal.
 New Portal users
 Sign up and create a Migration WA Portal profile by clicking the button below.
@@ -859,8 +859,8 @@ Invitations for WA State nomination are anticipated to be issued each month. The
 Future invitations
 Having an eligible EOI does not guarantee you will receive an invitation for State nomination.
 To receive an invitation in a future round, please ensure that:
-your nominated occupation is currently available on the Eligible occupations list(opens in a new tab); and
-your EOI meets all requirements outlined in the How to apply for State nomination(opens in a new tab) section.
+your nominated occupation is currently available on the Eligible occupations list; and
+your EOI meets all requirements outlined in the How to apply for State nomination section.
 Please note that WA Migration Services does not provide feedback on individual EOIs that have not received an invitation.
 Ranking system
 EOIs are selected based on the following ranking system.
@@ -1584,7 +1584,7 @@ Employment contracts submitted by an independent contractor or those which demon
 Employment contracts submitted by a sole trader will be considered in the following circumstances only:
 the sole trader is not the stated applicant of the State nomination application; and
 the employment contract meets all the State's employment contract requirements.
-For further information view contract of employment requirements in the (opens in a new tab)Stream specific requirements section(opens in a new tab). Employment contracts(opens in a new tab) and Independent contractors(opens in a new tab) information is also available on the Fair Work Ombudsman website.
+For further information view contract of employment requirements in the (opens in a new tab)Stream specific requirements section. Employment contracts(opens in a new tab) and Independent contractors(opens in a new tab) information is also available on the Fair Work Ombudsman website.
 State Nominated Migration Program
 A positive skills assessment is required for the State nomination program but does not guarantee that occupational licensing or registration requirements have been met.
 Applicants with an occupation requiring licensing or registration are advised to contact the relevant occupational licensing or registering body to verify their suitability for licensing or registration.
@@ -1616,7 +1616,7 @@ If, due to COVID-19, you were required to complete some of your studies online, 
 State Nominated Migration Program
 You may be eligible for the Graduate stream if you have obtained a Certificate III level or above VET qualification in Western Australia and have completed two years study in Western Australia at an accredited Western Australian educational institution.
 Invitations for the Graduate stream are determined by the highest completed qualification gained in Western Australia in your EOI. If you have a Western Australian Higher Ed qualification you will only be considered for the Higher Ed stream. If your highest Western Australian qualification is a VET qualification you will only be considered for the VET stream.
-For further details, view our Graduate stream requirements information.(opens in a new tab)
+For further details, view our Graduate stream requirements information.
 State Nominated Migration Program
 To be considered an accredited university or higher education provider, it must have met the below requirements at the time of your studies:
 registered as an Australian higher education provider with the Tertiary Education Quality and Standards Agency (TEQSA)(opens in a new tab);
@@ -1638,7 +1638,7 @@ To be considered an accredited provider of English language programs, it must ha
 registered with the Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS)(opens in a new tab); and
 have a campus in Western Australia, where students study full-time, through face-to-face delivery.
 Your Expression of Interest (EOI) in SkillSelect must include the suburb and post code of your Western Australian educational institution campus where you completed your study.
-For a list of all currently accredited educational institutions please view WA accredited educational institutions in the Stream specific requirements section(opens in a new tab).
+For a list of all currently accredited educational institutions please view WA accredited educational institutions in the Stream specific requirements section.
 State Nominated Migration Program
 Full-time study is determined by the applicant’s educational institution. Under Commonwealth Register of Institutions and Courses for Overseas Students(opens in a new tab) (CRICOS), full-time study is defined as a minimum of 20 scheduled course contact hours per week.
 State Nominated Migration Program
