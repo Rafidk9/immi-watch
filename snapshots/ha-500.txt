@@ -775,8 +775,7 @@ If you don’t hold a substantive visa you may apply for a student visa within 2
 You may also apply for a student visa in Australia within 28 days of being notified of an Administrative Review Tribunal (ART) decision if:
 your last substantive visa was a student visa
 your Student visa was cancelled
-the Student visa had already ceased by the time the ART set aside the cancellation decision
-you meet one of the exemptions to lodge a student visa application in Australia.
+the Student visa had already ceased by the time the ART set aside the cancellation decision.
 You cannot make a valid application for a Student visa if you:
 do not hold a substantive visa, and
 you have previously been granted a visa based on an application made when you did not hold a substantive visa.
