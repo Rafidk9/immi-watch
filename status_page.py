@@ -91,8 +91,9 @@ def build(now: dt.datetime) -> str:
     # ---- runners
     runners = []
     for label, st, stale_h, note in (
-        ("GitHub Actions", cloud, 3, "hourly, cloud"),
-        ("Office PC", local, LOCAL_STALE_HOURS, "hourly, sites that block cloud servers"),
+        # Both passes run on the office PC (run_local.ps1); GitHub Actions no longer runs checks.
+        ("Office PC – main sites", cloud, 3, "hourly"),
+        ("Office PC – blocked sites", local, 3, "hourly, sites that block cloud servers"),
     ):
         lr = st.get("last_run", {})
         at = parse_time(lr.get("at"))

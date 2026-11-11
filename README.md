@@ -4,7 +4,12 @@ Hourly change monitor for Australian immigration and education websites — Depa
 Affairs, the Federal Register of Legislation, every state/territory nomination site (Live in
 Melbourne, NSW, QLD, SA, WA, ACT, TAS, NT) and the Department of Education / Study Australia.
 
-Every hour GitHub Actions runs `monitor.py`, which:
+Every hour the office PC runs `run_local.ps1` (Windows Task Scheduler, task "immi-watch local
+check"), which runs `monitor.py` over every source, rebuilds the status page at
+`_site/index.html` and pushes the snapshots here. The GitHub Actions workflows are disabled
+(since Nov 2026); re-enable them in the Actions tab to move the checks back to the cloud, and
+switch `run_local.ps1` back to `runner: local` sources only. Nothing is checked while the PC is
+off or asleep. `monitor.py`:
 
 1. fetches each page in [`sources.yaml`](sources.yaml) and reduces it to clean text
    (menus, footers, scripts, "last updated" stamps removed);
