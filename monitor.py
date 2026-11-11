@@ -64,6 +64,8 @@ DIGEST_HOUR = 8              # Melbourne hour at which low-severity changes are 
 MIN_TEXT_CHARS = 200         # less than this = treat as a failed/blocked fetch
 MAX_DIFF_LINES = 60          # per change, in alert bodies
 AI_MODEL = os.environ.get("IMMI_AI_MODEL", "gemini-3.8-flash")
+# Tried in order when the one before is overloaded (Gemini 503/504s can last hours).
+AI_MODELS = list(dict.fromkeys([AI_MODEL, "gemini-3.6-flash", "gemini-3.5-flash-lite"]))
 
 # Lines that change on every load or carry no meaning.
 NOISE = re.compile(
@@ -520,25 +522,32 @@ def ai_review(ch: Change) -> bool:
     try:
         from google import genai
         from google.genai import types
-        # Gemini returns 503 "high demand" now and then: retry with backoff (~2 min at most).
-        retry = types.HttpRetryOptions(attempts=6, initial_delay=5, max_delay=60,
+        # Gemini returns 503 "high demand" / 504 now and then: a short retry per model, then the
+        # next model in AI_MODELS (a busy model can stay busy for hours).
+        retry = types.HttpRetryOptions(attempts=3, initial_delay=5, max_delay=20,
                                        http_status_codes=[429, 500, 502, 503, 504])
-        client = genai.Client(http_options=types.HttpOptions(timeout=180_000, retry_options=retry))  # ms
-        prompt =(f"Page: {ch.src['name']}\nGroup: {ch.src.get('group', '')}\nURL: {ch.src['url']}\n\n"
+        client = genai.Client(http_options=types.HttpOptions(timeout=90_000, retry_options=retry))  # ms
+        prompt = (f"Page: {ch.src['name']}\nGroup: {ch.src.get('group', '')}\nURL: {ch.src['url']}\n\n"
                   f"<diff>\n{ch.unified}\n</diff>")
         for url, text in linked_docs(ch):
             prompt += f'\n\n<linked_document url="{url}">\n{text}\n</linked_document>'
-        resp = client.models.generate_content(
-            model=AI_MODEL,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                system_instruction=AI_SYSTEM,
-                response_mime_type="application/json",
-                response_json_schema=AI_SCHEMA,
-                max_output_tokens=16000,
-            ),
-        )
-        if not resp.text:  # blocked or empty reply: fall back to the plain diff alert
+        resp = None
+        for model in AI_MODELS:
+            try:
+                resp = client.models.generate_content(
+                    model=model,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        system_instruction=AI_SYSTEM,
+                        response_mime_type="application/json",
+                        response_json_schema=AI_SCHEMA,
+                        max_output_tokens=16000,
+                    ),
+                )
+                break
+            except Exception as e:
+                print(f"  ! {model} unavailable for {ch.src['id']}: {type(e).__name__}: {str(e)[:120]}")
+        if resp is None or not resp.text:  # all busy, blocked or empty: plain diff alert instead
             print(f"  ! AI review empty for {ch.src['id']}")
             return False
         data = json.loads(resp.text)
