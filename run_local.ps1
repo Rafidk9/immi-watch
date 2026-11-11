@@ -26,14 +26,16 @@ $env:PYTHONIOENCODING = "utf-8"
 $ok = ($LASTEXITCODE -eq 0)
 $paths = @("snapshots", "changes", "state-local.json")
 
-# Failover: if the GitHub cloud check has not completed a run for over 3 hours (e.g. Actions
-# disabled by a billing lock), check its sources from this PC too. It stops by itself once the
-# cloud check runs again, because that updates last_run in state.json.
+# Failover: if the GitHub cloud check has not succeeded for over 3 hours (e.g. Actions disabled
+# by a billing lock), check its sources from this PC too, every hour. It stops by itself once
+# the cloud check succeeds again. (Judged from GitHub's run history, not state.json, which this
+# PC also updates while covering.)
 $cloudAge = $null
 try {
-    $cloudLast = (Get-Content state.json -Raw -Encoding utf8 | ConvertFrom-Json).last_run.at
-    $cloudAge = ((Get-Date) - [datetimeoffset]::Parse($cloudLast).LocalDateTime).TotalHours
-} catch { Log "could not read cloud last_run: $_" }
+    $cloudLast = gh run list --repo Rafidk9/immi-watch --workflow monitor.yml --status success --limit 1 --json createdAt --jq '.[0].createdAt' 2>$null
+    if ($cloudLast) { $cloudAge = ((Get-Date).ToUniversalTime() - [datetime]::Parse($cloudLast).ToUniversalTime()).TotalHours }
+    else { $cloudAge = 999 }
+} catch { Log "could not read cloud run history: $_" }
 if ($ok -and $cloudAge -gt 3) {
     Log ("cloud check last ran {0:N1} h ago - checking its sources from this PC" -f $cloudAge)
     $env:IMMI_RUNNER = "actions"
