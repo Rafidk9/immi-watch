@@ -857,7 +857,8 @@ Legal admissions authority of a state or territory
 Assessing authority
 Legal admissions authority of a state or territory
 New South Wales
-Email: ag_lpab@agd.nsw.gov.au
+Email:
+ag_lpab@agd.nsw.gov.au
 Queensland
 Email: admissions@qls.com.au
 South Australia
@@ -9403,7 +9404,8 @@ Legal admissions authority of a state or territory
 Assessing authority
 Legal admissions authority of a state or territory
 New South Wales
-Email: ag_lpab@agd.nsw.gov.au
+Email:
+ag_lpab@agd.nsw.gov.au
 Queensland
 Email: admissions@qls.com.au
 South Australia

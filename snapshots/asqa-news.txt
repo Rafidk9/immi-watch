@@ -770,10 +770,11 @@ This edition includes articles on the RTO Annual Registration Charge, Written Ag
 01 June 2023
 Tags
 ASQA Update
-Working under Supervision
-01 June 2023
 Extended transition period: HLT54115 Diploma of Nursing
+ASQA has approved an extended transition period for the training product HLT54115 Diploma of Nursing.
 29 May 2023
+Tags
+Extended transitions
 2023 ASQA Provider and Course Owner Survey is Open until 13 June 2023
 26 May 2023
 Bogus Aust Skills System Pty Ltd trading as Auskills Training (former RTO 41163) statements of attainment and qualifications
@@ -781,11 +782,20 @@ Bogus Aust Skills System Pty Ltd trading as Auskills Training (former RTO 41163)
 Written agreements with overseas students
 17 May 2023
 Extended transition period: AHC20616 Certificate II in Parks and Gardens
+ASQA has approved an extended transition period for the training product AHC20616 Certificate II in Parks and Gardens.
 16 May 2023
+Tags
+Extended transitions
 Extended transition period: HLT33015 and HLT43015 (Certificate III and IV in Allied Health Assistance)
+ASQA has approved an extended transition period for the training products HLT33015 and HLT43015 (Certificate III and IV in Allied Health Assistance).
 16 May 2023
+Tags
+Extended transitions
 Extended transition period: HLT training package qualifications
+ASQA has approved an extended transition period for the training products HLT20113, HLT30113, HLT40113, HLT40213, HLT50113, HLT50213 and HLT60113.
 12 May 2023
+Tags
+Extended transitions
 Extended transition period: CSC training package qualifications
 ASQA has approved an extended transition period for the training products CSC30120 Certificate III in Correctional Practice, CSC40121 Certificate IV in Correctional Practice and CSC50115 Diploma of Correctional Administration.
 11 May 2023
@@ -809,25 +819,37 @@ ASQA Update
 Annual Declaration on Compliance: submit by 17 May
 19 April 2023
 Extended transition period: FNS training package qualifications
+ASQA has approved an extended transition period for the training products FNS42020 Certificate IV in Banking Services, FNS50217 Diploma of Accounting, FNS50417 Diploma of Payroll Services and FNS60217 Advanced Diploma of Accounting.
 06 April 2023
+Tags
+Extended transitions
 Extended transition period: CPP40516 Certificate IV in Strata Community Management (Release 3)
 ASQA has approved an extended transition period for the training product CPP40516 Certificate IV in Strata Community Management (Release 3).
 05 April 2023
 Tags
 Extended transitions
 Extended transition period: CPCCWHS1001 Prepare to work safely in the construction industry
+ASQA has approved an extended transition period for the training product CPCCWHS1001 Prepare to work safely in the construction industry.
 31 March 2023
+Tags
+Extended transitions
 Annual Declaration on Compliance - 17 April 2023
 20 March 2023
 Extended transition period: PSP40116 Certificate IV in Government
+ASQA has approved an extended transition period for the training product PSP40116 Certificate IV in Government.
 09 March 2023
+Tags
+Extended transitions
 ASQA Update - March 2023
 This edition includes articles on amendments to our course accreditation forms, RTO and ESOS Obligations Checklists, and the top 3 frequently asked asqanet questions.
 07 March 2023
 Tags
 ASQA Update
 Extended transition period: MSF30418 Certificate III in Glass and Glazing
+ASQA has approved an extended transition period for the training product MSF30418 Certificate III in Glass and Glazing.
 07 March 2023
+Tags
+Extended transitions
 Extended transition period: PSP40516 Certificate IV in Trade Measurement
 22 February 2023
 Extended transition period: AHC30916 Certificate III in Landscape Construction
@@ -1418,7 +1440,10 @@ Temporary changes notification form available
 Improvement to timeframe to submit initial accreditation applications
 23 March 2020
 We’re publishing FAQs to help providers
+Providers, FAQs
 20 March 2020
+Tags
+Provider
 A joint ASQA and TEQSA statement regarding regulatory flexibility
 20 March 2020
 Greater transparency and consistency of data displayed on the national register for VET accredited courses
