@@ -21,6 +21,15 @@ $env:GITHUB_REPOSITORY = "Rafidk9/immi-watch"
 $env:ALERT_MENTION = "Rafidk9"
 $env:GITHUB_TOKEN = (gh auth token 2>$null)
 $env:PYTHONIOENCODING = "utf-8"
+# Private settings for this PC (e.g. GEMINI_API_KEY=... for AI briefings), saved by
+# set_gemini_key.ps1. The file is git-ignored, so the key never leaves this PC.
+if (Test-Path .env) {
+    foreach ($line in Get-Content .env -Encoding utf8) {
+        if ($line -match '^\s*([A-Z_][A-Z0-9_]*)\s*=\s*(.+?)\s*$') {
+            Set-Item -Path "Env:$($Matches[1])" -Value $Matches[2]
+        }
+    }
+}
 
 & python monitor.py 2>&1 | ForEach-Object { Log "$_" }
 $ok = ($LASTEXITCODE -eq 0)

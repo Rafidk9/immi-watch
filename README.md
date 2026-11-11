@@ -38,8 +38,9 @@ Every hour GitHub Actions runs `monitor.py`, which:
   affects and what to do, plus a severity. For new news items and legislation it also reads
   the linked article or instrument, so the briefing covers what it says, not just its title.
   The alert then links to the exact wording changes instead of pasting the diff. Only changed
-  pages are sent, so cost is cents a day. For the office-PC runner, also set
-  `GEMINI_API_KEY` as a Windows user environment variable (the scheduled task picks it up).
+  pages are sent, so cost is cents a day. For the office-PC runner, run
+  `powershell -ExecutionPolicy Bypass -File set_gemini_key.ps1` once and paste the key; it is
+  saved in the git-ignored `.env` file, which `run_local.ps1` loads on every run.
 
 Add secrets at **Settings → Secrets and variables → Actions → New repository secret**.
 
