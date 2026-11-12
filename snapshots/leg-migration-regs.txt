@@ -17,7 +17,7 @@ F2026C01179 C29001 November 2026 - 02 November 2026
 This instrument was backcaptured in accordance with Section 36 of the Legislative Instruments Act 2003
 All versions
 Show known future amendments
-326 total
+327 total
 Page size
 Compilation date
 Filter by compilation date
@@ -32,7 +32,9 @@ Filter by ID
 DL
 Notes
 Includes amendments
-03 Nov 2026
+12 Nov 2026
+sch 1 (items 1-3)
+03 Nov 2026 - 11 Nov 2026
 sch 1 (items 1-4)
 01 Nov 2026 - 02 Nov 2026
 C290
@@ -70,11 +72,7 @@ sch 1 (items 1-3)
 C284
 F2026C00241
 sch 1 (items 1-5)
-22 Jan 2026 - 28 Feb 2026
-C283
-F2026C00060
-sch 2 (items 13, 14)
-326 total
+327 total
 Page size
 As made
 1 total
