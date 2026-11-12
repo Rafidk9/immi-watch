@@ -22,7 +22,6 @@ Help with your visa
 If you are getting help with your visa, before you pay someone, read information on Who can help with your visa application.
 With this visa, you can
 live, study and work in Australia temporarily
-bring your family members
 Up to 18 months.
 Hong Kong and British National Overseas passport holders may stay for 5 years.
 From (concessions apply in limited circumstances).
@@ -33,7 +32,8 @@ For an indication of processing times for your visa, use the visa processing tim
 See all conditions
 With this visa, you can
 stay in Australia for 18 months
-travel, work or study in Australia during your stay.
+travel, work or study in Australia during your stay
+include family members if you are eligible.
 You must find your own employment if we grant this visa.
 How long you can stay
 This is a temporary visa. You can stay in Australia for 18 months.
@@ -44,14 +44,45 @@ Stay longer
 We cannot extend this visa.
 You may be eligible for other skilled work visas. Use our visa finder to find out options for work.
 Current and future Temporary Graduate visa holders from Hong Kong may have a pathway to permanent residency after 5 years.
-Include family
-You can include members of your family unit in your application when you apply, if they are in Australia. You can add your children to the application until we decide on your application. You cannot add any other member of the family unit to your application during that period.
-If you want to add your family member to your visa after we have granted it, they can apply as a subsequent entrant. They can apply from in or outside Australia. Family members who apply for this visa must meet our health and character requirements.
-For more details, see when you have this visa.
+Include family in some circumstances
+From 13 November 2026, new rules apply.
+Temporary Graduate visa applicants can now only include family members if they meet certain criteria.
+You can include family members if:
+they were included on your previous Student visa, or
+you meet one of the eligibility criteria below, or
+they are a newborn child who meets the requirements below.
+Your family members cannot apply later as subsequent entrants, separate from your application. This applies even if you meet the eligibility criteria to include them in your application.
+If you applied before 13 November 2026, we will assess your application under the rules that were in place on the date you applied.
+Before applying for your Temporary Graduate visa
+Check whether your family members were included on your previous visa or whether you meet one of the other eligibility criteria below before applying.
+ImmiAccount may allow you to include family members even if you are not able to. Being able to include a family member in ImmiAccount does not mean they can make a valid visa application.
+If a family member does not meet the eligibility requirements, their visa application will be invalid. This may affect their visa status if in Australia, and, if their current visa has expired, their ability to apply for another visa in Australia. A decision that an application is invalid cannot be merits reviewed.
+When you can include family members in your Temporary Graduate visa application
+Family members included on your previous visa
+You can include the same family members from your previous Student visa if they:
+currently hold a Student visa as your dependant, or
+held a Student visa as your dependant on 2 October 2026, or
+held a Student visa as your dependant at any time in the 6 months before you apply.
+Example: You cannot include a spouse or partner in your Temporary Graduate visa application who was not on your previous student visa.
+Other eligibility criteria for including family
+You can include any family members if:
+you are a national from a Pacific or ASEAN member country
+you studied a PHD degree on your last student visa
+you completed a course that was fully funded by a foreign government on your last student visa
+Example: If you meet one of the above criteria, you can include your spouse or partner in your Temporary Graduate visa application. You can do this even if they were not included in your previous Student visa application.
+Newborn children
+You can include a newborn child who was born outside Australia after you were granted your most recent Student visa, in your first Temporary Graduate visa application.
+You cannot add your newborn child born outside Australia to your Temporary Graduate visa after it is granted.
+Example: You can include a newborn child in your first Temporary Graduate visa application if they were born outside Australia after your most recent student visa was granted.
+Children born in Australia automatically hold the same visa as their parent. Find out what to do if you have a child in Australia.
+Where you and your family members can apply
+You must be in Australia when you apply. Your family members can be in or outside Australia.
+You and your family members can also be in or outside Australia when we decide your applications.
+When your family members must apply
+Your family members must apply at the same time as you, even if you are in Australia and they are outside Australia. You cannot add them to your application later.
 Cost
 The visa costs from for the main applicant (concessions apply in limited circumstances).
-There is also a charge for each family member who applies for the visa with you.
-Subsequent entrants, including children born offshore, must pay the full Visa Application Charge.
+There is also a charge for each eligible family member who applies for the visa with you.
 You might also have to pay other costs for:
 health checks
 police certificates
@@ -61,7 +92,7 @@ The Temporary Graduate visa is exempt from the Subsequent Temporary Application 
 Cost concession
 A lower visa cost applies to eligible Pacific Island and Timor-Leste citizens who lodge a valid Temporary Graduate visa application.
 We will charge eligible applicants the lower visa application cost during the application process in ImmiAccount. We will recognise eligible applicants by the valid passport from the specified countries used in the application when they apply.
-Family members are also eligible for the lower visa cost. We base this on the passport of the primary applicant (or visa holder who satisfies the primary visa criteria).
+Eligible family members are also eligible for the lower visa cost. We base this on the passport of the primary applicant (or visa holder who satisfies the primary visa criteria).
 Pacific Island and Timor-Leste citizens primary applicants must hold a valid passport issued by one of the following countries:
 Federated States of Micronesia
 Fiji
@@ -77,8 +108,7 @@ Tonga
 Tuvalu
 Vanuatu
 Apply from
-You can be in Australia (but not in immigration clearance) when you apply for this visa.
-Subsequent entrants can be in or outside Australia when they apply.
+You must be in Australia (but not in immigration clearance) when you apply for this visa.
 All applicants can be in or outside Australia at the time of decision.
 Processing times
 For an indication of processing times for your visa, use the visa processing time guide tool. This will show the processing times for recently decided applications. It is a guide only and not specific to your application.
@@ -318,6 +348,43 @@ Speaking
 B
 36
 14
+Meet certain eligibility criteria in order to include family
+You can only include family members if:
+they were included on your previous Student visa, or
+you meet one of the eligibility criteria below, or
+they are a newborn child who meets the requirements below.
+Your family member is:
+your partner, or
+your dependant child under 18 or,
+your dependant child over 18 but not yet 23 and dependent on your or your partner.
+Your family members cannot apply later as subsequent entrants, separate from your application. This applies even if you meet the eligibility criteria to include them in your application.
+Before applying for your Temporary Graduate visa
+Check whether your family members were included on your previous visa or whether you meet one of the other eligibility criteria below before applying.
+ImmiAccount may allow you to include family members even if you are not able to. Being able to include a family member in ImmiAccount does not mean they can make a valid visa application.
+If a family member does not meet the eligibility requirements, their visa application will be invalid. This may affect their visa status if in Australia, and, if their current visa has expired, their ability to apply for another visa in Australia. A decision that an application is invalid cannot be merits reviewed.
+When you can include family members in your Temporary Graduate visa application
+Family members included on your previous visa
+You can include the same family members from your previous Student visa if they:
+currently hold a Student visa as your dependant, or
+held a Student visa as your dependant on 2 October 2026, or
+held a Student visa as your dependant at any time in the 6 months before you apply.
+Example: You cannot include a spouse or partner in your Temporary Graduate visa application who was not on your previous student visa.
+Other eligibility criteria for including family
+You can include any family members if:
+you are a national from a Pacific or ASEAN member country
+you studied a PhD degree on your last student visa
+you completed a course that was fully funded by a foreign government on your last student visa
+Example: If you meet one of the above criteria, you can include your spouse or partner in your Temporary Graduate visa application. You can do this even if they were not included in your previous Student visa application.
+Newborn children
+You can include a newborn child who was born outside Australia after you were granted your most recent Student visa, in your first Temporary Graduate visa application.
+You cannot add your newborn child born outside Australia to your Temporary Graduate visa after it is granted.
+Example: You can include a newborn child in your first Temporary Graduate visa application if they were born outside Australia after your most recent student visa was granted.
+Children born in Australia automatically hold the same visa as their parent. Find out what to do if you have a child in Australia.
+Where you and your family members can apply
+You must be in Australia when you apply. Your family members can be in or outside Australia.
+You and your family members can also be in or outside Australia when we decide your applications.
+When your family members must apply
+Your family members must apply at the same time as you, even if you are in Australia and they are outside Australia. You cannot add them to your application later.
 Have adequate health insurance
 You and your family members must have and maintain adequate health insurance for the duration of your stay in Australia. See what we consider adequate health insurance.
 Reciprocal healthcare agreements
@@ -673,9 +740,9 @@ Provide accurate information. See what happens if you can't prove your identity 
 Apply online
 Create an account or log in to ImmiAccount
 Attach documents
-Have family applications processed together. Each family member must still have their Visa Application Charge paid and documents attached to their application
+Have family applications processed together. Each eligible family member must still have their Visa Application Charge paid and documents attached to their application
 Pay the Visa Application Charge. We will not process your application until you pay the charge.
-When you submit your application you must pay for you and your family members or your application will not be valid.
+When you submit your application you must pay for you and your eligible family members or your application will not be valid.
 Note:
 Choose visa stream carefully - it is not possible to make changes after you apply.
 A valid application must be made within the eligibility timeframe. Late applications cannot be accepted.
@@ -706,11 +773,6 @@ When you applied for this visa, you were granted a bridging visa. If your curren
 Do not cancel your current visa. If you do, you will be staying in Australia unlawfully.
 Learn more about visa expiry.
 Add family
-You may be able to add your dependent child to your application for this visa before we make a decision.
-You will need to:
-complete Form 1436 Adding an additional applicant after lodgement with a clear statement to add the child to your 485 application
-attach all supporting documents including the child's passport, birth certificate and documents to prove your relationship and custody.
-Your family can also apply to join you in Australia as a subsequent entrant after the visa is granted. See when you have this visa.
 Newborn children
 If your child is born after you apply but before we make a decision on your visa, then your child is considered to have made the same visa application as you.
 You must tell us as soon as possible and give us:
@@ -735,7 +797,6 @@ you want to withdraw your application.
 See how to tell us if your situation changes.
 Visa outcome
 You can be in or outside Australia (but not in immigration clearance) when we decide on your visa application.
-If you are a subsequent entrant (family member), you can be in or outside Australia when we decide on your visa application.
 New step description
 If your visa application is approved
 If we grant your visa, we will tell you:
@@ -790,8 +851,6 @@ To get proof of your travel in and out of Australia request your international m
 Working
 To see your conditions for work, use VEVO.
 You are protected by Australian workplace law. See your workplace rights and entitlements.
-Bringing family
-Members of the family unit can also apply to join you in Australia as a subsequent entrant after we grant your visa. They can be in or outside Australia when they apply (but not in immigration clearance). Family members applying for this visa as subsequent entrants must apply online in ImmiAccount. For more information see step by step.
 Visa holders must arrive in Australia by their Initial Entry Date.
 Newborn children
 Find out what to do if your child is born after you apply or when you hold your visa.
