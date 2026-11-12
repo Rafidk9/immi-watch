@@ -1,4 +1,7 @@
 News Article
+Contacting TEQSA during global Microsoft outage
+TEQSA email services are impacted by a global Microsoft outage.
+News Article
 TEQSA publishes SRE on adopting a definition of Islamophobia
 TEQSA has published its Statement of Regulatory Expectations: Adopting a definition of Islamophobia.
 News Article
@@ -25,6 +28,3 @@ TEQSA is seeking feedback on the draft Statement of Regulatory Expectations (SRE
 News Article
 Registrations are open for the TEQSA 2026 Conference
 Early-bird registrations for the annual TEQSA Conference are now open.
-News Article
-TEQSA Talks webinar set for 8 October
-Our next TEQSA Talks webinar will be held on Thursday 8 October 2026, from 2:00 to 3:00pm (AEDT), with a focus on implementation of the Threshold Standards amendments and the targeted guidance TEQ
