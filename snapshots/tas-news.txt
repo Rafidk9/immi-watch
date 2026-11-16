@@ -1,6 +1,6 @@
 News
-Important Update: ROI System Currently Offline
-ROIs are not being accepted while we investigate a system fault.
+Important Update: ROI System Back Online
+The system has now been fixed and ROIs can now be submitted
 Read more
 Processing Times and Invitations Issued
 Data on processing times, ROIs and nomination applications
