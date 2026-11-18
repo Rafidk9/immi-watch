@@ -56,9 +56,9 @@ Your earnings are one of many factors used to select ROIs for invitation. There 
 Further information about ROI
 Once you have submitted an ROI, it will remain in our system until either withdrawn by you, invited by us or the program year ends. You cannot update an ROI once it has been submitted.
 What if the information provided in my ROI has changed?
-The information in your ROI must be accurate and up to date. If you are invited to apply for visa nomination but unable to provide evidence for your claims, your application may be refused.
+The information in your ROI must be accurate and up to date and consistent with your SkillSelect EOI. If any information changes, you must withdraw the ROI and submit a new one. If you are invited to apply for visa nomination but unable to provide evidence for your claims, your application may be refused.
 If the information in your ROI is incorrect or out of date, you must withdraw it and submit a new ROI. You cannot update and re‑submit a previous ROI.
-The ROI fee is charged once per program year. If you withdraw and submit a new ROI within the same program year, you will not be charged again.
+The ROI fee is charged once per program year. If you withdraw and submit a new ROI within the same program year, you will not be charged an ROI fee again.
 You only need to withdraw and submit a new ROI if the information entered has changed, including:
 Annual earnings
 Partner points claimed in your ROI
@@ -80,8 +80,7 @@ If you are invited to apply, you, or your agent (if applicable), will be notifie
 We will not reissue the invitation if you do not apply within the specified period. If you wish to be considered in future invitation rounds, you will need to submit a new ROI.
 Updating and withdrawing your existing EOI
 What if the information in my SkillSelect EOI has changed?
-If the information in your SkillSelect EOI has changed, you do not need to withdraw and submit a new ROI. You only need to withdraw and submit a new ROI if the information you entered on the ROI form changes.
-However, it is important that your EOI is accurate and up to date. If you are invited to apply for visa nomination but unable to evidence your claims, your application may be refused. This includes years of experience in your nominated occupation and where you are currently living.
+It is important that your EOI is accurate and up to date. If you are invited to apply for visa nomination but unable to evidence your claims, your application may be refused. This includes years of experience in your nominated occupation and where you are currently living.
 Please review your EOI in SkillSelect and ensure the information is up to date and is consistent with the ROI information you have provided in your Live in Melbourne account.
 If you are invited to apply, you cannot modify your EOI. Please Contact Us about the information you wish to update on your EOI if you have been invited to apply.
 What if I have a new SkillSelect EOI number?
