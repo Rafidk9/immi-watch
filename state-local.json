@@ -3,52 +3,52 @@
     "parl-bills": {
       "url": "https://parlinfo.aph.gov.au/parlInfo/feeds/rss.w3p;adv=yes;orderBy=date-eFirst;page=0;query=Dataset%3Abillhome%20Date%3AthisYear;resCount=200",
       "fail_count": 0,
-      "last_checked": "2026-11-18T11:40+11:00",
+      "last_checked": "2026-11-18T12:40+11:00",
       "last_changed": "2026-10-16T14:10+11:00"
     },
     "npl": {
       "url": "https://www.dewr.gov.au/international-skills-engagement/national-planning-level",
       "fail_count": 0,
-      "last_checked": "2026-11-18T11:40+11:00",
+      "last_checked": "2026-11-18T12:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "min-education": {
       "url": "https://ministers.dewr.gov.au/releases.xml?minister=6525",
       "fail_count": 0,
-      "last_checked": "2026-11-18T11:40+11:00",
+      "last_checked": "2026-11-18T12:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "dewr-news": {
       "url": "https://www.dewr.gov.au/rss/newsroom.xml",
       "fail_count": 0,
-      "last_checked": "2026-11-18T11:40+11:00",
+      "last_checked": "2026-11-18T12:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "teqsa-news": {
       "url": "https://www.teqsa.gov.au/about-us/news-and-events/latest-news",
       "fail_count": 0,
-      "last_checked": "2026-11-18T11:40+11:00",
+      "last_checked": "2026-11-18T12:40+11:00",
       "baseline": "2026-10-16T14:10+11:00",
       "last_changed": "2026-11-16T10:40+11:00"
     },
     "asqa-news": {
       "url": "https://www.asqa.gov.au/news-events/news",
       "fail_count": 0,
-      "last_checked": "2026-11-18T11:40+11:00",
+      "last_checked": "2026-11-18T12:40+11:00",
       "baseline": "2026-10-16T14:10+11:00",
-      "last_changed": "2026-11-18T11:40+11:00"
+      "last_changed": "2026-11-18T12:40+11:00"
     },
     "jsa-news": {
       "url": "https://www.jobsandskills.gov.au/news_rss",
       "fail_count": 0,
-      "last_checked": "2026-11-18T11:40+11:00",
+      "last_checked": "2026-11-18T12:40+11:00",
       "baseline": "2026-10-16T14:10+11:00",
       "last_changed": "2026-10-21T11:40+11:00"
     },
     "edu-international": {
       "url": "https://www.education.gov.au/international-education",
       "fail_count": 0,
-      "last_checked": "2026-11-18T11:40+11:00",
+      "last_checked": "2026-11-18T12:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     }
   },
@@ -57,10 +57,15 @@
       "when": "2026-11-18T11:40+11:00",
       "md": "### ⚪ ASQA news page updated with minor text adjustments to transition period descriptions\n_ASQA – news (VET regulator)_\n\n**What changed**\n- Description for FWP20121 Certificate II in Forest Operations and FWP30121 Certificate III in Forest Operations shortened\n- Description for PSP60916 Advanced Diploma of Interpreting (LOTE-English) shortened\n- Description for PSP50916 Diploma of Interpreting (LOTE-English) shortened\n- Description for HLT42015 Certificate IV in Massage Therapy and HLT52015 Diploma of Remedial Massage shortened\n\n**Who it affects:** No one – wording or layout change only\n\n**What to do:** Nothing – for information\n\n[Official page](https://www.asqa.gov.au/news-events/news) · [Exact wording changes](https://github.com/Rafidk9/immi-watch/blob/main/changes/2026-11/20261118-1140_asqa-news.md) · severity: **low**",
       "record": "changes/2026-11/20261118-1140_asqa-news.md"
+    },
+    {
+      "when": "2026-11-18T12:40+11:00",
+      "md": "### ⚪ ASQA added a tags section for the extended transition period of training product MEM30305.\n_ASQA – news (VET regulator)_\n\n**What changed**\n- Added a sentence stating ASQA has approved an extended transition period for training product MEM30305.\n- Added a 'Tags' heading with the tag 'Extended transitions'.\n\n**Who it affects:** No one – wording or layout change only\n\n**What to do:** Nothing – for information\n\n[Official page](https://www.asqa.gov.au/news-events/news) · [Exact wording changes](https://github.com/Rafidk9/immi-watch/blob/main/changes/2026-11/20261118-1240_asqa-news.md) · severity: **low**",
+      "record": "changes/2026-11/20261118-1240_asqa-news.md"
     }
   ],
   "last_run": {
-    "at": "2026-11-18T11:40+11:00",
+    "at": "2026-11-18T12:40+11:00",
     "checked": 8,
     "baseline": 0,
     "changed": 1,
