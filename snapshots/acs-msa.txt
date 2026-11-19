@@ -3,6 +3,29 @@ ACS Migration Skills Assessment
 ACS is authorised to assess the skills and qualifications of IT, Data Science and Cyber Security professionals on behalf of the Australian Government, underpinned by SFIA (Skills Framework for the Information Age).
 &nbsp
 IMPORTANT NOTICE
+Migration Skills Assessment Price Increase
+A price increase of 3.5% will be applied to all assessment services. Recognition of Prior Learning (RPL) pathway will be increased to $1,551 in line with the value and work required, comparable to the General Skills pathway. These changes are effective from Tuesday, 5th January 2027.
+Assessment Pathway or Service
+Current Fee (excl. GST)
+New Fee (excl. GST)
+Post Australan Study
+$1,136
+$1,176
+General Skills
+$1,498
+$1,551
+Recognition of Prior Learning
+$625
+$1,551
+Qualification Only
+$620
+$647
+Appeal Level 1
+$516
+$535
+Appeal Level 2
+$520
+$542
 &nbsp
 ACS Christmas Holiday Shutdown period
 The ACS office will be closed during the Holiday period from the 21st December 2026 and re-open on the 4th January 2027.
