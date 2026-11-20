@@ -3,89 +3,58 @@
     "parl-bills": {
       "url": "https://parlinfo.aph.gov.au/parlInfo/feeds/rss.w3p;adv=yes;orderBy=date-eFirst;page=0;query=Dataset%3Abillhome%20Date%3AthisYear;resCount=200",
       "fail_count": 0,
-      "last_checked": "2026-11-21T07:40+11:00",
+      "last_checked": "2026-11-21T08:40+11:00",
       "last_changed": "2026-11-18T16:40+11:00"
     },
     "npl": {
       "url": "https://www.dewr.gov.au/international-skills-engagement/national-planning-level",
       "fail_count": 0,
-      "last_checked": "2026-11-21T07:40+11:00",
+      "last_checked": "2026-11-21T08:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "min-education": {
       "url": "https://ministers.dewr.gov.au/releases.xml?minister=6525",
       "fail_count": 0,
-      "last_checked": "2026-11-21T07:40+11:00",
+      "last_checked": "2026-11-21T08:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "dewr-news": {
       "url": "https://www.dewr.gov.au/rss/newsroom.xml",
       "fail_count": 0,
-      "last_checked": "2026-11-21T07:40+11:00",
+      "last_checked": "2026-11-21T08:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     },
     "teqsa-news": {
       "url": "https://www.teqsa.gov.au/about-us/news-and-events/latest-news",
       "fail_count": 0,
-      "last_checked": "2026-11-21T07:40+11:00",
+      "last_checked": "2026-11-21T08:40+11:00",
       "baseline": "2026-10-16T14:10+11:00",
       "last_changed": "2026-11-18T14:40+11:00"
     },
     "asqa-news": {
       "url": "https://www.asqa.gov.au/news-events/news",
       "fail_count": 0,
-      "last_checked": "2026-11-21T07:40+11:00",
+      "last_checked": "2026-11-21T08:40+11:00",
       "baseline": "2026-10-16T14:10+11:00",
       "last_changed": "2026-11-20T17:40+11:00"
     },
     "jsa-news": {
       "url": "https://www.jobsandskills.gov.au/news_rss",
       "fail_count": 0,
-      "last_checked": "2026-11-21T07:40+11:00",
+      "last_checked": "2026-11-21T08:40+11:00",
       "baseline": "2026-10-16T14:10+11:00",
       "last_changed": "2026-10-21T11:40+11:00"
     },
     "edu-international": {
       "url": "https://www.education.gov.au/international-education",
       "fail_count": 0,
-      "last_checked": "2026-11-21T07:40+11:00",
+      "last_checked": "2026-11-21T08:40+11:00",
       "baseline": "2026-10-16T14:10+11:00"
     }
   },
-  "pending_digest": [
-    {
-      "when": "2026-11-19T11:40+11:00",
-      "md": "### ⚪ ASQA has added summary descriptions and tags to historical news listings on its website.\n_ASQA – news (VET regulator)_\n\n**What changed**\n- Summary snippets and 'Extended transitions' tags were populated for older news items from September 2022 and January 2023.\n- Summarised items include the historical approval of TAE Training Package Version 5 (endorsed November 2022).\n- Summarised items also note extended transition periods for FBP20117 Certificate II in Food Processing and FBP30417 Certificate III in Bread Baking from September 2022.\n\n**Who it affects:** No one – wording or layout change only.\n\n**What to do:** Nothing – for information.\n\n[Official page](https://www.asqa.gov.au/news-events/news) · [Exact wording changes](https://github.com/Rafidk9/immi-watch/blob/main/changes/2026-11/20261119-1140_asqa-news.md) · severity: **low**",
-      "record": "changes/2026-11/20261119-1140_asqa-news.md"
-    },
-    {
-      "when": "2026-11-19T12:40+11:00",
-      "md": "### ⚪ ASQA added tags to previous news items regarding extended transition periods for specific training products.\n_ASQA – news (VET regulator)_\n\n**What changed**\n- Tags added to the news item for CPC32413 Certificate III in Plumbing\n- Tags added to the news item for FBP30117 Certificate III in Food Processing qualification\n- Tags added to the news item for UEE62111 Advanced Diploma of Engineering Technology – Electrical\n\n**Who it affects:** No one – wording or layout change only\n\n**What to do:** Nothing – for information\n\n[Official page](https://www.asqa.gov.au/news-events/news) · [Exact wording changes](https://github.com/Rafidk9/immi-watch/blob/main/changes/2026-11/20261119-1240_asqa-news.md) · severity: **low**",
-      "record": "changes/2026-11/20261119-1240_asqa-news.md"
-    },
-    {
-      "when": "2026-11-20T12:40+11:00",
-      "md": "### ⚪ ASQA has updated archived 2022 news listings with snippet descriptions and tags for previously approved extended transition periods.\n_ASQA – news (VET regulator)_\n\n**What changed**\n- Short descriptions and 'Extended transitions' tags have been added to historical news items from February to April 2022.\n- Affected listings include AHC50516 Diploma of Arboriculture, RII60215 Advanced Diploma of Extractive Industries Management, 10 TLILIC units, HLT35015, HLT45015, PMB30116, and PMB40116.\n- No new transition extensions, deadlines, or regulatory policy changes were announced.\n\n**Who it affects:** No one – wording or layout change only.\n\n**What to do:** Nothing – for information.\n\n[Official page](https://www.asqa.gov.au/news-events/news) · [Exact wording changes](https://github.com/Rafidk9/immi-watch/blob/main/changes/2026-11/20261120-1240_asqa-news.md) · severity: **low**",
-      "record": "changes/2026-11/20261120-1240_asqa-news.md"
-    },
-    {
-      "when": "2026-11-20T15:37+11:00",
-      "md": "### ⚪ ASQA website updated historical 2021 and 2022 transition notices with descriptions and tags\n_ASQA – news (VET regulator)_\n\n**What changed**\n- Short summary descriptions and 'Extended transitions' tags were added to archived news items from November 2021 to January 2022\n- Affected listings include past extended transition notices for FNS42115, TLI32515, RII30919, UEE62111, and ICT, AHC, NWP, MAR & CPC training packages\n- No new transition extensions, deadlines, or regulatory updates were announced\n\n**Who it affects:** No one – wording or layout change only\n\n**What to do:** Nothing – for information\n\n[Official page](https://www.asqa.gov.au/news-events/news) · [Exact wording changes](https://github.com/Rafidk9/immi-watch/blob/main/changes/2026-11/20261120-1537_asqa-news.md) · severity: **low**",
-      "record": "changes/2026-11/20261120-1537_asqa-news.md"
-    },
-    {
-      "when": "2026-11-20T16:40+11:00",
-      "md": "### ⚪ ASQA adds descriptive snippet and tags to an archived November 2021 news item for training product TLILIC0012\n_ASQA – news (VET regulator)_\n\n**What changed**\n- ASQA added summary text to an archived news item dated 1 November 2021.\n- The text confirms an extended transition period was approved for TLILIC0012 Licence to operate a vehicle loading crane (capacity 10 metre tonnes and above) (Release 1) until 28 February 2022.\n- Added category tags for 'Extended transitions'.\n\n**Who it affects:** No one – wording or layout change only (relates to a transition period that expired in February 2022).\n\n**What to do:** Nothing – for information.\n\n[Official page](https://www.asqa.gov.au/news-events/news) · [Exact wording changes](https://github.com/Rafidk9/immi-watch/blob/main/changes/2026-11/20261120-1640_asqa-news.md) · severity: **low**",
-      "record": "changes/2026-11/20261120-1640_asqa-news.md"
-    },
-    {
-      "when": "2026-11-20T17:40+11:00",
-      "md": "### ⚪ CPC Construction, Plumbing and Services Training Package: ASQA has added summary text to an archived news item on 11 High Risk Work units.\n_ASQA – news (VET regulator)_\n\n**What changed**\n- A summary snippet was added to an existing 1 November 2021 news listing on the ASQA website.\n- The item confirms an extended transition period was approved for 11 High Risk Work training product units from the CPC Construction, Plumbing and Services Training Package until 28 March 2022.\n- Tag 'Extended transitions' added to the news item.\n\n**Who it affects:** No one – wording or layout change only\n\n**What to do:** Nothing – for information.\n\n[Official page](https://www.asqa.gov.au/news-events/news) · [Exact wording changes](https://github.com/Rafidk9/immi-watch/blob/main/changes/2026-11/20261120-1740_asqa-news.md) · severity: **low**",
-      "record": "changes/2026-11/20261120-1740_asqa-news.md"
-    }
-  ],
+  "pending_digest": [],
   "last_run": {
-    "at": "2026-11-21T07:40+11:00",
+    "at": "2026-11-21T08:40+11:00",
     "checked": 8,
     "baseline": 0,
     "changed": 0,
