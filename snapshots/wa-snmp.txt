@@ -1029,32 +1029,35 @@ up to 75% of SNMP graduate stream nominations will be made for higher education 
 up to 25% of SNMP graduate stream nominations will be made for VET graduates.
 If you are eligible for an invitation through multiple streams, you will receive an invitation for each stream you are eligible for. However, you will only be able to lodge one application for State nomination through your chosen stream. If multiple EOIs are ranked at the same level, invitations will be issued based on the EOI submission date.
 If your EOI indicates you are seeking State nomination for both the subclass 190 and subclass 491 visa, you will generally be invited for the subclass 491 visa in the first instance. This is because you will generally have a higher EOI points score for this visa. If you are invited for the subclass 491 visa and the subclass 190 visa (in different invitation rounds) only one application can proceed.
-Invitations for priority trade occupations were issued on 14 October for the State Nominated Migration Program.
-Invitations for priority non-trade occupations were issued on 14 October for the State Nominated Migration Program.
+Invitations were issued on 20 November 2026 for the State Nominated Migration program.
 Intending visa subclass
 General stream
 WASMOL Schedule 1
 General stream
 WASMOL Schedule 2
+Defence Industry Stream schedule 3
 Graduate stream
 Higher education
 Graduate stream
 Vocational education and training
 Visa subclass 190
-118
-586
-99
-33
+98
+459
+1018
+74
+25
 Visa subclass 491
+66
+371
 0
-362
-13
-16
+50
+17
 TOTAL
-118
-948
-112
-49
+164
+830
+1018
+124
+42
 Profiles of the last invited expression of interest (EOI) for trade occupations in priority WA industry sectors
 Please note that this information does not take into account any occupation or visa subclass caps applied.
 Trade occupations in priority WA industry sectors - GENERAL STREAM
@@ -1072,14 +1075,14 @@ WASMOL Schedule 1
 -
 WASMOL Schedule 2
 190
-Overseas
-65
-01/10/2026
+Western Australia
+85
+6 November 2026
 WASMOL Schedule 2
 491
-Overseas
-75
-16/09/2026
+Another Australian State or Territory
+85
+22 June 2026
 Trade occupations in priority WA industry sectors - GRADUATE STREAM
 Building and Construction
 Graduate stream
@@ -1090,27 +1093,24 @@ EOI points
 Submission date
 Higher education
 190
-Western Australia
-AQF Certificate III
-95
-18/06/2026
+-
 Higher education
 491
 -
 Vocational education and training
 190
+Another Australian State or Territory
+AQF Certificate III
+65
+21 October 2026
+Vocational education and training
+491
 Western Australia
 AQF Certificate III
 65
-02/09/2026
-Vocational education and training
-491
-Overseas
-AQF Certificate III
-75
-01/09/2026
+13 November 2026
 View the last invited expression of interest by priority trade occupation PDF(opens in a new tab) for further information.
-Profiles of the last invited expression of interest (EOI) for non-trade occupations in priority WA industry sectors.
+Profiles of the last invited expression of interest (EOI) for all other occupations in priority WA industry sectors
 Please note that this information does not take into account any occupation or visa subclass caps applied.
 Occupations in priority WA industry sectors - GENERAL STREAM
 Building and Construction; Healthcare and Social Assistance; Hospitality and Tourism; Education and Training
@@ -1123,20 +1123,20 @@ WASMOL Schedule 1
 190
 Western Australia
 85
-07/03/2026
+18 September 2026
 WASMOL Schedule 1
 491
--
+Western Australia
+95
+2 September 2026
 WASMOL Schedule 2
 190
 Western Australia
-90
-09/04/2026
+85
+6 November 2026
 WASMOL Schedule 2
 491
 -
-95
-19/12/2025
 Occupations in priority WA industry sectors - GRADUATE STREAM
 Building and Construction; Healthcare and Social Assistance; Hospitality and Tourism; Education and Training
 Graduate stream
@@ -1148,25 +1148,45 @@ Submission date
 Higher education
 190
 Western Australia
-PhD/Master's Degree
+Master's Degree
 85
-24/12/2024
+6 July 2026
 Higher education
 491
--
+Western Australia
+Master's Degree
+95
+2 September 2026
 Vocational education and training
 190
 Western Australia
 Advanced Diploma
 90
-04/04/2025
+5 November 2026
 Vocational education and training
 491
--
-View the last invited expression of interest by priority non-trade occupation PDF(opens in a new tab) for further information.
-Profiles of the last invited expression of interest (EOI) for occupations in non-priority WA industry sectors
+Western Australia
+Advanced Diploma
+105
+5 November 2026
+View the last invited expression of interest by all other priority occupation PDF(opens in a new tab) for further information.
+Profiles of the last invited expression of interest (EOI) for occupations in the Defence industry stream.
 Please note that this information does not take into account any occupation or visa subclass caps applied.
-Occupations in non-priority WA industry sectors - GENERAL STREAM
+Defence industry occupations – DEFENCE INDUSTRY STREAM
+Defence Industry stream
+Visa subclass
+State of residence
+EOI points
+Submission date
+WASMOL Schedule 1
+190
+Western Australia
+80
+23 January 2025
+View the last invited expression of interest by Defence Industry occupation PDF(opens in a new tab) for further information
+Profiles of the last invited expression of interest (EOI) for all other occupations in WA industry sectors.
+Please note that this information does not take into account any occupation or visa subclass caps applied.
+All other occupations in WA industry sectors - GENERAL STREAM
 General stream
 Visa subclass
 State of residence
@@ -1184,7 +1204,7 @@ WASMOL Schedule 2
 WASMOL Schedule 2
 491
 -
-Occupations in non-priority WA industry sectors - GRADUATE STREAM
+All other occupations in WA industry sectors - GRADUATE STREAM
 Graduate stream
 Visa subclass
 State of residence
@@ -1203,6 +1223,7 @@ Vocational education and training
 Vocational education and training
 491
 -
+View the last invited expression of interest by all other occupation PDF(opens in a new tab) for further information.
 2026-27 program year — Invitations issued
 Visa type
 July
@@ -1222,27 +1243,31 @@ General stream WASMOL Schedule 1
 190
 -
 118
+98
 -
-236
+334
 491
 -
 47
 0
+66
 -
-47
+113
 General stream WASMOL Schedule 2
 190
 -
 549
 586
+459
 -
-1135
+1594
 491
 -
 221
 362
+371
 -
-583
+954
 Graduate stream — Higher education
 190
 -
@@ -1261,20 +1286,26 @@ Graduate stream - Vocational education and training
 -
 29
 33
+25
 -
-62
+87
 491
 -
 12
 16
+17
 -
-28
+45
+Defence WASMOL Schedule 3
+190
+1018
 Total to date
 -
 1100
 1227
+2178
 -
-2327
+4505
 2025—26 program year — Invitations issued
 Visa type
 July
