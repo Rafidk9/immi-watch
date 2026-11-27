@@ -47,8 +47,8 @@ sch 1 (items 1-4)
 01 Nov 2026 - 02 Nov 2026
 C290
 F2026C01179
-sch 1 (items 3-8)
 sch 1 (items 1, 2)
+sch 1 (items 3-8)
 02 Oct 2026 - 31 Oct 2026
 C289
 F2026C01017
@@ -70,8 +70,8 @@ sch 1 (items 1, 2)
 01 Apr 2026 - 19 May 2026
 C286
 F2026C00324
-sch 2 (items 8, 9)
 sch 2 (item 4)
+sch 2 (items 8, 9)
 11 Mar 2026 - 31 Mar 2026
 C285
 F2026C00266
