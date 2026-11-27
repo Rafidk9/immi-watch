@@ -13,7 +13,7 @@ Migration Act 1958
 Latest version
 View as made version
 Order print copy
-F2026C01219 C29212 November 2026 - 12 November 2026
+F2026C01242 C29313 November 2026
 This instrument was backcaptured in accordance with Section 36 of the Legislative Instruments Act 2003
 All versions
 Show known future amendments
@@ -33,6 +33,8 @@ DL
 Notes
 Includes amendments
 13 Nov 2026
+C293
+F2026C01242
 sch 1 (items 1-19)
 12 Nov 2026 - 12 Nov 2026
 C292
@@ -45,8 +47,8 @@ sch 1 (items 1-4)
 01 Nov 2026 - 02 Nov 2026
 C290
 F2026C01179
-sch 1 (items 1, 2)
 sch 1 (items 3-8)
+sch 1 (items 1, 2)
 02 Oct 2026 - 31 Oct 2026
 C289
 F2026C01017
@@ -54,9 +56,9 @@ sch 1 (items 1-20)
 01 Jul 2026 - 01 Oct 2026
 C288
 F2026C00667
+sch 1 (items 1-7)
 sch 2 (items 1-6), sch 3 (items 1-65)
 sch 1 (items 1-12)
-sch 1 (items 1-7)
 01 Jun 2026 - 30 Jun 2026
 C287
 F2026C00497
